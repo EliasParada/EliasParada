@@ -1,4 +1,9 @@
-### Hi there 👋
+# ¡Hola!
+### Soy un desarrollador principiante, probando esta función, 
+### una imagen del mundo ficticio de Runaterra por que me gusta 
+### jugar LOL(League of Legends).
+<img align="center" src="https://statics.viralizalo.com/virs/2019/05/VIR_446284_33476_cuanto_sabes_del_lore_de_league_of_legends_demaciaaaaaa_edition.jpg?cb=9804415"/>
+
 
 <!--
 **EliasParada/EliasParada** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
