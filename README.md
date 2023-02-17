@@ -1,5 +1,19 @@
-# ¡Hola!
-### Soy un desarrollador principiante, probando esta función, 
+# Sobre mi
+### Soy un desarrollador web, que trabaja de lado del cliente tanto como de lado de servidor, he trabajado con herramientas muy conocidad dentro del mundo del desarrollo web y la técnología, como pueden ser:
+
+- JS, HTML y CSS
+- Vue.js
+- Node.js
+- PHP
+- Laravel
+- Python
+- Tensorflow
+- Pandas
+- Firebase
+- AWS
+- Azure
+- Git y Github
+- Boostrap, Tailwind CSS, UI Kit, Carbone, Material Designe
 
 
 
