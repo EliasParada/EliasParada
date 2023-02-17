@@ -8,13 +8,13 @@
 - Laravel
 - Python
 - Tensorflow
-- Pandas
 - Firebase
 - AWS
 - Azure
 - Git y Github
 - Boostrap, Tailwind CSS, UI Kit, Carbone, Material Designe
 
+(Mi portafolio)[https://eliasparada.github.io/EliasParada/]
 
 
 <!--
