@@ -14,7 +14,7 @@
 - Git y Github
 - Boostrap, Tailwind CSS, UI Kit, Carbone, Material Designe
 
-(Mi portafolio)[https://eliasparada.github.io/EliasParada/]
+[Mi portafolio](https://eliasparada.github.io/EliasParada/)
 
 
 <!--
