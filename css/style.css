@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'minimalist';
+    src: url('../docs/minimalist-font.woff') format('truetype');
+}
+
+.inset-4-0 {
+    top: 4%;
+    left: 0%;
+}
+.inset-20-75 {
+    top: 20%;
+    left: 75%;
+}
+.inset-60-33 {
+    top: 60%;
+    left: 33%;
+}
+
+.content {
+    grid-template-rows: auto 3fr auto;
+}
+
+.font-mini {
+    font-family: 'minimalist', sans-serif;
+}
