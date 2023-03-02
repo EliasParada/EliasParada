@@ -18,6 +18,7 @@
 
 .content {
     grid-template-rows: auto 3fr auto;
+    grid-template-columns: 1fr;
 }
 
 .font-mini {
