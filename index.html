@@ -16,55 +16,67 @@
                 <div class="flex justify-end items-center gap-4">
                     <img src="images/profile.jpg" alt="" class="w-8 h-8 rounded-full scale-125">
                 </div>
-                <div class="flex justify-end gap-4">
-                    <li class="p-2 px-8 rounded-lg hover:bg-cyan-500 text-cyan-500 hover:text-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                            after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-24 after:transition-transform after:duration-700 after:ease-out
-                            before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-32 before:transition-transform before:duration-1000 before:ease-out">
-                        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
-                    </li>
-                    <li class="p-2 px-8 rounded-lg hover:bg-cyan-500 text-cyan-500 hover:text-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                            after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-24 after:transition-transform after:duration-700 after:ease-out
-                            before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-32 before:transition-transform before:duration-1000 before:ease-out">
-                        <a href="index.html"><i class="fa-solid fa-user"></i></a>
-                    </li>
-                    <li class="p-2 px-8 rounded-lg hover:bg-cyan-500 text-cyan-500 hover:text-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                            after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-24 after:transition-transform after:duration-700 after:ease-out
-                            before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-32 before:transition-transform before:duration-1000 before:ease-out">
-                        <a href="projects.html"><i class="fa-solid fa-gears"></i></a>
-                    </li>
-                    <li class="p-2 px-8 rounded-lg hover:bg-cyan-500 text-cyan-500 hover:text-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                            after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-24 after:transition-transform after:duration-700 after:ease-out
-                            before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-32 before:transition-transform before:duration-1000 before:ease-out">
-                        <a href="index.html"><i class="fa-solid fa-id-card"></i></a>
-                    </li>
+                <div class="flex flex-row relative">
+                    <div id="display-btn" class="flex sm:hidden h-8 px-8 py-2 rounded-lg hover:bg-cyan-500 fill-cyan-500 hover:fill-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                        after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                        before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="text-cyan-500 hover:text-cyan-800">
+                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                        </svg>
+                    </div>
+                    <div id="display-nav" class="h-0 z-10 absolute sm:relative md:relative overflow-hidden sm:h-auto justify-end gap-4 transition-all duration-400 ease-in">
+                        <li class="p-2 px-8 rounded-lg hover:bg-cyan-500 text-cyan-500 hover:text-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                            <a href="#home">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="p-2 px-8 rounded-lg hover:bg-cyan-500 text-cyan-500 hover:text-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                            <a href="#about">
+                                <p>About Me</p>
+                            </a>
+                        </li>
+                        <li class="p-2 px-8 rounded-lg hover:bg-cyan-500 text-cyan-500 hover:text-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                            <a href="#works">
+                                <p>My Works</p>
+                            </a>
+                        </li>
+                        <li class="p-2 px-8 rounded-lg hover:bg-cyan-500 text-cyan-500 hover:text-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                            <a href="#contact">
+                                <p>Contact Me</p>
+                            </a>
+                        </li>
+                    </div>
                 </div>
             </ul>
         </nav>
 
         <div class="w-full h-full relative">
             <!-- Brazo -->
-            <div class="flex flex-row justify-start items-end absolute top-0">
+            <!-- <div class="flex flex-row justify-start items-end absolute top-0">
                 <div id="joint1" class="h-8 bg-white w-8 border-2 border-b-black border-slate-500 rounded-full"></div>
-                <div id="part1" class="h-8 bg-white w-32 border-2 border-b-black border-slate-500 rounded-lg origin-bottom-right"></div>
+                <div id="part1" class="h-8 bg-white w-32 border-2 border-b-black border-slate-500 rounded-lg"></div>
                 <div id="joint2" class="h-8 bg-white w-8 border-2 border-b-black border-slate-500 rounded-full"></div>
                 <div id="part2" class="h-8 bg-white w-64 border-2 border-b-black border-slate-500 rounded-lg"></div>
                 <div id="joint3" class="h-8 bg-white w-8 border-2 border-b-black border-slate-500 rounded-full"></div>
                 <div id="hook" class="h-8 bg-white w-8 border-2 border-b-black border-slate-500 rounded-xl"></div>
-            </div>
+            </div> -->
 
             <div class="flex flex-col md:flex-row justify-between rounded-xl bg-slate-600 border-t-2 border-slate-400 w-full m-auto p-2 md:p-0 md:w-3/4">
-                <div class="flex flex-col justify-between w-full md:w-3/4 md:p-2 m-0">
+                <div id="home" class="flex flex-col justify-between w-full md:w-3/4 md:p-2 m-0">
                     <h1 class="text-5xl font-bold">Elias Mauricio Parada Lozano</h1>
                     <p> Desarrollador web front-end y back-end. Competente en Python y desarrollo de inteligencia artificial.
                         Apasionado por ofrecer sitios web y aplicaciones dinámicos de alta calidad.    
                     </p>
-                    <!-- Lista de lenguajes y herramientas, se puede cambiar el nombre i los iconos -->
                     <fieldset class="grid grid-cols-4 md:flex text-2xl w-full h-auto justify-start gap-4 align-center">
                         <legend class="text-lg">Lenguajes</legend>
-                        <!-- Iconos de fontawesome, entrar, crear un kit gratuito y ya pueden ver los iconos -->
-                        <!-- En caso de no quere hacer eso usar: 
-                            <a href=""><img class="hover:saturate-150 w-8 h-8" src="images/profile.jpg" alt="icono"></a>
-                        -->
                         <a href="" class="block hover:text-red-500"><i class="fa-brands fa-html5"></i></a>
                         <a href="" class="block hover:text-blue-500"><i class="fa-brands fa-css3-alt"></i></a>
                         <a href="" class="block hover:text-yellow-500"><i class="fa-brands fa-js"></i></a>
@@ -83,43 +95,7 @@
                         <a href="" class="block hover:text-violet-600"><i class="fa-brands fa-bootstrap"></i></a>
                         <a href="" class="block hover:text-sky-400"><i class="fa-brands fa-uikit"></i></a>
                     </fieldset>
-                    <button onclick="move()">Mover</button>
 
-<script>
-// Variables para guardar los elementos del brazo robótico
-let joint1 = document.getElementById("joint1");
-let part1 = document.getElementById("part1");
-let joint2 = document.getElementById("joint2");
-let part2 = document.getElementById("part2");
-let joint3 = document.getElementById("joint3");
-let hook = document.getElementById("hook");
-
-// Variables para guardar el ángulo inicial y final de cada articulación
-let angle1 = 10;
-let angle2 = 10;
-let angle3 = 10;
-let finalAngle1 = Math.PI / 4;
-let finalAngle2 = -Math.PI / 6;
-let finalAngle3 = Math.PI / 3;
-
-// Función para mover el brazo robótico al hacer clic en el botón
-function move() {
-    console.log('Mover');
-  
-  // Calcular la diferencia entre el ángulo inicial y final de cada articulación
-  let deltaAngle1 = finalAngle1 - angle1;
-  let deltaAngle2 = finalAngle2 - angle2;
-  let deltaAngle3 = finalAngle3 - angle3;
-
-  // Calcular el incremento del ángulo por cada paso de la animación
-  let stepAngle1 = deltaAngle1 / 100;
-  let stepAngle2 = deltaAngle2 / 100;
-  let stepAngle3 = deltaAngle3 / 100;
-
-  part1.style.transform = "rotate(" + stepAngle1 +")";
-
-}
-</script>
                 </div>
             </div>
         </div>
@@ -133,8 +109,11 @@ function move() {
                 <a href="https://www.linkedin.com/in/el%C3%ADas-parada-lozano-4655531bb/"><i class="text-xl fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/EliasParada"><i class="text-xl fa-brands fa-github"></i></a>
                 <a href="mailto:eliasparadalozano@hotmail.com"><i class="text-xl fa-solid fa-envelope"></i></a>
+                <div class="cursor-pointer"><i class="fa-solid fa-language"></i></div>
             </div>
         </div>
     </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
