@@ -24,3 +24,20 @@
 .font-mini {
     font-family: 'minimalist', sans-serif;
 }
+
+.field-cards {
+  background: linear-gradient(to right, #9ca3af 35%, #e5e7eb 60%, #f3f4f6 100%);
+  box-shadow: 10px -10px 10px -5px rgb(14 0 0 / 30%);
+}
+.field-title {
+  box-shadow: 10px -10px 10px -5px rgb(14 0 0 / 30%);
+}
+
+#cv {
+  font-size: 12pt !important;
+}
+
+.progress-bar {
+  transition: all 2s;
+  transition-timing-function: cubic-bezier(0.66, 0.68, 0, 1.24)
+}
