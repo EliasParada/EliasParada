@@ -42,5 +42,8 @@
     "english": "English",
     "native": "Native language",
     "lvl-english": "Level A1",
-    "some-works": "Some of the works I have participated in"
+    "some-works": "Some of the works I have participated in",
+    "close": "Close",
+    "desc-title": "Description",
+    "rol": "Development"
 }

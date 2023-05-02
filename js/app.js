@@ -65,38 +65,107 @@ window.addEventListener('click', (event) => {
   }
 });
 
-// Example project data
-const projects = [
+const enprojects = [
+  {
+    title: 'Super Market',
+    description: 'A web commerce that allows a supermarket to organize its inventory by using an Artificial Intelligence model to categorize its products.',
+    image: 'images/td1.jpeg',
+    galleryImages: [
+      'images/td1.jpeg',
+      'images/td2.jpeg',
+      'images/td3.jpeg'
+    ],
+    tags: ['#Python', '#HTML', '#CSS', '#AI']
+  },
+  {
+    title: 'Feels Good',
+    description: 'The project idea is to offer an Artificial Intelligence that is capable of analyzing emotions while chatting with other people, in order to recommend activities based on people\'s mood.',
+    image: 'images/fg1.jpeg',
+    galleryImages: [
+      'images/fg1.jpeg',
+      'images/fg2.jpeg',
+      'images/fg3.jpeg',
+      'images/fg4.jpeg'
+    ],
+    tags: ['#PHP', '#Laravel', '#HTML', '#CSS', '#Node.js', '#AI']
+  },
+  {
+    title: 'Image Normalizer',
+    description: 'A web page that allows filling out a form to generate a test bench that allows training an image recognition model by normalizing data.',
+    image: 'images/nimg1.jpeg',
+    galleryImages: [
+      'images/nimg1.jpeg'
+    ],
+    tags: ['#Python', '#HTML', '#CSS', '#AI']
+  }
+];
+
+const esprojects = [
   {
     title: 'Super Mercado',
     description: 'Un comercio web que permite a un super mercado organizar su inventario al hacer uso de un modelo de Inteligencia Artificial para categorizar sus productos.',
-    image: 'https://via.placeholder.com/150',
+    image: 'images/td1.jpeg',
     galleryImages: [
-      'https://via.placeholder.com/100',
-      'https://via.placeholder.com/100',
-      'https://via.placeholder.com/100'
+      'images/td1.jpeg',
+      'images/td2.jpeg',
+      'images/td3.jpeg'
     ],
     tags: ['#Python', '#HTML', '#CSS', '#AI']
   },
   {
     title: 'Feels Good',
     description: 'La idea del proyecto es ofrecer una inteligencia artificial que sea capaz de analizar las emociones al chatlar con otras personas, para así recomendar actividades en base al estado de animo de las personas.',
-    image: 'https://via.placeholder.com/150',
+    image: 'images/fg1.jpeg',
     galleryImages: [
-      'https://via.placeholder.com/100',
-      'https://via.placeholder.com/100',
-      'https://via.placeholder.com/100'
+      'images/fg1.jpeg',
+      'images/fg2.jpeg',
+      'images/fg3.jpeg',
+      'images/fg4.jpeg'
     ],
     tags: ['#PHP', '#Laravel', '#HTML', '#CSS', '#Node.js', '#AI']
   },
   {
     title: 'Normalizador de imagenes',
     description: 'Una página web que permite rellenar un formulario para general un banco de pruebas que permitan entrenar un modelo de reconocimiento de imagenes mediante la normalización de datos.',
-    image: 'https://via.placeholder.com/150',
+    image: 'images/nimg1.jpeg',
     galleryImages: [
-      'https://via.placeholder.com/100',
-      'https://via.placeholder.com/100',
-      'https://via.placeholder.com/100'
+      'images/nimg1.jpeg'
+    ],
+    tags: ['#Python', '#HTML', '#CSS', '#AI']
+  }
+];
+
+// Example project data
+let projects = [
+  {
+    title: 'Super Mercado',
+    description: 'Un comercio web que permite a un super mercado organizar su inventario al hacer uso de un modelo de Inteligencia Artificial para categorizar sus productos.',
+    image: 'images/td1.jpeg',
+    galleryImages: [
+      'images/td1.jpeg',
+      'images/td2.jpeg',
+      'images/td3.jpeg'
+    ],
+    tags: ['#Python', '#HTML', '#CSS', '#AI']
+  },
+  {
+    title: 'Feels Good',
+    description: 'La idea del proyecto es ofrecer una inteligencia artificial que sea capaz de analizar las emociones al chatlar con otras personas, para así recomendar actividades en base al estado de animo de las personas.',
+    image: 'images/fg1.jpeg',
+    galleryImages: [
+      'images/fg1.jpeg',
+      'images/fg2.jpeg',
+      'images/fg3.jpeg',
+      'images/fg4.jpeg'
+    ],
+    tags: ['#PHP', '#Laravel', '#HTML', '#CSS', '#Node.js', '#AI']
+  },
+  {
+    title: 'Normalizador de imagenes',
+    description: 'Una página web que permite rellenar un formulario para general un banco de pruebas que permitan entrenar un modelo de reconocimiento de imagenes mediante la normalización de datos.',
+    image: 'images/nimg1.jpeg',
+    galleryImages: [
+      'images/nimg1.jpeg'
     ],
     tags: ['#Python', '#HTML', '#CSS', '#AI']
   }
@@ -185,19 +254,68 @@ const createProjectCardElement = (project) => {
 };
 
 // Function to open the project modal
+// const openProjectModal = (project) => {
+//   modalTitle.textContent = project.title;
+//   modalDescription.textContent = project.description;
+//   modalGallery.innerHTML = '';
+//   for (const image of project.galleryImages) {
+//     const imageElement = document.createElement('img');
+//     imageElement.classList.add('w-1/3', 'h-24', 'object-cover');
+//     imageElement.setAttribute('src', image);
+//     imageElement.setAttribute('alt', project.title);
+//     modalGallery.appendChild(imageElement);
+//   }
+//   projectModal.classList.remove('hidden');
+// };
+
+// Define variables para almacenar el estado de la galería
+let currentImageIndex = 0;
+let galleryImages = [];
+
+// Function to open the project modal
 const openProjectModal = (project) => {
+  // Actualiza las variables de la galería con las imágenes del proyecto
+  galleryImages = project.galleryImages;
+  currentImageIndex = 0;
+
   modalTitle.textContent = project.title;
   modalDescription.textContent = project.description;
   modalGallery.innerHTML = '';
-  for (const image of project.galleryImages) {
-    const imageElement = document.createElement('img');
-    imageElement.classList.add('w-1/3', 'h-24', 'object-cover');
-    imageElement.setAttribute('src', image);
-    imageElement.setAttribute('alt', project.title);
-    modalGallery.appendChild(imageElement);
-  }
+
+  // Crea la imagen inicial en el modal
+  const imageElement = document.createElement('img');
+  imageElement.classList.add('w-full', 'h-auto', 'object-contain');
+  imageElement.setAttribute('src', galleryImages[currentImageIndex]);
+  imageElement.setAttribute('alt', project.title);
+  modalGallery.appendChild(imageElement);
+
+  const divControls = document.createElement('div');
+  divControls.classList.add('flex', 'flex-row', 'my-2', 'items-center', 'justify-center', 'space-x-8');
+
+
+  // Crea los botones para cambiar las imágenes
+  const previousButton = document.createElement('button');
+  previousButton.innerHTML = '<i class="fa-solid fa-backward"></i>';
+  previousButton.classList.add('text-black');
+  previousButton.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    imageElement.setAttribute('src', galleryImages[currentImageIndex]);
+  });
+  divControls.appendChild(previousButton);
+
+  const nextButton = document.createElement('button');
+  nextButton.innerHTML = '<i class="fa-solid fa-forward"></i>';
+  nextButton.classList.add('text-black');
+  nextButton.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    imageElement.setAttribute('src', galleryImages[currentImageIndex]);
+  });
+  divControls.appendChild(nextButton);
+  modalGallery.appendChild(divControls);
+
   projectModal.classList.remove('hidden');
 };
+
 
 // Function to close the project modal
 const closeProjectModal = () => {
@@ -206,7 +324,11 @@ const closeProjectModal = () => {
 
 // Function to filter projects by tag
 const filterProjects = (tag) => {
-  const filteredProjects = projects.filter(project => project.tags.includes(tag));
+  if (localStorage.lang && localStorage.lang == 'en') {
+    var filteredProjects = enprojects.filter(project => project.tags.includes(tag));
+  } else {
+    var filteredProjects = esprojects.filter(project => project.tags.includes(tag));
+  }
   renderProjects(filteredProjects);
 };
 
@@ -236,4 +358,9 @@ createAllElement();
 
 // Render initial tag list and project list
 renderTagList();
-renderProjects(projects);
+
+if (localStorage.lang && localStorage.lang == 'en') {
+  renderProjects(enprojects);
+} else {
+  renderProjects(esprojects);
+}
