@@ -1,4 +1,8 @@
 const languajes = document.querySelectorAll('[data-opt]');
+const langMap = {
+        'esSP': esSP,
+        'enUS': enUS
+};
 
 const updateLanguage = (data) => {
         for (const key in data) {
@@ -11,31 +15,24 @@ const updateLanguage = (data) => {
 
 languajes.forEach(el => {
         el.addEventListener('click', (e) => {
-        const newLang = e.target.getAttribute('data-opt');
+                const newLang = e.target.getAttribute('data-opt');
+                let send = {};
 
-        localStorage.setItem('lang', newLang);
+                localStorage.setItem('lang', newLang);
 
-        if (localStorage.lang && localStorage.lang == 'en') {
-                renderProjects(enprojects);
-                console.log('es');
-        } else {
-                renderProjects(esprojects);
-                console.log('en');
-        }
+                if (localStorage.lang && localStorage.lang == 'enUS') {
+                        renderProjects(enprojects);
+                } else {
+                        renderProjects(esprojects);
+                }
 
-        if (newLang == 'es') {
-                e.target.innerHTML = 'Español <i class="fa-solid fa-check-to-slot"></i>';
-                document.getElementById('enopt').innerHTML = 'English';
-        } else {
-                e.target.innerHTML = 'English <i class="fa-solid fa-check-to-slot"></i>';
-                document.getElementById('esopt').innerHTML = 'Español';
-        }
+                e.target.innerHTML = newLang === 'esSP' ? 'Español <i class="fa-solid fa-check-to-slot"></i>' : 'English <i class="fa-solid fa-check-to-slot"></i>';
+                document.getElementById(newLang === 'esSP' ? 'enopt' : 'esopt').innerHTML = newLang === 'esSP' ? 'English' : 'Español';
 
-        fetch(`/lang/${newLang}.json`)
-                .then(response => response.json())
-                .then(data => {
-                        updateLanguage(data);
-                });
+                send = langMap[newLang];
+                updateLanguage(send);
+
         });
+
 });
 

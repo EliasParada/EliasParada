@@ -135,7 +135,6 @@ const esprojects = [
   }
 ];
 
-// Example project data
 let projects = [
   {
     title: 'Super Mercado',

@@ -10,6 +10,37 @@
     <script src="js/3.2.6"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d36239a715.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init("k7DIcU-d7kTKb0MXt");
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            const btn = document.getElementById('button');
+
+            document.getElementById('form')
+            .addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'service_xgbn29k';
+                const templateID = 'template_gvv3n5l';
+
+                emailjs.sendForm(serviceID, templateID, this, 'k7DIcU-d7kTKb0MXt')
+                .then(() => {
+                    btn.value = 'Send Email';
+                    alert('Sent!');
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                });
+            });
+
+        }
+    </script>
 </head>
 <body class="m-0 p-0 w-full h-full min-h-screen bg-slate-100 text-white">
     <div id="deco" class="fixed -z-10 w-full h-full inset-0 overflow-hidden">
@@ -486,7 +517,7 @@ print(resultado)
                         <div class="flex flex-row w-full p-4">
                             <div class="flex flex-col justify-between">
                                 <h1 class="text-xl font-bold mx-4 text-center" data-lang="some-works">Algunos de los trabajos en los que he participado</h1>
-    <!-- <li class="tag" data-tag="">All</li>   -->
+                                <!-- <li class="tag" data-tag="">All</li>   -->
                                 <!-- Tag list -->
                                 <ul id="tagList" class="flex flex-wrap mx-4 my-2">
                                     <!-- Tags will be added here -->
@@ -526,6 +557,40 @@ print(resultado)
                         </div>
                     </div>
                 </div>
+
+
+                <!-- Contact form -->
+                <div id="works" class="flex items-center justify-center h-full max-h-full m-auto p-2 md:py-10 md:px-32">
+                    <fieldset class="field-cards text-gray-800 flex flex-col justify-between rounded-xl field-cards m-auto w-full md:w-3/4 p-0">
+                        <legend class="field-title text-lg rounded bg-gray-400 px-4 mark ml-4" data-lang="works">Contactame</legend>
+                        <div class="flex flex-row w-full p-4">
+                            <div class="flex flex-col justify-between">
+                                <h1 class="text-xl font-bold mx-4 text-center" data-lang="some-works">Algunos de los trabajos en los que he participado</h1>
+                                <form id="form">
+                                    <div class="field">
+                                      <label for="from_name">from_name</label>
+                                      <input type="text" name="from_name" id="from_name">
+                                    </div>
+                                    <div class="field">
+                                      <label for="to_name">to_name</label>
+                                      <input type="text" name="to_name" id="to_name">
+                                    </div>
+                                    <div class="field">
+                                      <label for="message">message</label>
+                                      <input type="text" name="message" id="message">
+                                    </div>
+                                    <div class="field">
+                                      <label for="reply_to">reply_to</label>
+                                      <input type="text" name="reply_to" id="reply_to">
+                                    </div>
+                                  
+                                    <input type="submit" id="button" value="Send Email" >
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
             <!-- <img src="images/me.png" alt="" class="absolute bottom-0 right-0 h-3/4 "> -->
         </div>
@@ -551,8 +616,8 @@ print(resultado)
                   
                     <div class="origin-top-right absolute bottom-10 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                       <div class="py-1 hidden transition-all duration-700 ease-in-out" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                        <a href="#" id="esopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" data-opt="es" role="menuitem">Español <i class="fa-solid fa-check-to-slot"></i></a>
-                        <a href="#" id="enopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" data-opt="en" role="menuitem">English</a>
+                        <button id="esopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="esSP" role="menuitem">Español <i class="fa-solid fa-check-to-slot"></i></button>
+                        <button id="enopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="enUS" role="menuitem">English</button>
                       </div>
                     </div>
                 </div>
@@ -563,9 +628,9 @@ print(resultado)
     </div>
 
     <script src="js/app.js"></script>
-    <!-- <script>
-        
-    </script> -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="lang/en.js"></script>
+    <script src="lang/es.js"></script>
     <script src="js/lang.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-{
+let enUS = {
     "title": "Portfolio - Elias Parada",
     "home": "Home",
     "about": "About Me",

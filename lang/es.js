@@ -1,4 +1,4 @@
-{
+let esSP = {
     "title": "Portafolio - Elias Parada",
     "home": "Inicio",
     "about": "Sobre Mí",
