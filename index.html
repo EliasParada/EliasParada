@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/me.jpg" />
+
+    <meta property="og:title" content="Elías Mauricio Parada Lozano" />
+    <meta property="og:description" content="Desarrollador full-stack apasionado por la tecnología." />
+
     <title data-lang="title">Portafolio - Elias Parada</title>
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,7 +34,7 @@
                 const serviceID = 'service_xgbn29k';
                 const templateID = 'template_gvv3n5l';
 
-                emailjs.sendForm(serviceID, templateID, this, 'k7DIcU-d7kTKb0MXt')
+                emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
                     btn.value = 'Send Email';
                     alert('Sent!');
