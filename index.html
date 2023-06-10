@@ -10,6 +10,7 @@
     <meta property="og:description" content="Desarrollador full-stack apasionado por la tecnología." />
     <meta property="og:url" content="https://efordev.com/" />
     <meta property="og:type" content="website" />
+    <meta name="keywords" content="Elias Mauricio Parada Lozano, Elías Mauricio Parada Lozano, Elias Parada, Elías Parada, Eryasu, Desarrollador full-stack" />
 
     <title data-lang="title">Elias Parada</title>
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
@@ -21,7 +22,7 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script type="text/javascript">
-        emailjs.init("k7DIcU-d7kTKb0MXt");
+        emailjs.init("gGqUr5jdcSqVwjRy4");
     </script>
     <script type="text/javascript">
         window.onload = function() {
@@ -33,10 +34,10 @@
 
                 btn.value = 'Sending...';
 
-                const serviceID = 'service_xgbn29k';
-                const templateID = 'template_gvv3n5l';
+                const serviceID = 'personal_outlook';
+                const templateID = 'template_hy6c8ty';
 
-                emailjs.sendForm(serviceID, templateID, this)
+                emailjs.sendForm(serviceID, templateID, this, 'gGqUr5jdcSqVwjRy4')
                 .then(() => {
                     btn.value = 'Send Email';
                     alert('Sent!');
@@ -564,40 +565,39 @@ print(resultado)
                         </div>
                     </div>
                 </div>
+            </div>
 
-
-                <!-- Contact form -->
-                <div id="works" class="flex items-center justify-center h-full max-h-full m-auto p-2 md:py-10 md:px-32">
-                    <fieldset class="field-cards text-gray-800 flex flex-col justify-between rounded-xl field-cards m-auto w-full md:w-3/4 p-0">
-                        <legend class="field-title text-lg rounded bg-gray-400 px-4 mark ml-4" data-lang="works">Contactame</legend>
-                        <div class="flex flex-row w-full p-4">
-                            <div class="flex flex-col justify-between">
-                                <h1 class="text-xl font-bold mx-4 text-center" data-lang="some-works">Algunos de los trabajos en los que he participado</h1>
-                                <form id="form">
-                                    <div class="field">
-                                      <label for="from_name">from_name</label>
-                                      <input type="text" name="from_name" id="from_name">
-                                    </div>
-                                    <div class="field">
-                                      <label for="to_name">to_name</label>
-                                      <input type="text" name="to_name" id="to_name">
-                                    </div>
-                                    <div class="field">
-                                      <label for="message">message</label>
-                                      <input type="text" name="message" id="message">
-                                    </div>
-                                    <div class="field">
-                                      <label for="reply_to">reply_to</label>
-                                      <input type="text" name="reply_to" id="reply_to">
-                                    </div>
-                                  
-                                    <input type="submit" id="button" value="Send Email" >
-                                </form>
-                                
-                            </div>
+            <!-- Contact form -->
+            <div id="works" class="flex items-center justify-center h-full max-h-full m-auto p-2 md:py-10 md:px-32">
+                <fieldset class="field-cards text-gray-800 flex flex-col justify-between rounded-xl field-cards m-auto w-full md:w-3/4 p-0">
+                    <legend class="field-title text-lg rounded bg-gray-400 px-4 mark ml-4" data-lang="works">Contactame</legend>
+                    <div class="flex flex-row w-full p-4">
+                        <div class="flex flex-col justify-between">
+                            <h1 class="text-xl font-bold mx-4 text-center" data-lang="some-works">Algunos de los trabajos en los que he participado</h1>
+                            <form id="form">
+                                <div class="field">
+                                  <label for="from_name">Email</label>
+                                  <input type="text" name="from_name" id="from_name">
+                                </div>
+                                <div class="field">
+                                  <label for="to_name">to_name</label>
+                                  <input type="text" name="to_name" id="to_name" disabled value="contact@efordev.com">
+                                </div>
+                                <div class="field">
+                                  <label for="subject">Asunto</label>
+                                  <input type="text" name="subject" id="subject">
+                                </div>
+                                <div class="field">
+                                  <label for="message">Mensahe</label>
+                                  <textarea type="text" name="message" id="message"></textarea>
+                                </div>
+                              
+                                <input type="submit" id="button" value="Send Email" >
+                            </form>
+                            
                         </div>
-                    </fieldset>
-                </div>
+                    </div>
+                </fieldset>
             </div>
             <!-- <img src="images/me.png" alt="" class="absolute bottom-0 right-0 h-3/4 "> -->
         </div>
@@ -625,6 +625,7 @@ print(resultado)
                       <div class="py-1 hidden transition-all duration-700 ease-in-out" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                         <button id="esopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="esSP" role="menuitem">Español <i class="fa-solid fa-check-to-slot"></i></button>
                         <button id="enopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="enUS" role="menuitem">English</button>
+                        <button id="enopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="jpJP" role="menuitem">日本語</button>
                       </div>
                     </div>
                 </div>
@@ -638,6 +639,7 @@ print(resultado)
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="lang/en.js"></script>
     <script src="lang/es.js"></script>
+    <script src="lang/jp.js"></script>
     <script src="js/lang.js"></script>
 </body>
 </html>

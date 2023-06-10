@@ -45,5 +45,6 @@ let esSP = {
     "some-works": "Algunos de los trabajos en los que he participado",
     "close": "Cerrar",
     "desc-title": "Descripción",
-    "rol": "Desarrollador"
+    "rol": "Desarrollador",
+    "description-404": "La dirección a la que intentas acceder no existe",
 }

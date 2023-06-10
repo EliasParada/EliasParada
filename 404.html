@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta property="og:image" content="https://efordev.com/images/me.jpg" />
+    <meta property="og:title" content="Elías Parada" />
+    <meta property="og:description" content="Desarrollador full-stack apasionado por la tecnología." />
+    <meta property="og:url" content="https://efordev.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="Elias Mauricio Parada Lozano, Elías Mauricio Parada Lozano, Elias Parada, Elías Parada, Eryasu, Desarrollador full-stack" />
+
+    <title data-lang="title">Elias Parada</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/3.2.6"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d36239a715.js" crossorigin="anonymous"></script>
+</head>
+<body class="m-0 p-0 w-full h-full min-h-screen bg-slate-100 text-white">
+    <div id="deco" class="fixed -z-10 w-full h-full inset-0 overflow-hidden">
+        <div class="absolute overflow-hidden w-64 h-64 rounded-lg rotate-45 bg-red-500 font-bold p-2 inset-4-0 divide-y divide-dashed">
+            <div>Js</div>
+            <pre class="font-mini">
+div
+    h1 Suma de números /h1
+    br/
+    input type="number" id="x"/
+    input type="number" id="y"/
+
+    input type="submit" click="sum"/
+
+    span
+        El resultado es p /p
+    /span
+/div
+            </pre>
+        </div>
+
+        <div class="absolute overflow-hidden w-64 h-64 rounded-lg -rotate-45 bg-yellow-500 font-bold p-2 inset-60-33 divide-y divide-dashed">
+            <div>Js</div>
+            <pre class="font-mini">
+function sum(x, y) {
+    let z = x + y;
+    return z;
+}
+
+sum(5, 10);
+            </pre>
+        </div>
+
+        <div class="absolute overflow-hidden w-64 h-64 rounded-lg rotate-12 bg-purple-500 font-bold p-2 inset-20-75 divide-y divide-dashed">
+            <div>Python</div>
+            <pre class="font-mini">
+def sumar(num1, num2):
+    resultado = num1 + num2
+    return resultado
+
+resultado = sumar(5, 10)
+print(resultado)
+            </pre>
+        </div>
+    </div>
+
+    <div class="w-full h-full inset-0 flex flex-col justify-between">
+        <nav class="w-full z-20 h-fit font-bold text-white font-medium grow-0">
+            <ul class="w-full h-auto bg-slate-300 p-4 flex justify-between">
+                <div class="flex justify-end items-center gap-4">
+                    <div class="transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden scale-125 rounded-full
+                    after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                    before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                        <img src="images/logo.svg" alt="" class="w-16 h-16 block rounded-full">
+                    </div>
+                </div>
+                <div class="flex flex-row items-center relative">
+                    <div id="display-btn" class="flex sm:hidden h-8 px-8 py-2 rounded-lg hover:bg-cyan-500 fill-cyan-500 hover:fill-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                        after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                        before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="text-cyan-500 hover:text-cyan-800">
+                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                        </svg>
+                    </div>
+                    <div id="display-nav" class="h-0 flex flex-row items-center z-10 overflow-hidden sm:h-auto justify-end gap-4 transition-all duration-400 ease-in">
+                        <li class="p-2 px-8 rounded-lg hover:bg-slate-500 text-slate-500 hover:text-slate-800 bg-slate-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                            <a href="#home">
+                                <p data-lang="home">Inicio</p>
+                            </a>
+                        </li>
+                        <li class="p-2 px-8 rounded-lg hover:bg-slate-500 text-slate-500 hover:text-slate-800 bg-slate-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                            <a href="#about">
+                                <p data-lang="about">Sobre Mí</p>
+                            </a>
+                        </li>
+                        <li class="p-2 px-8 rounded-lg hover:bg-slate-500 text-slate-500 hover:text-slate-800 bg-slate-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                            <a href="#works">
+                                <p data-lang="works">Mis Trabajos</p>
+                            </a>
+                        </li>
+                        <li class="p-2 px-8 rounded-lg hover:bg-slate-500 text-slate-500 hover:text-slate-800 bg-slate-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
+                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
+                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
+                            <a href="#contact">
+                                <p data-lang="contact">Contactame</p>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    
+        <div class="content z-10 h-full grow w-full h-auto relative m-0 p-0 overflow-y-hidden">
+            <div class="w-full h-5/6 relative">
+                <!-- 404 -->
+                <div id="home" class="flex items-center justify-center h-full max-h-full m-auto p-2 md:py-10 md:px-32">
+                    <fieldset class="field-cards text-gray-800 flex flex-col justify-between rounded-xl field-cards m-auto w-full md:w-3/4 p-0">
+                        <legend class="field-title text-lg rounded bg-gray-400 px-4 mark ml-4" data-lang="home">Error :(</legend>
+                        <div class="flex flex-row w-full p-4">
+                            <!-- <div class="basis-1/4 flex justify-center items-center">
+                                <img src="images/profile.jpg" alt="" class="w-full h-auto block rounded-lg">
+                            </div> -->
+                            <div class="flex flex-col justify-between basis-3/4">
+                                <h1 class="text-3xl font-bold mx-4">Error 404</h1>
+                                <!-- <p class="mx-4 italic font-light relative flex justify-start items-center"><span class="h-8 w-1 block rounded-r-lg bg-gray-200 border-l-4 mr-4"></span><span data-lang="phrase">Tu desarrollas tus propositos</span></p> -->
+                                <!-- <p class="m-4">Error 404</p> -->
+                                <p class="m-4" data-lang="error-404">La dirección a la que intentas acceder no existe</p>
+                                <a href="/" data-lang="home">Inicio</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full grow-0 z-20 p-2 bg-slate-900 flex align-center justify-center relative">
+            <div class="flex gap-8 mx-8 items-center">
+                <figure class="flex justify-end items-center gap-4">
+                    <img src="images/profile.jpg" class="w-8 h-8 rounded-full" alt="An example image">
+                </figure>
+                <a href="https://www.linkedin.com/in/el%C3%ADas-parada-lozano-4655531bb/"><i class="text-xl fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/EliasParada"><i class="text-xl fa-brands fa-github"></i></a>
+                <a href="mailto:eliasparadalozano@hotmail.com"><i class="text-xl fa-solid fa-envelope"></i></a>
+
+                <div class="relative inline-block text-left" data-te-dropdown-position="dropup">
+                    <div>
+                      <button type="button" class="inline-flex justify-center items-center spacing-x-4 w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-stone-500" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                        <i class="fa-solid fa-language mr-4"></i> <span data-lang="languajes">Idiomas</span>
+                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M5 15l5-5 5 5H5z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                    </div>
+                  
+                    <div class="origin-top-right absolute bottom-10 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                      <div class="py-1 hidden transition-all duration-700 ease-in-out" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        <button id="esopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="esSP" role="menuitem">Español <i class="fa-solid fa-check-to-slot"></i></button>
+                        <button id="enopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="enUS" role="menuitem">English</button>
+                        <button id="enopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="jpJP" role="menuitem">日本語</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="lang/en.js"></script>
+    <script src="lang/es.js"></script>
+    <script src="lang/jp.js"></script>
+    <script src="js/lang.js"></script>
+</body>
+</html>

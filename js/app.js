@@ -218,7 +218,7 @@ const createAllElement = () => {
 // Function to create a project card element
 const createProjectCardElement = (project) => {
   const projectCardElement = document.createElement('div');
-  projectCardElement.classList.add('w-full', 'rounded', 'overflow-hidden', 'shadow-lg', 'bg-gray-300');
+  projectCardElement.classList.add('w-full', 'rounded', 'overflow-hidden', 'shadow-lg', 'bg-gray-300', 'hover:scale-105', 'cursor-pointer');
 
   const projectImageElement = document.createElement('img');
   projectImageElement.classList.add('w-full');

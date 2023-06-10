@@ -1,7 +1,8 @@
 const languajes = document.querySelectorAll('[data-opt]');
 const langMap = {
         'esSP': esSP,
-        'enUS': enUS
+        'enUS': enUS,
+        'jpJP': jpJP
 };
 
 const updateLanguage = (data) => {

@@ -45,5 +45,6 @@ let enUS = {
     "some-works": "Some of the works I have participated in",
     "close": "Close",
     "desc-title": "Description",
-    "rol": "Development"
+    "rol": "Development",
+    "description-404": "The adders providen has not exist",
 }
