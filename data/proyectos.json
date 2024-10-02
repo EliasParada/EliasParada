@@ -1,0 +1,138 @@
+{
+    "es" : {
+        "titulo" : "Mis <span class='font-bold'>Proyectos</span>",
+        "proyectos" : [
+            {
+                "nombre" : "Apptary",
+                "descripcion" : "La aplicación tiene una pantalla principal para iniciar y dar la bienvenida al usuario. Luego, muestra una pantalla para ver, eliminar, modificar y buscar productos ingresados. También hay una pantalla para agregar datos de nuevos productos.",
+                "rol" : "Rol: Desarrollador.",
+                "lenguajes" :  "Lenguajes utilizados: Java, XML.",
+                "imagenes" : [
+                    "images/proyectos/apptary/1.jpg",
+                    "images/proyectos/apptary/2.jpg",
+                    "images/proyectos/apptary/3.jpg",
+                    "images/proyectos/apptary/4.jpg"
+                ]
+            },
+            {
+                "nombre" : "FACIAL ACCESS",
+                "descripcion" : "La aplicación es para una clínica, ya que cuenta al inicio con un apartado para poder iniciar sesión con el rostro, para que al usuario se le facilite iniciar sesión, en la pantalla principal también cuenta con varias funciones con los que el usuario puede interactuar.",
+                "rol" : "Rol: Desarrollador.",
+                "lenguajes" :  "Lenguajes utilizados: JavaScript, HTML, CSS, Python.",
+                "imagenes" : [
+                    "images/proyectos/facialaccess/1.png",
+                    "images/proyectos/facialaccess/2.png",
+                    "images/proyectos/facialaccess/3.png",
+                    "images/proyectos/facialaccess/4.png",
+                    "images/proyectos/facialaccess/5.png"
+                ]
+            },
+            {
+                "nombre" : "LOVEMASCOT",
+                "descripcion" : "La aplicación es para buscarle pareja a la mascota, crear una solución tecnológica que innove la forma como actualmente otras soluciones existentes ayudan a sus dueños a buscar pareja para sus mascotas, ya que nuestras mascotas se han convertido en un miembre muy especial de la familia.",
+                "rol" : "Rol desempeñado: Desarrollador.",
+                "lenguajes" :  "Lenguajes utilizados: JavaScript, HTML, CSS.",
+                "imagenes" : [
+                    "images/proyectos/lovemascot/1.jpeg",
+                    "images/proyectos/lovemascot/2.jpeg",
+                    "images/proyectos/lovemascot/3.jpeg",
+                    "images/proyectos/lovemascot/4.png",
+                    "images/proyectos/lovemascot/5.jpeg",
+                    "images/proyectos/lovemascot/6.png",
+                    "images/proyectos/lovemascot/7.png",
+                    "images/proyectos/lovemascot/8.png",
+                    "images/proyectos/lovemascot/9.png"
+                ]
+            },
+            {
+                "nombre" : "IRIS ACCESORIOS",
+                "descripcion" : "La plataforma en línea permite a los usuarios visualizar y comprar productos de manera eficiente y segura. El sitio web fue diseñado con una interfaz intuitiva y accesible, facilitando la navegación y mejorando la experiencia de usuario.",
+                "rol" : "Rol desempeñado: Desarrollador.",
+                "lenguajes" :  "Lenguajes utilizados: JavaScript, HTML, CSS, PHP.",
+                "imagenes" : [
+                    "images/proyectos/irisaccesorios/1.png",
+                    "images/proyectos/irisaccesorios/2.png",
+                    "images/proyectos/irisaccesorios/3.png",
+                    "images/proyectos/irisaccesorios/4.png",
+                    "images/proyectos/irisaccesorios/5.png",
+                    "images/proyectos/irisaccesorios/6.png",
+                    "images/proyectos/irisaccesorios/7.png",
+                    "images/proyectos/irisaccesorios/8.png",
+                    "images/proyectos/irisaccesorios/9.png",
+                    "images/proyectos/irisaccesorios/10.png",
+                    "images/proyectos/irisaccesorios/11.png",
+                    "images/proyectos/irisaccesorios/12.png"
+                ]
+            }
+        ]
+    },
+    "en": {
+        "titulo": "PROJECTS",
+        "subtitulo": "Some of the projects I have worked on",
+        "proyectos": [
+            {
+                "nombre": "Apptary",
+                "descripcion": "This application features a main screen to start and welcome users. It then displays a screen to view, delete, modify, and search for registered products. Additionally, there is a screen to add new product data.",
+                "rol": "Role: Developer.",
+                "lenguajes": "Languages used: Java, XML.",
+                "imagenes": [
+                    "images/proyectos/apptary/1.jpg",
+                    "images/proyectos/apptary/2.jpg",
+                    "images/proyectos/apptary/3.jpg",
+                    "images/proyectos/apptary/4.jpg"
+                ]
+            },
+            {
+                "nombre": "FACIAL ACCESS",
+                "descripcion": "This application is designed for a clinic and includes a facial recognition login feature for ease of access. The main screen also offers various functions that users can interact with.",
+                "rol": "Role: Developer.",
+                "lenguajes": "Languages used: JavaScript, HTML, CSS, Python.",
+                "imagenes": [
+                    "images/proyectos/facialaccess/1.png",
+                    "images/proyectos/facialaccess/2.png",
+                    "images/proyectos/facialaccess/3.png",
+                    "images/proyectos/facialaccess/4.png",
+                    "images/proyectos/facialaccess/5.png"
+                ]
+            },
+            {
+                "nombre": "LOVEMASCOT",
+                "descripcion": "This application is designed to find partners for pets, creating a technological solution that innovates the way other existing solutions help pet owners find mates for their pets. Our pets have become an important part of the family.",
+                "rol": "Role: Developer.",
+                "lenguajes": "Languages used: JavaScript, HTML, CSS.",
+                "imagenes": [
+                    "images/proyectos/lovemascot/1.jpeg",
+                    "images/proyectos/lovemascot/2.jpeg",
+                    "images/proyectos/lovemascot/3.jpeg",
+                    "images/proyectos/lovemascot/4.png",
+                    "images/proyectos/lovemascot/5.jpeg",
+                    "images/proyectos/lovemascot/6.png",
+                    "images/proyectos/lovemascot/7.png",
+                    "images/proyectos/lovemascot/8.png",
+                    "images/proyectos/lovemascot/9.png"
+                ]
+            },
+            {
+                "nombre": "IRIS ACCESORIOS",
+                "descripcion": "This online platform allows users to efficiently and securely view and purchase products. The website is designed with an intuitive and accessible interface, making navigation easy and enhancing the user experience.",
+                "rol": "Role: Developer.",
+                "lenguajes": "Languages used: JavaScript, HTML, CSS, PHP.",
+                "imagenes": [
+                    "images/proyectos/irisaccesorios/1.png",
+                    "images/proyectos/irisaccesorios/2.png",
+                    "images/proyectos/irisaccesorios/3.png",
+                    "images/proyectos/irisaccesorios/4.png",
+                    "images/proyectos/irisaccesorios/5.png",
+                    "images/proyectos/irisaccesorios/6.png",
+                    "images/proyectos/irisaccesorios/7.png",
+                    "images/proyectos/irisaccesorios/8.png",
+                    "images/proyectos/irisaccesorios/9.png",
+                    "images/proyectos/irisaccesorios/10.png",
+                    "images/proyectos/irisaccesorios/11.png",
+                    "images/proyectos/irisaccesorios/12.png"
+                ]
+            }
+        ]
+    }
+    
+}

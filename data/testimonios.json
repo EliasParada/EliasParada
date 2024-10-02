@@ -1,0 +1,66 @@
+{
+    "es": [
+        {
+            "nombre": "Juan Pérez",
+            "profesion": "Desarrollador Web",
+            "comentario": "Excelente trabajo, muy profesional y eficiente.",
+            "imagen": "img/testimonios/juan.jpg"
+        },
+        {
+            "nombre": "Ana Gómez",
+            "profesion": "Diseñadora Gráfica",
+            "comentario": "Gran experiencia, el diseño superó nuestras expectativas.",
+            "imagen": "img/testimonios/ana.jpg"
+        },
+        {
+            "nombre": "Ana Gómez",
+            "profesion": "Diseñadora Gráfica",
+            "comentario": "Gran experiencia, el diseño superó nuestras expectativas.",
+            "imagen": "img/testimonios/ana.jpg"
+        },
+        {
+            "nombre": "Ana Gómez",
+            "profesion": "Diseñadora Gráfica",
+            "comentario": "Gran experiencia, el diseño superó nuestras expectativas.",
+            "imagen": "img/testimonios/ana.jpg"
+        },
+        {
+            "nombre": "Ana Gómez",
+            "profesion": "Diseñadora Gráfica",
+            "comentario": "Gran experiencia, el diseño superó nuestras expectativas.",
+            "imagen": "img/testimonios/ana.jpg"
+        }
+    ],
+    "en": [
+        {
+            "nombre": "John Doe",
+            "profesion": "Web Developer",
+            "comentario": "Excellent work, very professional and efficient.",
+            "imagen": "img/testimonios/john.jpg"
+        },
+        {
+            "nombre": "Jane Smith",
+            "profesion": "Graphic Designer",
+            "comentario": "Great experience, the design exceeded our expectations.",
+            "imagen": "img/testimonios/jane.jpg"
+        },
+        {
+            "nombre": "Jane Smith",
+            "profesion": "Graphic Designer",
+            "comentario": "Great experience, the design exceeded our expectations.",
+            "imagen": "img/testimonios/jane.jpg"
+        },
+        {
+            "nombre": "Jane Smith",
+            "profesion": "Graphic Designer",
+            "comentario": "Great experience, the design exceeded our expectations.",
+            "imagen": "img/testimonios/jane.jpg"
+        },
+        {
+            "nombre": "Jane Smith",
+            "profesion": "Graphic Designer",
+            "comentario": "Great experience, the design exceeded our expectations.",
+            "imagen": "img/testimonios/jane.jpg"
+        }
+    ]
+}

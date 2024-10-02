@@ -1,0 +1,28 @@
+{
+    "es": {
+        "subtitulo": "Apasionada por el desarrollo frontend y el mundo del QA Testing",
+        "descripcion": "Soy un desarrollador frontend en JavaScript. Tengo una fuerte pasión por crear interfaces de usuario intuitivas y atractivas, y un gran enfoque en la calidad y la eficiencia del código. Mis habilidades incluyen el uso de herramientas modernas de desarrollo web y metodologías ágiles para asegurar que cada proyecto no solo cumpla, sino que exceda las expectativas.",
+        "titulo": "Sobre <span class='font-bold'>Mí</span>",
+        "boton": "Descargar CV",
+        "titulo_herramientas": "Mis <span class='font-bold'>Habilidades</span>",
+        "herramientas": [
+            { "nombre": "Git", "icono": "<i class='fa-brands fa-github'></i>" },
+            { "nombre": "JavaScript", "icono": "<i class='fa-brands fa-js'></i>" },
+            { "nombre": "HTML", "icono": "<i class='fa-brands fa-html5'></i>" },
+            { "nombre": "CSS", "icono": "<i class='fa-brands fa-css3-alt'></i>" }
+        ]
+    },
+    "en": {
+        "titulo": "About <span class='font-bold'>Me</span>",
+        "subtitulo": "Passionate about frontend development and QA Testing",
+        "descripcion": "I am a frontend developer in JavaScript, with a strong passion for creating intuitive and engaging user interfaces. My focus is on writing clean, efficient code and ensuring high quality in every aspect of development. I am experienced in using modern web development tools and agile methodologies to ensure that each project not only meets but exceeds expectations.",
+        "boton": "Download CV",
+        "titulo_herramientas": "My <span class='font-bold'>Skills</span>",
+        "herramientas": [
+            { "nombre": "Git", "icono": "<i class='fa-brands fa-github'></i>" },
+            { "nombre": "JavaScript", "icono": "<i class='fa-brands fa-js'></i>" },
+            { "nombre": "HTML", "icono": "<i class='fa-brands fa-html5'></i>" },
+            { "nombre": "CSS", "icono": "<i class='fa-brands fa-css3-alt'></i>" }
+        ]
+    }
+}

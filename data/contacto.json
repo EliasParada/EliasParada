@@ -1,0 +1,36 @@
+{
+    "es": {
+        "titulo": "Contacto",
+        "subtitulo": "¿Te gustaría ponerte en contacto?",
+        "descripcion": "Estoy disponible para explorar nuevas oportunidades y colaboraciones. Si deseas discutir un proyecto, solicitar información adicional o explorar cómo podemos trabajar juntos, no dudes en enviarme un mensaje. Me aseguraré de responder a la mayor brevedad posible.",
+        "nombreLabel": "Nombre",
+        "nombrePlaceholder": "Nombre",
+        "asuntoLabel": "Asunto",
+        "asuntoPlaceholder": "Asunto",
+        "mensajeLabel": "Mensaje",
+        "mensajePlaceholder": "Mensaje",
+        "enviarButton": "Enviar",
+        "redes": [
+            { "nombre": "LinkedIn", "url": "https://www.linkedin.com/in/marvin-sol%C3%B3rzano-b0042a268/", "icono": "fa-brands fa-linkedin" },
+            { "nombre": "GitHub", "url": "https://github.com/USIS051620", "icono": "fa-brands fa-github" },
+            { "nombre": "Correo Electrónico", "url": "mailto:marvinjosuesolorzano178@gmail.com", "icono": "fa-solid fa-envelope" }
+        ]
+    },
+    "en": {
+        "titulo": "Contact",
+        "subtitulo": "Interested in connecting?",
+        "descripcion": "I am available to explore new opportunities and collaborations. If you would like to discuss a project, request additional information, or explore how we can work together, please feel free to send me a message. I will make sure to respond as soon as possible.",
+        "nombreLabel": "Name",
+        "nombrePlaceholder": "Name",
+        "asuntoLabel": "Subject",
+        "asuntoPlaceholder": "Subject",
+        "mensajeLabel": "Message",
+        "mensajePlaceholder": "Message",
+        "enviarButton": "Send",
+        "redes": [
+            { "nombre": "LinkedIn", "url": "https://www.linkedin.com/in/marvin-sol%C3%B3rzano-b0042a268/", "icono": "fa-brands fa-linkedin" },
+            { "nombre": "GitHub", "url": "https://github.com/USIS051620", "icono": "fa-brands fa-github" },
+            { "nombre": "Email", "url": "mailto:marvinjosuesolorzano178@gmail.com", "icono": "fa-solid fa-envelope" }
+        ]
+    }
+}
