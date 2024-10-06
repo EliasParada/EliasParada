@@ -67,7 +67,7 @@ SR7.JSON['CAROUSEL-PROJECTS'] = {
 				]
 			},
 			layers: {
-				"0": { // Contenedor para la imagen 1
+				"0": { // Contenedor para la imagen 1, Definir posición y tamaño
 					"listen": ["mouseenter", "mouseleave"],
 					"id": 0,
 					"alias": "Item-1",
