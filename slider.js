@@ -1,4 +1,4 @@
-SR7.JSON['SR7_1306_1'] = {
+SR7.JSON['CAROUSEL-PROJECTS'] = {
 	"settings": {
 		"title": "Proyectos",
 		"alias": "Proyectos",
@@ -6,168 +6,169 @@ SR7.JSON['SR7_1306_1'] = {
 		"fonts": {
 			"Oswald": {
 				"name": "Oswald",
-				"normal": {
-					"300": true,
-					"400": true
-				},
-				"subset": {
-					"latin": true
-				}
+				"normal": {"300": true, "400": true},
+				"subset": {"latin": true}
 			}
 		},
 		"class": "rs-respect-topbar",
-		"vPort": ["100px", "100px", "100px", "100px", "100px"],
 		"size": {
 			"fullHeight": true,
-			"fullHeightOffset": "#masthead,",
 			"contentFH": true,
 			"width": [1240, 1240, 1024, 778, 480],
 			"height": [750, 750, 750, 1240, 1240],
-			"minHeight": ["", "", "", "", ""],
-			"maxWidth": 0
 		},
 		"carousel": {
 			"type": "h",
 			"align": "center",
-			"maxV": 1,
-			"justify": false,
-			"scale": false,
-			"minS": 50,
-			"vScale": false,
-			"oScale": false,
-			"space": 0,
-			"rotation": false,
-			"maxR": 0,
-			"varR": false,
-			"opacity": false,
-			"maxO": 100,
-			"varO": false,
 			"spin": "3d",
 			"spinA": 1,
-			"snap": true,
 			"infinity": true,
-			"skewX": "-15deg",
+			"skewX": "-10deg",
 			"skewY": 0,
 			"ease": "power3.inOut",
 			"dur": 800,
-			"overshoot": false,
-			"stretch": false,
-			"showAllLayers": "all",
-			"jMWidth": true,
-			"bR": 0,
-			"bRU": "px",
-			"pNV": "50px",
-			"pT": "0px",
-			"pB": "0px"
+			"showAllLayers": "all"
 		},
-		"slideshow": {
-			"auto": false,
-			"stopAt": 1
-		},
+		"slideshow": {"auto": false, "stopAt": 1},
 		"nav": {
-			"p": {
-				"w": 50,
-				"h": 100
-			},
+			"p": {"w": 50, "h": 100},
 			"arrows": {
 				"set": true,
 				"def": {
-					"left-icon": {
-						"title": "Left-Icon",
-						"type": "icon",
-						"data": "\\e82a"
-					},
-					"right-icon": {
-						"title": "Right-Icon",
-						"type": "icon",
-						"data": "\\e82b"
-					},
-					"dark-color": {
-						"type": "color",
-						"title": "Dark Color",
-						"data": "#000000"
-					},
-					"light-color": {
-						"type": "color",
-						"title": "Light Color",
-						"data": "#e8e8e8c9"
-					},
-					"width_height": {
-						"type": "custom",
-						"title": "Width & Height",
-						"data": "70px"
-					},
-					"icon_size": {
-						"type": "custom",
-						"title": "Icon Size",
-						"data": "40px"
-					},
-					"icon_line_height": {
-						"type": "custom",
-						"title": "Icon Line Height",
-						"data": "70px"
-					}
-				},
-				"cst": {
-					"left-icon": "\\e82a",
-					"left-icon-def": false,
-					"right-icon": "\\e82b",
-					"right-icon-def": false,
-					"dark-color": "#e8e8e8c9",
-					"dark-color-def": false,
-					"light-color": "#ffffff",
-					"light-color-def": false,
-					"width_height": "70px",
-					"width_height-def": false,
-					"icon_size": "40px",
-					"icon_size-def": false,
-					"icon_line_height": "70px",
-					"icon_line_height-def": false
+					"left-icon": {"title": "Left Icon", "type": "icon", "data": "\\e82a"},
+					"right-icon": {"title": "Right Icon", "type": "icon", "data": "\\e82b"},
+					"dark-color": {"type": "color", "title": "Dark Color", "data": "#000000"},
+					"light-color": {"type": "color", "title": "Light Color", "data": "#e8e8e8c9"},
+					"width_height": {"type": "custom", "title": "Width & Height", "data": "70px" },
+					"icon_size": {"type": "custom", "title": "Icon Size", "data": "40px" },
+					"icon_line_height": {"type": "custom", "title": "Icon Line Height", "data": "70px"}
 				},
 				"key": "gallery-arrows",
-				"t": 28,
-				"m": "hslide",
 				"css": ".gallery-arrows.sr7-arrows {\n\tcursor:pointer;\n\tborder-radius:0.3rem;\n\tbackground:##light-color##;\n\twidth:##width_height##;\n\theight:##width_height##;\n\tposition:absolute;\n\tdisplay:block;\n\tz-index:1000;\n\t    box-sizing: border-box;\n}\n.gallery-arrows.sr7-rightarrow.sr7-touchhover {\n\ttransform: scale(0.5);\n}\n.gallery-arrows.sr7-rightarrow.sr7-touchhover:before {\n\tpadding-left:10px;\n}\n.gallery-arrows.sr7-leftarrow.sr7-touchhover:before {\n\tpadding-right:10px;\n}\n.gallery-arrows.sr7-arrows:before {\n\tfont-family: 'revicons';\n\tfont-size:##icon_size##;\n\tcolor:##dark-color##;\n\tdisplay:block;\n\tline-height: ##icon_line_height##;\n\ttext-align: center;\n    transition: 0.3s padding ease-out;\n}\n.gallery-arrows.sr7-arrows.sr7-leftarrow:before {\n\tcontent: '##left-icon##';\n}\n.gallery-arrows.sr7-arrows.sr7-rightarrow:before {\n\tcontent: '##right-icon##';\n}\n\n",
-				"html": "",
 				"on": true,
-				"s": 1000,
-				"dIn": ["#a", 1000, "#a", "#a", "#a"],
-				"dOut": ["#a", 200, "#a", "#a", 1200],
-				"show": [true, true, true, true, true],
-				"l": {
-					"a": "slider",
-					"anim": "fade",
-					"x": ["#a", "0px", "#a", "#a", "#a"],
-					"y": ["#a", "0px", "#a", "#a", "#a"],
-					"v": ["#a", "center", "#a", "#a", "#a"],
-					"h": ["#a", "left", "#a", "#a", "#a"]
-				},
-				"r": {
-					"a": "slider",
-					"anim": "fade",
-					"x": ["#a", "0px", "#a", "#a", "#a"],
-					"y": ["#a", "0px", "#a", "#a", "#a"],
-					"v": ["#a", "center", "#a", "#a", "#a"],
-					"h": ["#a", "right", "#a", "#a", "#a"]
-				}
+				"show": true,
 			}
 		},
-		"version": "",
-		"general": {
-			"lazyLoad": "smart",
-			"slideshow": {
-				"globalViewPort": "true",
-				"globalViewDist": "-200px"
-			}
-		}
+		"general": {"lazyLoad": "smart"}
 	},
 	"slides": {
+		"1": {
+			id: 1,
+			slide: {
+				id: 1,
+				title: "Prueva",
+				order: "4",
+				description: "PRUEBA",
+				"actions": [
+					{"a": "playScene", "evt": "mouseenter", "rec": true, "target": ["1"], "sc": "scene_1", "src": [0]},
+					{"a": "playScene", "evt": "mouseleave", "rec": true, "target": ["1"], "sc": "scene_2", "src": [0]},
+					{"a": "playScene", "evt": "mouseenter", "sc": "in", "rec": true, "target": ["2"], "src": [0]},
+					{"a": "playScene", "evt": "mouseleave", "sc": "scene_1", "rec": true, "target": ["2"], "src": [0]}
+				]
+			},
+			layers: {
+				"0": { // Contenedor para la imagen 1
+					"listen": ["mouseenter", "mouseleave"],
+					"id": 0,
+					"alias": "Item-1",
+					"subtype": "group",
+					"size": { // Tamaño del contenedor
+						"w": "60%",
+						"h": "100%",
+					},
+					"pos": { // Posición del contenedor
+						"h": ["right", "right", "right", "right", "right"],
+						"v": ["bottom", "bottom", "bottom", "bottom", "bottom"],
+						"pos": "absolute",
+					},
+					"cursor": "pointer",
+					"tl": {"in": { "content": {"all": [{}, {}]}} // Sin esto no funciona, no se porque
+					},
+					"p": {"t": [0, 0, 0, 0, 0], "b": [0, 0, 0, 0, 0], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0]},
+					"m": {"t": [0, 0, 0, 0, 0], "b": [0, 0, 0, 0, 0], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0]},
+					"border": {
+						"s": "solid",
+						"c": "#000000", // El color se podrá elegir en un futuro
+						"w": {
+							"t": ["10px", "10px", "10px", "10px", "10px"],
+							"r": ["10px", "10px", "10px", "10px", "10px"],
+							"b": ["10px", "10px", "10px", "10px", "10px"],
+							"l": ["10px", "10px", "10px", "10px", "10px"]
+						}
+					},
+					"type": "container",
+				},
+				"1": { // Imagen de la libreria 1 para el texto CAROUSEL-PROJECTS-1-2
+					"id": 1,
+					"size": {"w": "100%", "h": "100%",},
+					"pid": "0", // ID del contenedor
+					"bg": {
+						"image": {
+							"src": "images\/projects\/lingotter\/1.jpg",
+							"lib_id": 28300,
+							"pos": {"x": "50%", "y": "50%"},
+							"repeat": "no-repeat",
+							"size": "cover",
+						}
+					},
+					"tl": {
+						"in": {"mask": {"all": [{}, {}]}},
+						"scene_1": {
+							"content": {"all": [{"t": 0, "e": "power4.out", "sX": "1.05", "sY": "1.05"}]},
+							"mask": {"all": [{"t": 0, "d": 1000, "f": 1000, "e": "power4.out", "oflow": "hidden", "off": 1 }]}
+						},
+						"scene_2": {"content": {"all": [{"t": 0, "e": "sine.out", "sX": "1", "sY": "1"}]}}
+					},
+					"type": "shape"
+				},
+				"2": { // Texto CAROUSEL-PROJECTS-1-2
+					"id": 2,
+					"alias": "Images-normalizer", // Opcional
+					"size": {"w": "100%"},
+					"pos": {"v": "bottom", "pos": "absolute"},
+					"pid": "0",
+					"zIndex": 7,
+					"bg": {
+						"color": {
+							"type": "linear",
+							"angle": "180",
+							"orig": [{"rgba": "rgba(0,0,0,0)", "p": 0}, {"rgba": "rgba(0,0,0,0)", "p": 0}, {"rgba": "rgba(0,0,0,0.75)", "p": 100}, {"rgba": "rgba(0,0,0,0.75)", "p": 100}],
+							"string": "linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%)"
+						}
+					},
+					"tl": { // Mostrar layer
+						"in": { // Entrada cuando se presiona
+							"content": {"all": [{"t": "w0"}, {"t": 0}]}, // Para que se muestre la primer vez
+							"clip": {
+								"orig": "b",
+								"all": [
+									{"d": 0, "e": "power4.out", "c": "0%"}, 
+									{"d": "750", "e": "power4.out", "c": 100}
+								]
+							}
+						},
+						"scene_1": { // Ocultar cuando se presiona otro
+							"clip": {
+								"orig": "b",
+								"type": "r",
+								"all": [{"t": 0, "e": "sine.out", "c": "0%"}]
+							}
+						},
+					},
+					"p": 0, // Padding
+					"m": 0, // Margin
+					"tA": "center", // Text Align
+					"color": "#ffffff",
+					"font": {"family": "Oswald", "weight": "700", "ls": 0}, // ls = Letter spacing
+					"lh": "70px", // Espacio entre lineas
+					"type": "text",
+				},
+			}
+		},
 		"1894": {
 			"id": 1894,
 			"slide": {
-				"addOns": [],
 				"id": 1894,
-				"version": "6.7.9",
 				"actions": [{
 					"a": "playScene",
 					"evt": "mouseenter",
@@ -254,40 +255,8 @@ SR7.JSON['SR7_1306_1'] = {
 					"src": [12]
 				}],
 				"title": "",
-				"parentId": null,
-				"language": "default",
 				"order": "1",
-				
 				"description": "",
-				"attr": {
-					"class": "",
-					"data": "",
-					"id": "",
-					"a": "",
-					"aO": "ml",
-					"t": "",
-					"tO": "",
-					"deepLink": "",
-					"attr": ""
-				},
-				"publish": {
-					"from": "",
-					"to": "",
-					"state": ""
-				},
-				"slideshow": {
-					"stop": false,
-					"len": "default",
-					"hal": 0,
-					"hom": false,
-					"hfn": false
-				},
-				"loop": {
-					"u": false,
-					"r": -1,
-					"s": 0,
-					"e": 99999
-				}
 			},
 			"layers": {
 				"0": {
@@ -302,7 +271,7 @@ SR7.JSON['SR7_1306_1'] = {
 					"subtype": "group",
 					"size": {
 						"w": ["60%", "60%", "60%", "50%", "50%"],
-						"h": ["100%", "100%", "100%", "100%", "100%"],
+						"h": ["100%", "100%", "100%", "50%", "50%"],
 						"minW": ["none", "none", "none", "none", "none"],
 						"minH": ["none", "none", "none", "none", "none"]
 					},
@@ -1579,11 +1548,6 @@ SR7.JSON['SR7_1306_1'] = {
 				},
 				"12": { // Contenedor para la imagen 28300
 					"listen": ["mouseenter", "mouseleave"],
-					"fluid": {
-						"tx": true,
-						"tr": true,
-						"sp": true
-					},
 					"id": 12,
 					"alias": "Item-3",
 					"subtype": "group",
@@ -1596,101 +1560,8 @@ SR7.JSON['SR7_1306_1'] = {
 						"v": ["bottom", "bottom", "bottom", "bottom", "bottom"],
 						"pos": "absolute",
 					},
-					"zIndex": 8,
-					"order": 8,
-					"display": ["block", "block", "block", "block", "block"],
-					"vA": "top",
 					"cursor": "pointer",
-					"bg": {
-						"color": {
-							"orig": "transparent",
-							"type": "solid",
-							"string": "transparent"
-						}
-					},
-					"attr": {
-						"aO": "ml",
-						"tO": "ml"
-					},
-					"tl": {
-						"in": {
-							"content": {
-								"pers": "600px",
-								"orig": {
-									"x": "50%",
-									"y": "50%",
-									"z": "0"
-								},
-								"all": [{
-									"t": 0,
-									"d": 0,
-									"f": 0,
-									"e": "power3.inOut",
-									"pE": "d",
-									"x": [0, 0, 0, 0, 0],
-									"y": [0, 0, 0, 0, 0],
-									"o": 1,
-									"xRe": 0,
-									"yRe": 0,
-									"off": 0
-								}, {
-									"t": 0,
-									"d": 300,
-									"f": 300,
-									"e": "power3.inOut",
-									"pE": "d",
-									"x": [0, 0, 0, 0, 0],
-									"y": [0, 0, 0, 0, 0],
-									"o": 1,
-									"xRe": 0,
-									"yRe": 0,
-									"off": 0
-								}]
-							}
-						},
-						"out": {
-							"content": {
-								"pers": "600px",
-								"orig": {
-									"x": "50%",
-									"y": "50%",
-									"z": "0"
-								},
-								"all": [{
-									"t": 0,
-									"d": 1000,
-									"f": 1000,
-									"e": "power3.inOut",
-									"pE": "n",
-									"addOns": {
-										"explodinglayers": {
-											"u": true,
-											"color": {
-												"type": "solid",
-												"orig": "#000000",
-												"string": "rgba(0, 0, 0, 1)"
-											},
-											"density": 1,
-											"direction": "left",
-											"padding": 150,
-											"power": 2,
-											"randomsize": false,
-											"randomspeed": false,
-											"size": 5,
-											"speed": 1,
-											"style": "fill",
-											"type": "circle"
-										}
-									},
-									"x": ["inherit", "inherit", "inherit", "inherit", "inherit"],
-									"y": ["inherit", "inherit", "inherit", "inherit", "inherit"],
-									"o": "1",
-									"xRe": 0,
-									"yRe": 0,
-									"off": 0
-								}]
-							}
-						}
+					"tl": {"in": { "content": {"all": [{}, {}]}} // Sin esto no funciona, no se porque
 					},
 					"p": {
 						"t": [0, 0, 0, 0, 0],
@@ -1704,258 +1575,38 @@ SR7.JSON['SR7_1306_1'] = {
 						"l": [0, 0, 0, 0, 0],
 						"r": [0, 0, 0, 0, 0]
 					},
-					"tA": ["center", "center", "center", "center", "center"],
 					"border": {
-						"s": ["solid", "solid", "solid", "solid", "solid"],
-						"c": "#ffffff",
+						"s": "solid",
+						"c": "#000000", // El color se podrá elegir en un futuro
 						"w": {
 							"t": ["10px", "10px", "10px", "10px", "10px"],
 							"r": ["10px", "10px", "10px", "10px", "10px"],
-							"b": ["20px", "20px", "20px", "20px", "20px"],
+							"b": ["10px", "10px", "10px", "10px", "10px"],
 							"l": ["10px", "10px", "10px", "10px", "10px"]
 						}
 					},
-					"lh": ["#a", 25, "20", "15", "9"],
 					"type": "container",
-					"content": {
-						"text": ""
-					},
-					"toggle": {
-						"text": ""
-					}
 				},
 				"13": { // Imagen de la libreria 28300 para el texto SR7_1306_1-1894-14
 					"id": 13,
-					"size": {
-						"w": ["100%", "100%", "100%", "100%", "100%"],
-						"h": ["100%", "100%", "100%", "100%", "100%"],
-					},
-					"pid": 12,
+					"size": {"w": "100%", "h": "100%",},
+					"pid": 12, // ID del contenedor
 					"bg": {
 						"image": {
 							"src": "images\/fg1.jpeg",
-							"lib": "",
 							"lib_id": 28300,
-							"pos": {
-								"x": "50%",
-								"y": "50%"
-							},
+							"pos": {"x": "50%", "y": "50%"},
 							"repeat": "no-repeat",
 							"size": "cover",
-							"sizeVal": 0,
-							"seo": false
 						}
 					},
 					"tl": {
-						"in": {
-							"content": {
-								"pers": "600px",
-								"orig": {
-									"x": "50%",
-									"y": "50%",
-									"z": "0"
-								},
-								"all": [{
-									"t": 0,
-									"d": 0,
-									"f": 0,
-									"e": "sine.out",
-									"pE": "d",
-									"x": [0, 0, 0, 0, 0],
-									"y": [0, 0, 0, 0, 0],
-									"sX": "1.5",
-									"sY": "1.5",
-									"o": 0,
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}, {
-									"t": 0,
-									"d": 1000,
-									"f": 1000,
-									"e": "sine.out",
-									"pE": "d",
-									"x": ["0px", "0px", "0px", "0px", "0px"],
-									"y": ["0px", "0px", "0px", "0px", "0px"],
-									"sX": 1,
-									"sY": 1,
-									"o": 1,
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}]
-							},
-							"mask": {
-								"all": [{
-									"t": 0,
-									"d": 0,
-									"f": 0,
-									"e": "sine.out",
-									"x": [0, 0, 0, 0, 0],
-									"y": [0, 0, 0, 0, 0],
-									"oflow": "hidden",
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}, {
-									"t": 0,
-									"d": 1000,
-									"f": 1000,
-									"e": "sine.out",
-									"x": [0, 0, 0, 0, 0],
-									"y": [0, 0, 0, 0, 0],
-									"oflow": "hidden",
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}]
-							}
-						},
+						"in": {"mask": {"all": [{}, {}]}},
 						"scene_1": {
-							"content": {
-								"pers": "600px",
-								"orig": {
-									"x": "50%",
-									"y": "50%",
-									"z": "0"
-								},
-								"all": [{
-									"t": 0,
-									"d": 1000,
-									"f": 1000,
-									"e": "power4.out",
-									"pE": "d",
-									"x": ["(inherit)", "(inherit)", "(inherit)", "(inherit)", "(inherit)"],
-									"y": ["(inherit)", "(inherit)", "(inherit)", "(inherit)", "(inherit)"],
-									"sX": "1.05",
-									"sY": "1.05",
-									"o": 1,
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}]
-							},
-							"mask": {
-								"all": [{
-									"t": 0,
-									"d": 1000,
-									"f": 1000,
-									"e": "power4.out",
-									"x": ["(inherit)", "(inherit)", "(inherit)", "(inherit)", "(inherit)"],
-									"y": ["(inherit)", "(inherit)", "(inherit)", "(inherit)", "(inherit)"],
-									"oflow": "hidden",
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}]
-							}
+							"content": {"all": [{"t": 0, "e": "power4.out", "sX": "1.05", "sY": "1.05"}]},
+							"mask": {"all": [{"t": 0, "d": 1000, "f": 1000, "e": "power4.out", "oflow": "hidden", "off": 1 }]}
 						},
-						"scene_2": {
-							"content": {
-								"pers": "600px",
-								"orig": {
-									"x": "50%",
-									"y": "50%",
-									"z": "0"
-								},
-								"all": [{
-									"t": 0,
-									"d": 300,
-									"f": 300,
-									"e": "sine.out",
-									"pE": "d",
-									"x": ["(inherit)", "(inherit)", "(inherit)", "(inherit)", "(inherit)"],
-									"y": ["(inherit)", "(inherit)", "(inherit)", "(inherit)", "(inherit)"],
-									"sX": "1",
-									"sY": "1",
-									"o": 1,
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}]
-							},
-							"mask": {
-								"all": [{
-									"t": 0,
-									"d": 300,
-									"f": 300,
-									"e": "sine.out",
-									"x": ["(inherit)", "(inherit)", "(inherit)", "(inherit)", "(inherit)"],
-									"y": ["(inherit)", "(inherit)", "(inherit)", "(inherit)", "(inherit)"],
-									"oflow": "hidden",
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}]
-							}
-						},
-						"out": {
-							"content": {
-								"pers": "600px",
-								"orig": {
-									"x": "50%",
-									"y": "50%",
-									"z": "0"
-								},
-								"all": [{
-									"t": 0,
-									"d": 1000,
-									"f": 1000,
-									"e": "power3.inOut",
-									"pE": "n",
-									"addOns": {
-										"explodinglayers": {
-											"u": true,
-											"color": {
-												"type": "solid",
-												"orig": "#000000",
-												"string": "rgba(0, 0, 0, 1)"
-											},
-											"density": 1,
-											"direction": "left",
-											"padding": 150,
-											"power": 2,
-											"randomsize": false,
-											"randomspeed": false,
-											"size": 5,
-											"speed": 1,
-											"style": "fill",
-											"type": "circle"
-										}
-									},
-									"x": ["inherit", "inherit", "inherit", "inherit", "inherit"],
-									"y": ["inherit", "inherit", "inherit", "inherit", "inherit"],
-									"o": "1",
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}]
-							},
-							"mask": {
-								"all": [{
-									"t": 0,
-									"d": 1000,
-									"f": 1000,
-									"e": "power3.inOut",
-									"oflow": "visible",
-									"xRe": 0,
-									"yRe": 0,
-									"off": 1
-								}]
-							}
-						}
-					},
-					"p": {
-						"t": [0, 0, 0, 0, 0],
-						"b": [0, 0, 0, 0, 0],
-						"l": [0, 0, 0, 0, 0],
-						"r": [0, 0, 0, 0, 0]
-					},
-					"m": {
-						"t": [0, 0, 0, 0, 0],
-						"b": [0, 0, 0, 0, 0],
-						"l": [0, 0, 0, 0, 0],
-						"r": [0, 0, 0, 0, 0]
+						"scene_2": {"content": {"all": [{"t": 0, "e": "sine.out", "sX": "1", "sY": "1"}]}}
 					},
 					"type": "shape"
 				},
