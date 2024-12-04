@@ -11,12 +11,12 @@ SR7.JSON['CAROUSEL-PROJECTS'] = {
 			}
 		},
 		"class": "rs-respect-topbar",
-		"size": {
-			"fullHeight": true,
-			"contentFH": true,
-			"width": [1240, 1240, 1024, 778, 480],
-			"height": [750, 750, 750, 1240, 1240],
-		},
+		size: {
+            fullHeight: false,
+            contentFH: false,
+            width: [1240, 1240, 1024, 778, 360], // Ajustar a 360 para móviles pequeños
+            height: [750, 750, 750, 1000, 500], // Altura más reducida en móviles
+        },
 		"carousel": {
 			"type": "h",
 			"align": "center",
