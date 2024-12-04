@@ -1,5 +1,5 @@
-SR7.JSON['CAROUSEL-PROJECTS'] = {
-	"settings": {
+SR7.JSON['CAROUSEL-PROJECTS'] = { // "CAROUSEL-PROJECTS" es el ID del carrusel, así como el inicio de los sliders que mas adelante se declaran
+	"settings": { // Esto es una configuración estatica, no se modificará
 		"title": "Proyectos",
 		"alias": "Proyectos",
 		"type": "carousel",
@@ -51,32 +51,45 @@ SR7.JSON['CAROUSEL-PROJECTS'] = {
 		},
 		"general": {"lazyLoad": "smart"}
 	},
-	"slides": {
-		"1": {
-			id: 1,
-			slide: {
-				id: 1,
+	// Los comentarios que inician en %% son los unicos que se cambiarán porque se leeran de un archivo de configuración, cuando todo se genere dinamicamente, lo demas solo se reescribirá
+	"slides": { // Los slides son porciones de el carrusel que almacenarán la cantidad de layers (imagenes) que se quiera
+		"1": { // %% El KEY "1" es el valor que hay en el atributo data-key="" de los elementos sr7-module>sr7-content>sr7-carousel>sr7-slide
+			id: 1, // %% ID o mas bien KEY del slide
+			slide: { // Configuraciones del Slide
+				id: 1, // %% ID del Slide
 				title: "Prueva",
-				order: "4",
+				order: "4", // Define el orden en que se mostrara el Slide, importante y no se deben repetir los ordenes, cuando se genere dinamicamente esto será segun el orden de la lista de Slides
 				description: "PRUEBA",
+				// Los "actions" son la configuración de los layers, cada imagen de los Slides se divide en 3 layers.
+				// 1. Layer contenedor, define las dimensiones del layer y su posición
+				// 2. Layer de figura, que se relacionará con el data-libid="" de las imagenes para cada slide, en sr7-module>image_lists>img
+				// 3. Layer de texto, es el texto que se mostrará al pasar el cursor sobre el contenedor, se definen varios para un solo sr7-slide#ID-KEY, que tiene varios sr7-txt#ID-KEY-INDEX, cada INDEX es un texto relacioando a una imagen distinta
 				"actions": [
-					{"a": "playScene", "evt": "mouseenter", "rec": true, "target": ["1"], "sc": "scene_1", "src": [0]},
-					{"a": "playScene", "evt": "mouseleave", "rec": true, "target": ["1"], "sc": "scene_2", "src": [0]},
-					{"a": "playScene", "evt": "mouseenter", "sc": "in", "rec": true, "target": ["2"], "src": [0]},
-					{"a": "playScene", "evt": "mouseleave", "sc": "scene_1", "rec": true, "target": ["2"], "src": [0]}
+					{"a": "playScene", "evt": "mouseenter", "rec": true, "target": ["1"], "sc": "scene_1", "src": [0]}, // Relación del layer %% "1" escena "scene_1" con el layer "0"
+					{"a": "playScene", "evt": "mouseleave", "rec": true, "target": ["1"], "sc": "scene_2", "src": [0]}, // Relación del layer %% "1" escena "scene_2" con el layer "0"
+					{"a": "playScene", "evt": "mouseenter", "sc": "in", "rec": true, "target": ["2"], "src": [0]}, // Relación del layer %% "2" escena "in" con el layer "0"
+					{"a": "playScene", "evt": "mouseleave", "sc": "scene_1", "rec": true, "target": ["2"], "src": [0]} // Relación del layer %% "2" escena "scene_1" con el layer "0"
+					// Como se ve, hay 4 relaciones para tener una imagen (layers) de todas las que el Slide tendrá, si se quiere tener otra imagen hay que hacer las 4 relaciones con los nuevos 3 layers, ejemplo, IMAGEN LIBID=1, TEXT=KEY-2, layesr 0, 1, 2 (por el texto), relación 1 a 0 y 2 a 0 ::: IMAGEN LIBID=2, TEXT=KEY-5, layesr 3, 4, 5 (por el texto), relación 4 a 3 y 5 a 3, etc
+					// Los id de las Imagenes/Layers van así
+					/** SLIDE#CAROUSEL-PROJECTS-1
+					 * 		TEXTO#CAROUSEL-PROJECTS-1-1
+					 * 		IMAGEN#1
+					 * 	/SLIDE
+					*/
+					// Y se relaciona el Texto (SEGUNDO LAYER DE LA IMAGEN) con la Imagen (TERCER LAYER DE LA IMAGEN), y esos se relacionan a un layer "imaginario" (PRIMER LAYER DE LA IMAGEN), por eso cada imagen necesita 3 layers, y no se pueden repetir id's, esto se puede evitar porque primero se define un key de layer, en ese caben otros id's, y así consecutivamente, al venir de una configuración habra una lista de slides y cuantas imagenes habra en cada slide, normalmente 3 o 4, y los %%ID de esta sección no seran explicitos en la configuración, pero si por indexación se asignarán
 				]
 			},
 			layers: {
-				"0": { // Contenedor para la imagen 1, Definir posición y tamaño
+				"0": { // %% Contenedor para la imagen 1, Definir posición y tamaño
 					"listen": ["mouseenter", "mouseleave"],
-					"id": 0,
+					"id": 0, // %% ID del layer "imaginario"
 					"alias": "Item-1",
 					"subtype": "group",
-					"size": { // Tamaño del contenedor
+					"size": { // %% Tamaño del contenedor, esto vendra en un valor del 1 al 100 en la configuración
 						"w": "60%",
 						"h": "100%",
 					},
-					"pos": { // Posición del contenedor
+					"pos": { // %% Posición del contenedor
 						"h": ["right", "right", "right", "right", "right"],
 						"v": ["bottom", "bottom", "bottom", "bottom", "bottom"],
 						"pos": "absolute",
@@ -88,7 +101,7 @@ SR7.JSON['CAROUSEL-PROJECTS'] = {
 					"m": {"t": [0, 0, 0, 0, 0], "b": [0, 0, 0, 0, 0], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0]},
 					"border": {
 						"s": "solid",
-						"c": "#000000", // El color se podrá elegir en un futuro
+						"c": "#000000", // %% El color de los bordes de la imagen en el carrusel, vendrá en el JSON
 						"w": {
 							"t": ["10px", "10px", "10px", "10px", "10px"],
 							"r": ["10px", "10px", "10px", "10px", "10px"],
@@ -98,14 +111,14 @@ SR7.JSON['CAROUSEL-PROJECTS'] = {
 					},
 					"type": "container",
 				},
-				"1": { // Imagen de la libreria 1 para el texto CAROUSEL-PROJECTS-1-2
-					"id": 1,
+				"1": { // %% Imagen de la libreria image_lists>img[data-libid="1"]
+					"id": 1, // %% ID del layer, para no perderse, 1 mas que el ID del contenedor
 					"size": {"w": "100%", "h": "100%",},
-					"pid": "0", // ID del contenedor
+					"pid": "0", // %% ID del contenedor
 					"bg": {
 						"image": {
 							"src": "images\/projects\/lingotter\/1.jpg",
-							"lib_id": 28300,
+							"lib_id": 1, // %% Aqui se relaciona el libid al que pertenece el layer
 							"pos": {"x": "50%", "y": "50%"},
 							"repeat": "no-repeat",
 							"size": "cover",
@@ -121,9 +134,9 @@ SR7.JSON['CAROUSEL-PROJECTS'] = {
 					},
 					"type": "shape"
 				},
-				"2": { // Texto CAROUSEL-PROJECTS-1-2
-					"id": 2,
-					"alias": "Images-normalizer", // Opcional
+				"2": { // %% Texto sr7-txt#CAROUSEL-PROJECTS-1-2, no es CAROUSEL-PROJECTS-1-1 porque eso me dejaria con un error, porque el CAROUSEL-PROJECTS-1-1 se refiere al layer 1 que contiene la imagen, se recomienda que el id del texto vaya aumentando de 3 en 3
+					"id": 2, // %% ID del layer
+					"alias": "Images-normalizer", // Opcional, pero se dejará
 					"size": {"w": "100%"},
 					"pos": {"v": "bottom", "pos": "absolute"},
 					"pid": "0",
@@ -7017,7 +7030,7 @@ SR7.JSON['CAROUSEL-PROJECTS'] = {
 	"addOns": []
 };
 
-if (SR7.F.init) SR7.F.init(); // DOUBLE CALL NOT A PROBLEM, MANAGED IN INIT
+if (SR7.F.init) SR7.F.init();
 document.addEventListener('DOMContentLoaded', function () {
 	if (SR7.F.init) SR7.F.init();
 	else SR7.shouldBeInited = true;

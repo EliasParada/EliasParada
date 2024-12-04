@@ -1,0 +1,144 @@
+{
+    "es": {
+        "title": "Habilidades",
+        "skills": [
+            {
+                "name": "HTML",
+                "icono": "<i class='fa-brands fa-html5'></i>",
+                "percent": 0.95,
+                "frameworks": []
+            },
+            {
+                "name": "CSS",
+                "icono": "<i class='fa-brands fa-css3-alt'></i>",
+                "percent": 0.9,
+                "frameworks": ["Bootstrap", "Tailwind CSS", "Sass"]
+            },
+            {
+                "name": "JavaScript",
+                "icono": "<i class='fa-brands fa-js'></i>",
+                "percent": 0.85,
+                "frameworks": ["Node.js", "Angular", "Vue.js", "React"]
+            },
+            {
+                "name": "PHP",
+                "icono": "<i class='fa-brands fa-php'></i>",
+                "percent": 0.8,
+                "frameworks": ["Laravel", "Symfony"]
+            },
+            {
+                "name": "Laravel",
+                "icono": "<i class='fa-solid fa-l'></i>",
+                "percent": 0.75,
+                "frameworks": []
+            },
+            {
+                "name": "Node.js",
+                "icono": "<i class='fa-brands fa-node'></i>",
+                "percent": 0.8,
+                "frameworks": ["Express", "NestJS"]
+            },
+            {
+                "name": "Vue",
+                "icono": "<i class='fa-brands fa-vuejs'></i>",
+                "percent": 0.7,
+                "frameworks": []
+            },
+            {
+                "name": "Firebase",
+                "icono": "<i class='fa-brands fa-fire'></i>",
+                "percent": 0.65,
+                "frameworks": []
+            },
+            {
+                "name": "Python",
+                "icono": "<i class='fa-brands fa-python'></i>",
+                "percent": 0.75,
+                "frameworks": ["Django", "Flask"]
+            },
+            {
+                "name": "GitHub",
+                "icono": "<i class='fa-brands fa-github'></i>",
+                "percent": 0.85,
+                "frameworks": []
+            },
+            {
+                "name": "SQL",
+                "icono": "<i class='fa-solid fa-database'></i>",
+                "percent": 0.9,
+                "frameworks": ["MySQL", "SQL Server", "PostgreSQL"]
+            }
+        ]
+    },
+    "en": {
+        "title": "Skills",
+        "skills": [
+            {
+                "name": "HTML",
+                "icono": "<i class='fa-brands fa-html5'></i>",
+                "percent": 0.95,
+                "frameworks": []
+            },
+            {
+                "name": "CSS",
+                "icono": "<i class='fa-brands fa-css3-alt'></i>",
+                "percent": 0.9,
+                "frameworks": ["Bootstrap", "Tailwind CSS", "Sass"]
+            },
+            {
+                "name": "JavaScript",
+                "icono": "<i class='fa-brands fa-js'></i>",
+                "percent": 0.85,
+                "frameworks": ["Node.js", "Angular", "Vue.js", "React"]
+            },
+            {
+                "name": "PHP",
+                "icono": "<i class='fa-brands fa-php'></i>",
+                "percent": 0.8,
+                "frameworks": ["Laravel", "Symfony"]
+            },
+            {
+                "name": "Laravel",
+                "icono": "<i class='fa-solid fa-l'></i>",
+                "percent": 0.75,
+                "frameworks": []
+            },
+            {
+                "name": "Node.js",
+                "icono": "<i class='fa-brands fa-node'></i>",
+                "percent": 0.8,
+                "frameworks": ["Express", "NestJS"]
+            },
+            {
+                "name": "Vue",
+                "icono": "<i class='fa-brands fa-vuejs'></i>",
+                "percent": 0.7,
+                "frameworks": []
+            },
+            {
+                "name": "Firebase",
+                "icono": "<i class='fa-brands fa-fire'></i>",
+                "percent": 0.65,
+                "frameworks": []
+            },
+            {
+                "name": "Python",
+                "icono": "<i class='fa-brands fa-python'></i>",
+                "percent": 0.75,
+                "frameworks": ["Django", "Flask"]
+            },
+            {
+                "name": "GitHub",
+                "icono": "<i class='fa-brands fa-github'></i>",
+                "percent": 0.85,
+                "frameworks": []
+            },
+            {
+                "name": "SQL",
+                "icono": "<i class='fa-solid fa-database'></i>",
+                "percent": 0.9,
+                "frameworks": ["MySQL", "SQL Server", "PostgreSQL"]
+            }
+        ]
+    }
+}
