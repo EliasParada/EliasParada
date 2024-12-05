@@ -1,0 +1,14 @@
+{
+    "es": {
+        "title": "Certificados",
+        "certificates": [
+            { "name": "EF SET Certificado de Inglés", "image": "images/certs/efset.jpg", "link": "https://cert.efset.org/en/4DHjpo"}
+        ]
+    },
+    "en": {
+        "title": "Certificates",
+        "certificates": [
+            { "name": "EF SET English Certifiate", "image": "images/certs/efset.jpg", "link": "https://cert.efset.org/en/4DHjpo"}
+        ]
+    }
+}

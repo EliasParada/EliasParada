@@ -1,0 +1,20 @@
+{
+    "es": {
+        "title": "Sobre Mí",
+        "description": "Soy Elias Mauricio Parada Lozano, un desarrollador full-stack apasionado por la creación de soluciones web innovadoras. Con experiencia en HTML, CSS, JavaScript, PHP, Laravel, Node.js, Vue, y Firebase, estoy siempre buscando nuevas tecnologías y desafíos para mejorar mis habilidades y aportar valor a los proyectos en los que participo.",
+        "download": { 
+            "title": "Descargar CV", 
+            "rute": "public/docs/es/cv.pdf"
+        },
+        "profile_image": "img/about.webp"
+    },
+    "en": {
+        "title": "About Me",
+        "description": "I'm Elias Mauricio Parada Lozano, a full-stack developer passionate about creating innovative web solutions. With experience in HTML, CSS, JavaScript, PHP, Laravel, Node.js, Vue, and Firebase, I'm always seeking new technologies and challenges to improve my skills and add value to the projects I work on.",
+        "download": { 
+            "title": "Download CV", 
+            "rute": "public/docs/en/cv.pdf"
+        },
+        "profile_image": "img/about.webp"
+    }
+}

@@ -1,646 +1,508 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO -->
-    <meta property="og:image" content="https://efordev.com/images/me.jpg" />
-    <meta property="og:title" content="Elías Parada" />
-    <meta property="og:description" content="Desarrollador full-stack apasionado por la tecnología." />
-    <meta property="og:url" content="https://efordev.com/" />
-    <meta property="og:type" content="website" />
-    <meta name="keywords" content="Elias Mauricio Parada Lozano, Elías Mauricio Parada Lozano, Elias Parada, Elías Parada, Eryasu, Desarrollador full-stack" />
+    <title>Elias Mauricio Parada Lozano - Desarrollador Full-Stack</title>
 
-    <title data-lang="title">Elias Parada</title>
-    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- SEO estándar -->
+    <meta name="description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador full-stack.">
+    <meta name="keywords" content="Elias Mauricio Parada Lozano, desarrollador full-stack, portafolio, desarrollo web, desarrollo de software">
+    <meta name="author" content="Elias Mauricio Parada Lozano">
+    
+    <!-- Facebook SEO -->
+    <meta property="og:title" content="Elias Mauricio Parada Lozano - Desarrollador Full-Stack">
+    <meta property="og:description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador full-stack.">
+    <meta property="og:image" content="URL_DE_TU_IMAGEN/logo.png">
+    <meta property="og:url" content="URL_DE_TU_SITIO">
+    <meta property="og:type" content="website">
+
+    <!-- X.com SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elias Mauricio Parada Lozano - Desarrollador Full-Stack">
+    <meta name="twitter:description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador full-stack.">
+    <meta name="twitter:image" content="URL_DE_TU_IMAGEN/logo.png">
+    
+    <!-- Tailwind CSS -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="js/3.2.6"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/d36239a715.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-    <script type="text/javascript">
-        emailjs.init("gGqUr5jdcSqVwjRy4");
+    <script type="text/javascript" src="/js/module.js" async="async" data-wp-strategy="async"></script>
+    <script type="text/javascript" src="/js/tools.js" async="async" data-wp-strategy="async"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/progressbar.js@1.0.1/dist/progressbar.min.css" rel="stylesheet">
+    <script src="/js/init.js"></script>
+ <style>
+        /* .logo {
+            background-image: url('images/logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        } */
+        .hero {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('img/bg.webp');
+            background-size: cover;
+            background-position: center;
+            filter: blur(2.5px);
+            z-index: -1;
+        }
+        .hero .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .carousel img {
+            display: none;
+        }
+        .carousel img:first-child {
+            display: block;
+        }
+    </style>
+    <style>
+        /* Contenedor de cada habilidad */
+        .skill-card {
+            position: relative;
+            padding: 16px;
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Contenedor de la barra de habilidad */
+        .progress-bar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 14px; /* Altura de la barra */
+            margin-top: 16px;
+            background-color: #e0e0e0; /* Fondo gris claro */
+            border-radius: 20px;
+            position: relative;
+        }
+    
+        /* Estilo para cada cuadro de la barra */
+        .progress-square {
+            width: 10px; /* Tamaño de cada cuadro */
+            height: 10px;
+            margin: 1px;
+            background-color: rgba(239, 68, 68, 0.5); /* Rojo opaco */
+            border-radius: 4px;
+            transition: background-color 0.2s ease-in-out;
+        }
+    
+        /* Animación de pulso cuando un cuadro se llena */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+            50% {
+                transform: scale(1.2);
+                box-shadow: 0 0 10px rgba(239, 68, 68, 0.7);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+        }
+    
+        .pulsing {
+            animation: pulse 1s ease-in-out;
+        }
+    
+        /* Título de la habilidad */
+        .skill-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #EF4444;
+            margin-top: 12px;
+        }
+
+        
+    </style>
+    
+    
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <div class="logo">
+                <img 
+                    src="img/logox100.webp"
+                    srcset="
+                        img/logox25.webp 100w,
+                        img/logox50.webp 200w,
+                        img/logox100.webp 400w"
+                    sizes="(max-width: 600px) 3.33rem,
+                        (max-width: 1024px) 3.33rem,
+                        3.33rem"
+                    alt="Logo de Elias Mauricio Parada Lozano"
+                    class="logo"
+                />
+            </div>
+            <nav>
+                <ul class="flex space-x-4 flex-wrap">
+                    <li><a href="#about" class="text-gray-700 hover:text-gray-900">Sobre Mí</a></li>
+                    <li><a href="#skills" class="text-gray-700 hover:text-gray-900">Habilidades</a></li>
+                    <li><a href="#experience" class="text-gray-700 hover:text-gray-900">Experiencia</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-gray-900">Proyectos</a></li>
+                    <li><a href="#testimonials" class="text-gray-700 hover:text-gray-900">Testimonios</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            background-color: rgba(255, 0, 0, 0.5);
+            z-index: 50;
+            transition: all 0.5s ease;
+        }
+
+        .expanded {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .content-hidden {
+            visibility: hidden;
+        }
+    </style>
+
+
+    <div id="overlay" class="overlay"></div>
+    <section class="hero h-96 w-full relative flex items-center justify-center text-white">
+        <div class="overlay"></div>
+        <div class="text-center z-10">
+            <h1 class="text-4xl font-bold mb-4">Elias Mauricio Parada Lozano</h1>
+            <p class="text-xl">Desarrollador Full-Stack</p>
+            <button class="inline-block bg-gradient-to-r from-red-400 to-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-red-500 hover:to-red-800 transition-transform transform hover:scale-105" data-aos="zoom-in">Contactame</button>
+        </div>
+    </section>
+    <main class="mx-auto py-8">
+        
+        
+        <section id="about-me" class="mx-auto my-10">
+        </section>
+
+        <section id="skills" class="p-8 bg-white shadow-lg rounded-lg">
+            <!-- Título de habilidades, contenido será insertado por JS -->
+        </section>
+
+        <section id="certificates" class="mx-auto my-10">
+            <!-- Certificados -->
+        </section>
+
+        <section id="projects" class="p-8 bg-white shadow-lg rounded-lg">
+            <h2 class="text-3xl font-bold mb-4 text-center p-2 pt-4">Proyectos</h2>
+            <div data-modal="true">
+                <p class="rs-p-wp-fix"></p>
+                <sr7-module data-alias="Proyectos" data-id="1" id="CAROUSEL-PROJECTS" class="rs-respect-topbar">
+                    <sr7-adjuster></sr7-adjuster>
+                    <sr7-content>
+                        <sr7-carousel>
+                            <!-- CAJAS DE TEXTO -->
+                        </sr7-carousel>
+                    </sr7-content>
+                    <image_lists style="display:none">
+                        <!-- IMAGENES -->
+                    </image_lists>
+                </sr7-module>
+                <script>
+                    SR7.PMH ??={}; 
+                    SR7.PMH["CAROUSEL-PROJECTS"] = {
+                        cn:0, 
+                        state:false, 
+                        fn: function() { 
+                            if (_tpt!==undefined && _tpt.prepareModuleHeight !== undefined) {
+                                _tpt.prepareModuleHeight({
+                                    id:"CAROUSEL-PROJECTS",
+                                    type:'carousel',
+                                    size:{fullWidth:true, fullHeight:true}
+                                });
+                                SR7.PMH["CAROUSEL-PROJECTS"].state=true;
+                            } else if((SR7.PMH["CAROUSEL-PROJECTS"].cn++)<100) 
+                                setTimeout(SR7.PMH["CAROUSEL-PROJECTS"].fn,19);
+                        }
+                    };
+                    SR7.PMH["CAROUSEL-PROJECTS"].fn();
+                </script>
+            </div>
+        </section>
+
+        <div id="project-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50 hidden">
+            <div class="bg-white rounded-lg w-3/4 md:w-1/2 p-4 relative">
+                <button id="close-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">&times;</button>
+                <div id="modal-content">
+                    <!-- Información del proyecto se cargará aquí dinámicamente -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <section id="testimonials" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-center sticky top-0 z-10 p-2 pt-4 bg-white">Testimonios</h2>
+            <div class="relative">
+                <div id="testimonialsCarousel" class="carousel flex relative overflow-hidden">
+                    <div class="bg-white p-4 shadow rounded-lg mx-2 sm:mx-4 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-20">
+                        <div class="flex items-center">
+                            <img src="client_image1.jpg" alt="Cliente A" class="rounded-full h-12 w-12 object-cover mr-4">
+                            <div>
+                                <p class="text-gray-700 italic">&quot;Elias es un desarrollador excepcional con un ojo para los detalles. Su habilidad para resolver problemas es impresionante.&quot;</p>
+                                <p class="text-gray-600 mt-2">- Cliente A, Desarrollador Frontend</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 shadow rounded-lg mx-2 sm:mx-4 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-20">
+                        <div class="flex items-center">
+                            <img src="client_image2.jpg" alt="Cliente B" class="rounded-full h-12 w-12 object-cover mr-4">
+                            <div>
+                                <p class="text-gray-700 italic">&quot;Trabajar con Elias ha sido una experiencia fantástica. Siempre entrega resultados de alta calidad.&quot;</p>
+                                <p class="text-gray-600 mt-2">- Cliente B, Diseñador UX/UI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-y-0 left-0 flex items-center justify-center">
+                    <button id="prevTestimonialBtn" class="hidden lg:block bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-l-lg">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center justify-center">
+                    <button id="nextTestimonialBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-r-lg">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="contact" class="bg-red-600 text-white py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6 text-center sticky top-0 z-10 p-2 pt-4 bg-red-600">Contacto</h2>
+                <div class="max-w-lg mx-auto">
+                    <form action="#" method="POST" class="grid grid-cols-1 gap-4">
+                        <label for="name" class="block">
+                            <span class="text-lg font-semibold">Nombre</span>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300">
+                        </label>
+                        <label for="email" class="block">
+                            <span class="text-lg font-semibold">Correo electrónico</span>
+                            <input type="email" id="email" name="email" placeholder="correo@example.com" class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300">
+                        </label>
+                        <label for="message" class="block">
+                            <span class="text-lg font-semibold">Mensaje</span>
+                            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí" class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300"></textarea>
+                        </label>
+                        <button type="submit" class="bg-white text-red-600 py-2 px-4 rounded-md hover:bg-gray-200 hover:text-red-600 transition-colors duration-300">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-white shadow mt-8">
+        <div class="container mx-auto px-4 py-4 text-center">
+            <p class="text-gray-700">&copy; 2024 Elias Mauricio Parada Lozano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        // Efecto de scroll suave
+        $('nav a').click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+            }, 500);
+        });
     </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            const btn = document.getElementById('button');
 
-            document.getElementById('form')
-            .addEventListener('submit', function(event) {
-                event.preventDefault();
+    <!-- AOS for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-                btn.value = 'Sending...';
-
-                const serviceID = 'personal_outlook';
-                const templateID = 'template_hy6c8ty';
-
-                emailjs.sendForm(serviceID, templateID, this, 'gGqUr5jdcSqVwjRy4')
-                .then(() => {
-                    btn.value = 'Send Email';
-                    alert('Sent!');
-                }, (err) => {
-                    btn.value = 'Send Email';
-                    alert(JSON.stringify(err));
-                });
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slick-carousel'
             });
 
+            $('.slick-carousel').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                arrows: false,
+                centerMode: true,
+                focusOnSelect: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+
+    </script>
+
+    <script>
+        const testimonialsCarousel = document.getElementById('testimonialsCarousel');
+    const prevBtn = document.getElementById('prevTestimonialBtn');
+    const nextBtn = document.getElementById('nextTestimonialBtn');
+    const testimonials = testimonialsCarousel.children;
+    let currentTestimonialIndex = 0;
+
+    function showTestimonial(index) {
+        for (let i = 0; i < testimonials.length; i++) {
+            testimonials[i].classList.add('hidden');
+        }
+        testimonials[index].classList.remove('hidden');
+    }
+
+    function moveNextTestimonial() {
+        if (currentTestimonialIndex < testimonials.length - 1) {
+            currentTestimonialIndex++;
+            showTestimonial(currentTestimonialIndex);
+        }
+    }
+
+    function movePrevTestimonial() {
+        if (currentTestimonialIndex > 0) {
+            currentTestimonialIndex--;
+            showTestimonial(currentTestimonialIndex);
+        }
+    }
+
+    nextBtn.addEventListener('click', moveNextTestimonial);
+    prevBtn.addEventListener('click', movePrevTestimonial);
+
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('bg-sky-500');
+                const filter = button.getAttribute('data-filter');
+                document.querySelectorAll('.project-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-tags').includes(filter)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll('.open-modal-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-modal');
+                document.getElementById(modalId).classList.remove('hidden');
+                startCarousel(modalId);
+            });
+        });
+
+        document.querySelectorAll('.close-modal-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = button.closest('.modal');
+                modal.classList.add('hidden');
+                stopCarousel(modal.id);
+            });
+        });
+
+        function startCarousel(modalId) {
+            const carousel = document.querySelector(`#${modalId} .carousel`);
+            const images = carousel.querySelectorAll('img');
+            let currentIndex = 0;
+
+            images[currentIndex].style.display = 'block';
+
+            const interval = setInterval(() => {
+                images[currentIndex].style.display = 'none';
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].style.display = 'block';
+            }, 3000);
+
+            carousel.setAttribute('data-interval', interval);
+        }
+
+        function stopCarousel(modalId) {
+            const carousel = document.querySelector(`#${modalId} .carousel`);
+            const interval = carousel.getAttribute('data-interval');
+            clearInterval(interval);
+            carousel.removeAttribute('data-interval');
+
+            const images = carousel.querySelectorAll('img');
+            images.forEach(img => img.style.display = 'none');
+            images[0].style.display = 'block';
         }
     </script>
-</head>
-<body class="m-0 p-0 w-full h-full min-h-screen bg-slate-100 text-white">
-    <div id="deco" class="fixed -z-10 w-full h-full inset-0 overflow-hidden">
-        <div class="absolute overflow-hidden w-64 h-64 rounded-lg rotate-45 bg-red-500 font-bold p-2 inset-4-0 divide-y divide-dashed">
-            <div>Js</div>
-            <pre class="font-mini">
-div
-    h1 Suma de números /h1
-    br/
-    input type="number" id="x"/
-    input type="number" id="y"/
 
-    input type="submit" click="sum"/
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js" integrity="sha512-7IoDEsIJGxz/gNyJY/0LRtS45wDSvPFXGPuC7Fo4YueWMNOmWKMAllEqo2Im3pgOjeEwsOoieyliRgdkZnY0ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    span
-        El resultado es p /p
-    /span
-/div
-            </pre>
-        </div>
+    <!-- <script src="public/css/js/modules/projects.js"></script> -->
+    <script src="js/slider.js"></script>
+    <script src="js/sections/start.js"></script>
+    <script src="js/sections/skills.js"></script>
+    <script src="js/sections/badges.js"></script>
+    <script src="js/sections/aboutme.js"></script>
+    <script src="js/sections/proyectos.js"></script>
 
-        <div class="absolute overflow-hidden w-64 h-64 rounded-lg -rotate-45 bg-yellow-500 font-bold p-2 inset-60-33 divide-y divide-dashed">
-            <div>Js</div>
-            <pre class="font-mini">
-function sum(x, y) {
-    let z = x + y;
-    return z;
-}
+    <script>
+        AOS.init();
 
-sum(5, 10);
-            </pre>
-        </div>
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarHero('es');
+            cargarAboutMe('es');
+            cargarHabilidades('es');
+            cargarCertificados('es');
+            cargarProyectos('es');
+            // updateMenu('es').then(seccionesActivas => {
+            //     if (seccionesActivas['inicio']) cargarInicio('es');
+            //     if (seccionesActivas['sobre-mi']) cargarSobreMi('es');
+            //     if (seccionesActivas['proyectos']) cargarProyectos('es');
+            //     if (seccionesActivas['testimonios']) cargarTestimonios('es');
+            //     if (seccionesActivas['contacto']) cargarContacto('es');
+            // });
+        });
+    </script>
 
-        <div class="absolute overflow-hidden w-64 h-64 rounded-lg rotate-12 bg-purple-500 font-bold p-2 inset-20-75 divide-y divide-dashed">
-            <div>Python</div>
-            <pre class="font-mini">
-def sumar(num1, num2):
-    resultado = num1 + num2
-    return resultado
+    <script type="text/javascript" src="/js/lazysizes.js" id="lazysizes-js"></script>
 
-resultado = sumar(5, 10)
-print(resultado)
-            </pre>
-        </div>
-    </div>
-
-    <div class="w-full h-full inset-0 flex flex-col justify-between">
-        <nav class="w-full z-20 h-fit font-bold text-white font-medium grow-0">
-            <ul class="w-full h-auto bg-slate-300 p-4 flex justify-between">
-                <div class="flex justify-end items-center gap-4">
-                    <div class="transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden scale-125 rounded-full
-                    after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
-                    before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
-                        <img src="images/logo.svg" alt="" class="w-16 h-16 block rounded-full">
-                    </div>
-                </div>
-                <div class="flex flex-row items-center relative">
-                    <div id="display-btn" class="flex sm:hidden h-8 px-8 py-2 rounded-lg hover:bg-cyan-500 fill-cyan-500 hover:fill-cyan-800 bg-cyan-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                        after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
-                        before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-cyan-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="text-cyan-500 hover:text-cyan-800">
-                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                        </svg>
-                    </div>
-                    <div id="display-nav" class="h-0 flex flex-row items-center z-10 overflow-hidden sm:h-auto justify-end gap-4 transition-all duration-400 ease-in">
-                        <li class="p-2 px-8 rounded-lg hover:bg-slate-500 text-slate-500 hover:text-slate-800 bg-slate-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
-                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
-                            <a href="#home">
-                                <p data-lang="home">Inicio</p>
-                            </a>
-                        </li>
-                        <li class="p-2 px-8 rounded-lg hover:bg-slate-500 text-slate-500 hover:text-slate-800 bg-slate-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
-                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
-                            <a href="#about">
-                                <p data-lang="about">Sobre Mí</p>
-                            </a>
-                        </li>
-                        <li class="p-2 px-8 rounded-lg hover:bg-slate-500 text-slate-500 hover:text-slate-800 bg-slate-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
-                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
-                            <a href="#works">
-                                <p data-lang="works">Mis Trabajos</p>
-                            </a>
-                        </li>
-                        <li class="p-2 px-8 rounded-lg hover:bg-slate-500 text-slate-500 hover:text-slate-800 bg-slate-400 transition-colors duration-400 ease-in cursor-pointer relative overflow-hidden
-                                after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
-                                before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-slate-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
-                            <a href="#contact">
-                                <p data-lang="contact">Contactame</p>
-                            </a>
-                        </li>
-                    </div>
-                </div>
-            </ul>
-        </nav>
-    
-        <div class="content z-10 h-full grow w-full h-auto relative m-0 p-0 overflow-y-hidden">
-            <div class="w-full h-5/6 relative">
-                <!-- Home -->
-                <div id="home" class="flex items-center justify-center h-full max-h-full m-auto p-2 md:py-10 md:px-32">
-                    <fieldset class="field-cards text-gray-800 flex flex-col justify-between rounded-xl field-cards m-auto w-full md:w-3/4 p-0">
-                        <legend class="field-title text-lg rounded bg-gray-400 px-4 mark ml-4" data-lang="home">Inicio</legend>
-                        <div class="flex flex-row w-full p-4">
-                            <div class="basis-1/4 flex justify-center items-center">
-                                <img src="images/profile.jpg" alt="" class="w-full h-auto block rounded-lg">
-                            </div>
-                            <div class="flex flex-col justify-between basis-3/4">
-                                <h1 class="text-3xl font-bold mx-4">Elias Mauricio Parada Lozano</h1>
-                                <p class="mx-4 italic font-light relative flex justify-start items-center"><span class="h-8 w-1 block rounded-r-lg bg-gray-200 border-l-4 mr-4"></span><span data-lang="phrase">Tu desarrollas tus propositos</span></p>
-                                <p class="m-4" data-lang="description"> Desarrollador web front-end y back-end. Competente en Python y desarrollo de inteligencia artificial.
-                                    Apasionado por ofrecer sitios web y aplicaciones dinámicos de alta calidad.    
-                                </p>
-                            </div>
-                        </div>
-                        <fieldset class="field-cards grid grid-cols-4 md:flex text-2xl w-full h-auto justify-start gap-4 align-center rounded-lg p-4">
-                            <legend class="field-title mark text-lg bg-gray-400 rounded px-4" data-lang="main-lang">Mis Lenguajes Principales</legend>
-                            <a href="" class="block hover:text-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-blue-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-yellow-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-sky-700">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-violet-700">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z" />
-                                    <path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3z" />
-                                </svg>
-                            </a>
-                        </fieldset>
-                        <fieldset class="field-cards grid grid-cols-4 md:flex text-2xl w-full h-auto justify-start gap-4 align-center rounded-lg p-4">
-                            <legend class="field-title mark text-lg rounded bg-gray-400 px-4" data-lang="tools">Mis Herramientas Principales</legend>
-                            <a href="" class="block hover:text-yellow-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M180.41 203.01c-.72 22.65 10.6 32.68 10.88 39.05a8.164 8.164 0 0 1-4.1 6.27l-12.8 8.96a10.66 10.66 0 0 1-5.63 1.92c-.43-.02-8.19 1.83-20.48-25.61a78.608 78.608 0 0 1-62.61 29.45c-16.28.89-60.4-9.24-58.13-56.21-1.59-38.28 34.06-62.06 70.93-60.05 7.1.02 21.6.37 46.99 6.27v-15.62c2.69-26.46-14.7-46.99-44.81-43.91-2.4.01-19.4-.5-45.84 10.11-7.36 3.38-8.3 2.82-10.75 2.82-7.41 0-4.36-21.48-2.94-24.2 5.21-6.4 35.86-18.35 65.94-18.18a76.857 76.857 0 0 1 55.69 17.28 70.285 70.285 0 0 1 17.67 52.36l-.01 69.29zM93.99 235.4c32.43-.47 46.16-19.97 49.29-30.47 2.46-10.05 2.05-16.41 2.05-27.4-9.67-2.32-23.59-4.85-39.56-4.87-15.15-1.14-42.82 5.63-41.74 32.26-1.24 16.79 11.12 31.4 29.96 30.48zm170.92 23.05c-7.86.72-11.52-4.86-12.68-10.37l-49.8-164.65c-.97-2.78-1.61-5.65-1.92-8.58a4.61 4.61 0 0 1 3.86-5.25c.24-.04-2.13 0 22.25 0 8.78-.88 11.64 6.03 12.55 10.37l35.72 140.83 33.16-140.83c.53-3.22 2.94-11.07 12.8-10.24h17.16c2.17-.18 11.11-.5 12.68 10.37l33.42 142.63L420.98 80.1c.48-2.18 2.72-11.37 12.68-10.37h19.72c.85-.13 6.15-.81 5.25 8.58-.43 1.85 3.41-10.66-52.75 169.9-1.15 5.51-4.82 11.09-12.68 10.37h-18.69c-10.94 1.15-12.51-9.66-12.68-10.75L328.67 110.7l-32.78 136.99c-.16 1.09-1.73 11.9-12.68 10.75h-18.3zm273.48 5.63c-5.88.01-33.92-.3-57.36-12.29a12.802 12.802 0 0 1-7.81-11.91v-10.75c0-8.45 6.2-6.9 8.83-5.89 10.04 4.06 16.48 7.14 28.81 9.6 36.65 7.53 52.77-2.3 56.72-4.48 13.15-7.81 14.19-25.68 5.25-34.95-10.48-8.79-15.48-9.12-53.13-21-4.64-1.29-43.7-13.61-43.79-52.36-.61-28.24 25.05-56.18 69.52-55.95 12.67-.01 46.43 4.13 55.57 15.62 1.35 2.09 2.02 4.55 1.92 7.04v10.11c0 4.44-1.62 6.66-4.87 6.66-7.71-.86-21.39-11.17-49.16-10.75-6.89-.36-39.89.91-38.41 24.97-.43 18.96 26.61 26.07 29.7 26.89 36.46 10.97 48.65 12.79 63.12 29.58 17.14 22.25 7.9 48.3 4.35 55.44-19.08 37.49-68.42 34.44-69.26 34.42zm40.2 104.86c-70.03 51.72-171.69 79.25-258.49 79.25A469.127 469.127 0 0 1 2.83 327.46c-6.53-5.89-.77-13.96 7.17-9.47a637.37 637.37 0 0 0 316.88 84.12 630.22 630.22 0 0 0 241.59-49.55c11.78-5 21.77 7.8 10.12 16.38zm29.19-33.29c-8.96-11.52-59.28-5.38-81.81-2.69-6.79.77-7.94-5.12-1.79-9.47 40.07-28.17 105.88-20.1 113.44-10.63 7.55 9.47-2.05 75.41-39.56 106.91-5.76 4.87-11.27 2.3-8.71-4.1 8.44-21.25 27.39-68.49 18.43-80.02z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-red-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M316.3 452c-2.1 0-4.2-.6-6.1-1.6L291 439c-2.9-1.6-1.5-2.2-.5-2.5 3.8-1.3 4.6-1.6 8.7-4 .4-.2 1-.1 1.4.1l14.8 8.8c.5.3 1.3.3 1.8 0L375 408c.5-.3.9-.9.9-1.6v-66.7c0-.7-.3-1.3-.9-1.6l-57.8-33.3c-.5-.3-1.2-.3-1.8 0l-57.8 33.3c-.6.3-.9 1-.9 1.6v66.7c0 .6.4 1.2.9 1.5l15.8 9.1c8.6 4.3 13.9-.8 13.9-5.8v-65.9c0-.9.7-1.7 1.7-1.7h7.3c.9 0 1.7.7 1.7 1.7v65.9c0 11.5-6.2 18-17.1 18-3.3 0-6 0-13.3-3.6l-15.2-8.7c-3.7-2.2-6.1-6.2-6.1-10.5v-66.7c0-4.3 2.3-8.4 6.1-10.5l57.8-33.4c3.7-2.1 8.5-2.1 12.1 0l57.8 33.4c3.7 2.2 6.1 6.2 6.1 10.5v66.7c0 4.3-2.3 8.4-6.1 10.5l-57.8 33.4c-1.7 1.1-3.8 1.7-6 1.7zm46.7-65.8c0-12.5-8.4-15.8-26.2-18.2-18-2.4-19.8-3.6-19.8-7.8 0-3.5 1.5-8.1 14.8-8.1 11.9 0 16.3 2.6 18.1 10.6.2.8.8 1.3 1.6 1.3h7.5c.5 0 .9-.2 1.2-.5.3-.4.5-.8.4-1.3-1.2-13.8-10.3-20.2-28.8-20.2-16.5 0-26.3 7-26.3 18.6 0 12.7 9.8 16.1 25.6 17.7 18.9 1.9 20.4 4.6 20.4 8.3 0 6.5-5.2 9.2-17.4 9.2-15.3 0-18.7-3.8-19.8-11.4-.1-.8-.8-1.4-1.7-1.4h-7.5c-.9 0-1.7.7-1.7 1.7 0 9.7 5.3 21.3 30.6 21.3 18.5 0 29-7.2 29-19.8zm54.5-50.1c0 6.1-5 11.1-11.1 11.1s-11.1-5-11.1-11.1c0-6.3 5.2-11.1 11.1-11.1 6-.1 11.1 4.8 11.1 11.1zm-1.8 0c0-5.2-4.2-9.3-9.4-9.3-5.1 0-9.3 4.1-9.3 9.3 0 5.2 4.2 9.4 9.3 9.4 5.2-.1 9.4-4.3 9.4-9.4zm-4.5 6.2h-2.6c-.1-.6-.5-3.8-.5-3.9-.2-.7-.4-1.1-1.3-1.1h-2.2v5h-2.4v-12.5h4.3c1.5 0 4.4 0 4.4 3.3 0 2.3-1.5 2.8-2.4 3.1 1.7.1 1.8 1.2 2.1 2.8.1 1 .3 2.7.6 3.3zm-2.8-8.8c0-1.7-1.2-1.7-1.8-1.7h-2v3.5h1.9c1.6 0 1.9-1.1 1.9-1.8zM137.3 191c0-2.7-1.4-5.1-3.7-6.4l-61.3-35.3c-1-.6-2.2-.9-3.4-1h-.6c-1.2 0-2.3.4-3.4 1L3.7 184.6C1.4 185.9 0 188.4 0 191l.1 95c0 1.3.7 2.5 1.8 3.2 1.1.7 2.5.7 3.7 0L42 268.3c2.3-1.4 3.7-3.8 3.7-6.4v-44.4c0-2.6 1.4-5.1 3.7-6.4l15.5-8.9c1.2-.7 2.4-1 3.7-1 1.3 0 2.6.3 3.7 1l15.5 8.9c2.3 1.3 3.7 3.8 3.7 6.4v44.4c0 2.6 1.4 5.1 3.7 6.4l36.4 20.9c1.1.7 2.6.7 3.7 0 1.1-.6 1.8-1.9 1.8-3.2l.2-95zM472.5 87.3v176.4c0 2.6-1.4 5.1-3.7 6.4l-61.3 35.4c-2.3 1.3-5.1 1.3-7.4 0l-61.3-35.4c-2.3-1.3-3.7-3.8-3.7-6.4v-70.8c0-2.6 1.4-5.1 3.7-6.4l61.3-35.4c2.3-1.3 5.1-1.3 7.4 0l15.3 8.8c1.7 1 3.9-.3 3.9-2.2v-94c0-2.8 3-4.6 5.5-3.2l36.5 20.4c2.3 1.2 3.8 3.7 3.8 6.4zm-46 128.9c0-.7-.4-1.3-.9-1.6l-21-12.2c-.6-.3-1.3-.3-1.9 0l-21 12.2c-.6.3-.9.9-.9 1.6v24.3c0 .7.4 1.3.9 1.6l21 12.1c.6.3 1.3.3 1.8 0l21-12.1c.6-.3.9-.9.9-1.6v-24.3zm209.8-.7c2.3-1.3 3.7-3.8 3.7-6.4V192c0-2.6-1.4-5.1-3.7-6.4l-60.9-35.4c-2.3-1.3-5.1-1.3-7.4 0l-61.3 35.4c-2.3 1.3-3.7 3.8-3.7 6.4v70.8c0 2.7 1.4 5.1 3.7 6.4l60.9 34.7c2.2 1.3 5 1.3 7.3 0l36.8-20.5c2.5-1.4 2.5-5 0-6.4L550 241.6c-1.2-.7-1.9-1.9-1.9-3.2v-22.2c0-1.3.7-2.5 1.9-3.2l19.2-11.1c1.1-.7 2.6-.7 3.7 0l19.2 11.1c1.1.7 1.9 1.9 1.9 3.2v17.4c0 2.8 3.1 4.6 5.6 3.2l36.7-21.3zM559 219c-.4.3-.7.7-.7 1.2v13.6c0 .5.3 1 .7 1.2l11.8 6.8c.4.3 1 .3 1.4 0L584 235c.4-.3.7-.7.7-1.2v-13.6c0-.5-.3-1-.7-1.2l-11.8-6.8c-.4-.3-1-.3-1.4 0L559 219zm-254.2 43.5v-70.4c0-2.6-1.6-5.1-3.9-6.4l-61.1-35.2c-2.1-1.2-5-1.4-7.4 0l-61.1 35.2c-2.3 1.3-3.9 3.7-3.9 6.4v70.4c0 2.8 1.9 5.2 4 6.4l61.2 35.2c2.4 1.4 5.2 1.3 7.4 0l61-35.2c1.8-1 3.1-2.7 3.6-4.7.1-.5.2-1.1.2-1.7zm-74.3-124.9l-.8.5h1.1l-.3-.5zm76.2 130.2l-.4-.7v.9l.4-.2z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-green-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M356.9 64.3H280l-56 88.6-48-88.6H0L224 448 448 64.3h-91.1zm-301.2 32h53.8L224 294.5 338.4 96.3h53.8L224 384.5 55.7 96.3z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M504.4,115.83a5.72,5.72,0,0,0-.28-.68,8.52,8.52,0,0,0-.53-1.25,6,6,0,0,0-.54-.71,9.36,9.36,0,0,0-.72-.94c-.23-.22-.52-.4-.77-.6a8.84,8.84,0,0,0-.9-.68L404.4,55.55a8,8,0,0,0-8,0L300.12,111h0a8.07,8.07,0,0,0-.88.69,7.68,7.68,0,0,0-.78.6,8.23,8.23,0,0,0-.72.93c-.17.24-.39.45-.54.71a9.7,9.7,0,0,0-.52,1.25c-.08.23-.21.44-.28.68a8.08,8.08,0,0,0-.28,2.08V223.18l-80.22,46.19V63.44a7.8,7.8,0,0,0-.28-2.09c-.06-.24-.2-.45-.28-.68a8.35,8.35,0,0,0-.52-1.24c-.14-.26-.37-.47-.54-.72a9.36,9.36,0,0,0-.72-.94,9.46,9.46,0,0,0-.78-.6,9.8,9.8,0,0,0-.88-.68h0L115.61,1.07a8,8,0,0,0-8,0L11.34,56.49h0a6.52,6.52,0,0,0-.88.69,7.81,7.81,0,0,0-.79.6,8.15,8.15,0,0,0-.71.93c-.18.25-.4.46-.55.72a7.88,7.88,0,0,0-.51,1.24,6.46,6.46,0,0,0-.29.67,8.18,8.18,0,0,0-.28,2.1v329.7a8,8,0,0,0,4,6.95l192.5,110.84a8.83,8.83,0,0,0,1.33.54c.21.08.41.2.63.26a7.92,7.92,0,0,0,4.1,0c.2-.05.37-.16.55-.22a8.6,8.6,0,0,0,1.4-.58L404.4,400.09a8,8,0,0,0,4-6.95V287.88l92.24-53.11a8,8,0,0,0,4-7V117.92A8.63,8.63,0,0,0,504.4,115.83ZM111.6,17.28h0l80.19,46.15-80.2,46.18L31.41,63.44Zm88.25,60V278.6l-46.53,26.79-33.69,19.4V123.5l46.53-26.79Zm0,412.78L23.37,388.5V77.32L57.06,96.7l46.52,26.8V338.68a6.94,6.94,0,0,0,.12.9,8,8,0,0,0,.16,1.18h0a5.92,5.92,0,0,0,.38.9,6.38,6.38,0,0,0,.42,1v0a8.54,8.54,0,0,0,.6.78,7.62,7.62,0,0,0,.66.84l0,0c.23.22.52.38.77.58a8.93,8.93,0,0,0,.86.66l0,0,0,0,92.19,52.18Zm8-106.17-80.06-45.32,84.09-48.41,92.26-53.11,80.13,46.13-58.8,33.56Zm184.52,4.57L215.88,490.11V397.8L346.6,323.2l45.77-26.15Zm0-119.13L358.68,250l-46.53-26.79V131.79l33.69,19.4L392.37,178Zm8-105.28-80.2-46.17,80.2-46.16,80.18,46.15Zm8,105.28V178L455,151.19l33.68-19.4v91.39h0Z"/>
-                                </svg>
-                            </a>
-                            <a href="" class="block hover:text-violet-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="fill-gray-800 stroke-gray-500 stroke-2 w-8 h-8">
-                                    <path d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z"/>
-                                </svg>
-                            </a>
-                        </fieldset>
-                    </fieldset>
-                </div>
-    
-                <!-- About Me -->
-                <div class="flex items-center justify-center h-full max-h-full m-auto p-2 md:py-10 md:px-32">
-                    <fieldset id="about" class="text-gray-800 flex flex-col justify-between rounded-xl field-cards m-auto w-full md:w-3/4 p-0">
-                        <legend class="field-title text-lg rounded bg-gray-400 px-4 mark ml-4" data-lang="about">Sobre Mí</legend>
-                        <div class="w-full flex flex-row justify-between items-center">
-                            <div class="basis-1/2 flex flex-col p-4">
-                                <h1 class="text-xl font-bold m-auto" data-lang="soft-skills">Habilidades Blandas</h1>
-                                <div class="w-full">
-                                    <div class="text-center font-bold" data-lang="teamwork">Trabajo en Equipo</div>
-                                    <div class="flex items-center">
-                                      <i class="mr-2"><i class="fa-brands fa-html5"></i></i>
-                                      <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                        <div id="progress-bar" class="h-full bg-blue-800
-                                            before:content-['90%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 90%;"></div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="text-center font-bold" data-lang="agile">Desarrollo ágil</div>
-                                    <div class="flex items-center">
-                                      <i class="mr-2"><i class="fa-brands fa-github"></i></i>
-                                      <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                        <div id="progress-bar" class="h-full bg-blue-800
-                                        before:content-['80%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 80%;"></div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="text-center font-bold" data-lang="adaptability">Adaptabilidad</div>
-                                    <div class="flex items-center">
-                                      <i class="mr-2"><i class="fa-solid fa-boxes-packing"></i></i>
-                                      <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                        <div id="progress-bar" class="h-full bg-blue-800
-                                        before:content-['95%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 95%;"></div>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="basis-1/2 flex flex-col p-4">
-                                <h1 class="text-xl font-bold m-auto" data-lang="hard-skills">Habilidades Duras</h1>
-                                <div class="w-full">
-                                    <div class="text-center font-bold" data-lang="backend">Programación Back-End</div>
-                                    <div class="flex items-center">
-                                      <i class="mr-2"><i class="fa-brands fa-square-js"></i></i>
-                                      <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                        <div id="progress-bar" class="h-full bg-red-900
-                                        before:content-['85%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 85%;"></div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="text-center font-bold" data-lang="frontend">Programación Front-End</div>
-                                    <div class="flex items-center">
-                                      <i class="mr-2"><i class="fa-brands fa-php"></i></i>
-                                      <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                        <div id="progress-bar" class="h-full bg-red-900
-                                        before:content-['90%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 90%;"></div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="text-center font-bold" data-lang="grafic-design">Diseño Gráfico</div>
-                                    <div class="flex items-center">
-                                      <i class="mr-2"><i class="fa-brands fa-python"></i></i>
-                                      <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                        <div id="progress-bar" class="h-full bg-red-900
-                                        before:content-['62%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 62%;"></div>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <fieldset class="field-cards grid grid-cols-4 md:flex w-full h-auto justify-start gap-4 align-center rounded-lg p-4">
-                            <legend class="field-title mark text-lg rounded bg-gray-400 px-4" data-lang="knowledge">Mis Conocimientos</legend>
-                            <div class="w-full flex flex-row justify-between items-center">
-                                <div class="basis-1/2 flex flex-col p-4">
-                                    <div class="w-full">
-                                        <div class="text-center font-bold" data-lang="html-css">HTML y CSS</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-brands fa-html5"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                                before:content-['92%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 92%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="text-center font-bold" data-lang="git-github">Git y GitHub</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-brands fa-github"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['80%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 80%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="text-center font-bold" data-lang="rest-soap">REST y SOAP</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-solid fa-boxes-packing"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['90%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 90%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="text-center font-bold">Node.js</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-brands fa-node-js"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['90%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 90%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="text-center font-bold">Angular</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-brands fa-angular"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['60%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 60%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="basis-1/2 flex flex-col p-4">
-                                    <div class="w-full">
-                                        <div class="text-center font-bold">JavaScript</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-brands fa-square-js"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['86%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 86%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="text-center font-bold">PHP</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-brands fa-php"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['80%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 80%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="text-center font-bold">Python</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-brands fa-python"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['60%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 60%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="text-center font-bold" data-lang="design-fundamentals">Fundamentos del Diseño</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-solid fa-pen-ruler"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['95%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 95%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full">
-                                        <div class="text-center font-bold" data-lang="responsive">Responsive Design</div>
-                                        <div class="flex items-center">
-                                          <i class="mr-2"><i class="fa-solid fa-mobile-screen"></i></i>
-                                          <div class="shadow-xl shadow-gray-600 flex-grow h-5 bg-gray-300 rounded-lg overflow-hidden">
-                                            <div id="progress-bar" class="h-full bg-purple-800
-                                            before:content-['85%'] before:w-full before:h-full before:flex before:justify-center before:items-center before:font-bold before:text-white before:block" style="width: 85%;"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset class="field-cards text-gray-800 flex flex-col text-2xl w-full h-auto justify-start gap-4 align-center rounded-lg p-4 text-sm relative">
-                            <legend class="field-title text-lg bg-gray-400 rounded px-4" data-lang="cv">Curriculum Vitae</legend>
-                            <a href="docs/cv.pdf" download="CV_Elias_Parada.pdf" id="download" class="block z-50 absolute top-10 right-10 w-fit h-fit m-4 p-2 px-8 rounded-lg hover:bg-gray-500 text-gray-500 hover:text-gray-800 bg-gray-400 transition-colors duration-400 ease-in cursor-pointer overflow-hidden
-                                    after:content-['.'] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:text-transparent after:w-8 after:-skew-x-12 after:h-full after:absolute after:top-0 after:left-0 after:-translate-x-16 hover:after:translate-x-40 after:transition-transform after:duration-700 after:ease-out
-                                    before:content-['.'] before:bg-gradient-to-r before:from-transparent before:via-gray-100 before:to-transparent before:text-transparent before:w-10 before:-skew-x-12 before:h-16 before:absolute before:top-0 before:left-0 before:-translate-x-12 hover:before:translate-x-40 before:transition-transform before:duration-1000 before:ease-out">
-                                <p data-lang="download">Descargar</p>
-                            </a>
-                            
-                            <div class="w-full text-gray-800 bg-slate-100 rounded-lg shadow-2xl shadow-slate-900 overflow-hidden relative top-0" id="cv">
-                                <div class="w-full absolute -top-1/4 pl-8 flex items-center justify-center z-10">
-                                    <div class="w-56 h-56 rounded-lg bg-yellow-600 rotate-45"></div>
-                                </div>
-                                <div class="text-gray-800 p-2 pl-8 z-20 relative divide-y divide-dashed divide-slate-700">
-                                    <img src="images/me.jpg" alt="profile" class="rounded-full mx-auto my-2 w-28 h-28">
-
-                                    <fieldset class="w-4/12 float-left">
-                                        <legend class="text-lg font-bold relative"><div class="absolute inset-y-1/4 -left-5 w-4 h-4 ring-slate-600 ring-2 ring-offset-2 bg-slate-400 hover:bg-sky-400 transition-colors duration-700 rounded-full"></div><div  data-lang="personal">Contacto</div></legend>
-                                        <div class="italic spacing-x-4 w-11/12 break-words m-0">
-                                            <p class="font-bold" data-lang="name">Nombre:</p><p class="break-words copy cursor-pointer">Elías Mauricio Parada Lozano</p>
-                                            <p class="font-bold" data-lang="phone">Telefono:</p><p class="break-words copy cursor-pointer">7712-4813</p>
-                                            <p class="font-bold" data-lang="email">Correo:</p><p class="break-words copy cursor-pointer">eliasparadalozano@hotmail.com</p>
-                                            <p class="font-bold" data-lang="address">Dirección:<p class="break-words copy cursor-pointer">Usulután, Usulután, El Salvador</p>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="w-7/12 float-right">
-                                        <legend class="text-lg font-bold relative"><div class="absolute inset-y-1/4 -left-5 w-4 h-4 ring-slate-600 ring-2 ring-offset-2 bg-slate-400 hover:bg-sky-400 transition-colors duration-700 rounded-full"></div><div data-lang="about">Sobre Mí</div></legend>
-                                        <div class="italic spacing-x-4 w-11/12 m-0">
-                                            <p class="break-normal" data-lang="me">Desarrollador web con experiencia en front-end y back-end.
-                                                 Me apasiona crear soluciones innovadoras y eficientes que satisfagan las necesidades 
-                                                 de los usuarios. Colaborador en equipo eficaz y siempre estoy 
-                                                 dispuesto a ayudar a mis compañeros de equipo. Comprometido con el aprendizaje continuo.</p>
-                                            
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="w-full">
-                                        <legend class="text-lg font-bold relative"><div class="absolute inset-y-1/4 -left-5 w-4 h-4 ring-slate-600 ring-2 ring-offset-2 bg-slate-400 hover:bg-sky-400 transition-colors duration-700 rounded-full"></div><div data-lang="skills">Habilidades</div></legend>
-                                        <div class="italic flex flex-col justify-between spacing-4 w-11/12 m-0">
-                                            <div class="">
-                                                <p data-lang="tool">Capaz de trabajar con los siguientes lenguajes de programación:</p>
-                                            </div>
-                                            <div class="basis-1/3 flex flex-row w-full justify-evenly items-center">
-                                                <div class="m-2 flex flex-col items-center justify-center">
-                                                    <h1 class="text-2xl"><i class="fa-brands fa-html5"></i></h1>
-                                                    <h2 class="text-xl font-bold">HTML</h1>
-                                                </div>
-                                                <div class="m-2 flex flex-col items-center justify-center">
-                                                    <h1 class="text-2xl"><i class="fa-brands fa-css3-alt"></i></h1>
-                                                    <h2 class="text-xl font-bold">CSS</h1>
-                                                </div>
-                                                <div class="m-2 flex flex-col items-center justify-center">
-                                                    <h1 class="text-2xl"><i class="fa-brands fa-js"></i></h1>
-                                                    <h2 class="text-xl font-bold">JavaScript</h1>
-                                                </div>
-                                                <div class="m-2 flex flex-col items-center justify-center">
-                                                    <h1 class="text-2xl"><i class="fa-brands fa-php"></i></h1>
-                                                    <h2 class="text-xl font-bold">PHP</h1>
-                                                </div>
-                                                <div class="m-2 flex flex-col items-center justify-center">
-                                                    <h1 class="text-2xl"><i class="fa-brands fa-python"></i></h1>
-                                                    <h2 class="text-xl font-bold">Python</h1>
-                                                </div>
-                                                <div class="m-2 flex flex-col items-center justify-center">
-                                                    <h1 class="text-2xl"><i class="fa-solid fa-database"></i></h1>
-                                                    <h2 class="text-xl font-bold">SQL</h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="w-full">
-                                        <legend class="text-lg font-bold relative"><div class="absolute inset-y-1/4 -left-5 w-4 h-4 ring-slate-600 ring-2 ring-offset-2 bg-slate-400 hover:bg-sky-400 transition-colors duration-700 rounded-full"></div><div data-lang="education">Educación</div></legend>
-                                        <div class="italic flex spacing-x-4 w-11/12 text-base m-0">
-                                            <div class="w-1/2">
-                                                <h1 class="text-lg"><i class="fa-solid fa-graduation-cap"></i><h1 data-lang="dsw">Técnico Vocacional Opción Desarrollo de Software</h1></h1>
-                                                <h2 class="text-sm font-bold">Instituto Nacional de Usulután</h1>
-                                                <span>2017 - 2019</span>
-                                            </div>
-
-                                            <div class="w-1/2">
-                                                <h1 class="text-lg"><i class="fa-solid fa-clock"></i><h1 data-lang="is">Ingeniería en Sistemas y Redes Informáticas</h1></h1>
-                                                <h2 class="text-sm font-bold">Universidad Gerardo Barrios</h1>
-                                                <span data-lang="prev">2020 - 2025 Previsto</span>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="w-full">
-                                        <legend class="text-lg font-bold relative"><div class="absolute inset-y-1/4 -left-5 w-4 h-4 ring-slate-600 ring-2 ring-offset-2 bg-slate-400 hover:bg-sky-400 transition-colors duration-700 rounded-full"></div><div data-lang="languajes">Idiomas</div></legend>
-                                        <div class="italic flex spacing-x-4 w-11/12 text-base m-0">
-                                            <div class="w-1/3">
-                                                <h1 class="text-lg"><i class="fa-solid fa-flag"></i><h1 data-lang="spanish">Español</h1></h1>
-                                                <h2 class="text-sm font-bold" data-lang="native">Idioma nativo.</h1>
-                                            </div>
-                                            <div class="w-1/3">
-                                                <h1 class="text-lg"><i class="fa-solid fa-flag"></i><h1 data-lang="english">Inglés</h1></h1>
-                                                <h2 class="text-sm font-bold" data-lang="lvl-english">Nivel A1.</h1>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div>
-
-                                </div>
-                            </div>
-                            
-                        </fieldset>
-                    </div>
-                </div>
-
-                <!-- Works -->
-                <div id="works" class="flex items-center justify-center h-full max-h-full m-auto p-2 md:py-10 md:px-32">
-                    <fieldset class="field-cards text-gray-800 flex flex-col justify-between rounded-xl field-cards m-auto w-full md:w-3/4 p-0">
-                        <legend class="field-title text-lg rounded bg-gray-400 px-4 mark ml-4" data-lang="works">Mis Trabajos</legend>
-                        <div class="flex flex-row w-full p-4">
-                            <div class="flex flex-col justify-between">
-                                <h1 class="text-xl font-bold mx-4 text-center" data-lang="some-works">Algunos de los trabajos en los que he participado</h1>
-                                <!-- <li class="tag" data-tag="">All</li>   -->
-                                <!-- Tag list -->
-                                <ul id="tagList" class="flex flex-wrap mx-4 my-2">
-                                    <!-- Tags will be added here -->
-                                </ul>
-                                <!-- Project cards -->
-                                <div id="projectList" class="grid grid-cols-3 gap-4 mx-auto my-2">
-                                    <!-- Project cards will be added here -->
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <!-- Project modal -->
-                    <div id="projectModal" class="fixed z-50 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-                        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-                            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-                            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-                            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                                <div class="sm:flex sm:items-start">
-                                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
-                                        <h3 id="modal-title" class="text-lg leading-6 font-medium text-gray-900"></h3>
-                                            <div id="modalGallery" class="flex flex-col my-2">
-                                            <!-- Gallery images will be added here -->
-                                            </div>
-                                        <p class="font-bold text-black" data-lang="desc-title">Descripción</p>
-                                        <p id="modalDescription" class="mx-4 text-sm text-black mt-2"></p>
-                                        <p class="font-bold text-black">Rol</p>
-                                        <p class="mx-4 italic font-light text-black" data-lang="rol">Desarrollador</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                                <button data-lang="close" type="button" id="closeModalButton" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm">
-                                Cerrar
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact form -->
-            <div id="works" class="flex items-center justify-center h-full max-h-full m-auto p-2 md:py-10 md:px-32">
-                <fieldset class="field-cards text-gray-800 flex flex-col justify-between rounded-xl field-cards m-auto w-full md:w-3/4 p-0">
-                    <legend class="field-title text-lg rounded bg-gray-400 px-4 mark ml-4" data-lang="works">Contactame</legend>
-                    <div class="flex flex-row w-full p-4">
-                        <div class="flex flex-col justify-between">
-                            <h2>En construcción</h2>
-                            <h1 class="text-xl font-bold mx-4 text-center" data-lang="some-works">Algunos de los trabajos en los que he participado</h1>
-                            <form id="form">
-                                <div class="field">
-                                  <label for="from_name">Email</label>
-                                  <input type="text" name="from_name" id="from_name">
-                                </div>
-                                <div class="field">
-                                  <label for="to_name">to_name</label>
-                                  <input type="text" name="to_name" id="to_name" disabled value="contact@efordev.com">
-                                </div>
-                                <div class="field">
-                                  <label for="subject">Asunto</label>
-                                  <input type="text" name="subject" id="subject">
-                                </div>
-                                <div class="field">
-                                  <label for="message">Mensahe</label>
-                                  <textarea type="text" name="message" id="message"></textarea>
-                                </div>
-                              
-                                <input type="submit" id="button" value="Send Email" >
-                            </form>
-                            
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-            <!-- <img src="images/me.png" alt="" class="absolute bottom-0 right-0 h-3/4 "> -->
-        </div>
-    
-        <div class="w-full grow-0 z-20 p-2 bg-slate-900 flex align-center justify-center relative">
-            <div class="flex gap-8 mx-8 items-center">
-                <figure class="flex justify-end items-center gap-4">
-                    <img src="images/profile.jpg" class="w-8 h-8 rounded-full" alt="An example image">
-                </figure>
-                <a href="https://www.linkedin.com/in/el%C3%ADas-parada-lozano-4655531bb/"><i class="text-xl fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/EliasParada"><i class="text-xl fa-brands fa-github"></i></a>
-                <a href="mailto:eliasparadalozano@hotmail.com"><i class="text-xl fa-solid fa-envelope"></i></a>
-
-                <div class="relative inline-block text-left" data-te-dropdown-position="dropup">
-                    <div>
-                      <button type="button" class="inline-flex justify-center items-center spacing-x-4 w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-stone-500" id="options-menu" aria-haspopup="true" aria-expanded="true">
-                        <i class="fa-solid fa-language mr-4"></i> <span data-lang="languajes">Idiomas</span>
-                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M5 15l5-5 5 5H5z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-                    </div>
-                  
-                    <div class="origin-top-right absolute bottom-10 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                      <div class="py-1 hidden transition-all duration-700 ease-in-out" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                        <button id="esopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="esSP" role="menuitem">Español <i class="fa-solid fa-check-to-slot"></i></button>
-                        <button id="enopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="enUS" role="menuitem">English</button>
-                        <button id="enopt" class="flex justify-between items-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 w-full" data-opt="jpJP" role="menuitem">日本語</button>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="cursor-pointer"></div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/app.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="lang/en.js"></script>
-    <script src="lang/es.js"></script>
-    <script src="lang/jp.js"></script>
     <script src="js/lang.js"></script>
 </body>
 </html>

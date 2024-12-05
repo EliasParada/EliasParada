@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Time Selector</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .slider-thumb {
+            width: 12px;
+            height: 24px;
+            background-color: #4A5568;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            top: -11px;
+        }
+        .slider-thumb:hover {
+            background-color: #2D3748;
+        }
+        .slider-thumb:active {
+            background-color: #1A202C;
+        }
+        .time-label {
+            position: absolute;
+            top: -32px;
+            width: 50px;
+            text-align: center;
+            background: white;
+            padding: 2px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+<!-- <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel='stylesheet' id='sr7css-css' href='//www.sliderrevolution.com/wp-content/plugins/revslider/public/css/sr7.css?ver=6.7.15' type='text/css' media='all' />
+
+<link rel='stylesheet' id='child-style-css' href='https://www.sliderrevolution.com/wp-content/themes/SliderRevolution/style.css?ver=6.6.1' type='text/css' media='all' />
+
+<link rel='stylesheet' id='font-awesome-css' href='https://www.sliderrevolution.com/wp-content/themes/zakra/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<script type="text/javascript" src="//www.sliderrevolution.com/wp-content/plugins/revslider/public/js/sr7.js?ver=6.7.15" id="sr7-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://www.sliderrevolution.com/wp-content/plugins/essential-grid/public/assets/js/libs/tptools.js?ver=6.7.16" id="tp-tools-js" async="async" data-wp-strategy="async"></script>
+
+<script src="/js/init.js"></script> -->
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="w-4/5 max-w-3xl p-4 bg-white rounded-lg shadow">
+        <div class="flex justify-between items-center mb-4">
+            <div>
+                <label for="start-time" class="block text-sm font-medium text-gray-700">Hora de Inicio</label>
+                <input id="start-time" type="text" class="mt-1 p-2 border border-gray-300 rounded-md w-32 text-center">
+            </div>
+            <div>
+                <label for="end-time" class="block text-sm font-medium text-gray-700">Hora de Finalización</label>
+                <input id="end-time" type="text" class="mt-1 p-2 border border-gray-300 rounded-md w-32 text-center">
+            </div>
+        </div>
+        <div class="relative mt-4">
+            <div class="h-2 bg-gray-300 rounded-full overflow-hidden">
+                <div id="gradient-bar-1" class="absolute h-2 bg-gradient-to-r from-blue-400 to-yellow-400"></div>
+                <div id="gradient-bar-2" class="absolute h-2 bg-gradient-to-r from-blue-400 to-yellow-400"></div>
+            </div>
+            <div id="start-slider" class="slider-thumb"></div>
+            <div id="start-slider-label" class="time-label">00:00</div>
+            <div id="end-slider" class="slider-thumb"></div>
+            <div id="end-slider-label" class="time-label">00:00</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
