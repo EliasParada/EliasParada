@@ -1,5 +1,5 @@
 async function cargarProyectos(language) {
-    try {
+    // try {
         const response = await fetch('../../../../data/proyectos.json');
         const data = await response.json();
 
@@ -11,66 +11,189 @@ async function cargarProyectos(language) {
         const content = data[language];
         const proyectosPorDiapositiva = content.diapositivas;
 
-        // Limpiar el contenido anterior del carrusel
         const carouselContainer = document.querySelector('sr7-carousel');
         carouselContainer.innerHTML = '';
 
-        // Generar slides dinámicos
-        SR7.JSON['CAROUSEL-PROJECTS'].slides = {}; // Aseguramos que la propiedad exista
+        SR7.JSON['CAROUSEL-PROJECTS'].slides = {};
 
         proyectosPorDiapositiva.forEach((diapositiva, slideIndex) => {
             const grupos = [];
             const proyectos = diapositiva.proyectos;
 
-            // Agrupar proyectos en lotes de cuatro
             for (let i = 0; i < proyectos.length; i += 4) {
                 grupos.push(proyectos.slice(i, i + 4));
             }
 
-            // Crear elementos HTML para cada diapositiva
             const slideElement = document.createElement('sr7-slide');
             slideElement.setAttribute('id', `CAROUSEL-PROJECTS-${slideIndex}`);
             slideElement.setAttribute('data-key', slideIndex);
 
-            // Crear nodos para los proyectos dentro de la diapositiva
             grupos.forEach((grupo) => {
-                grupo.forEach((proyecto, index) => {
+                proyectos.forEach((proyecto, index) => {
                     const baseId = slideIndex + index * 3;
-                    const projectText = document.createElement('sr7-txt');
-                    projectText.setAttribute(
-                        'id',
-                        `CAROUSEL-PROJECTS-${slideIndex}-${baseId + 2}`
-                    );
-                    projectText.className =
-                        'text-xs md:text-xl font-semibold mb-2';
-                    projectText.textContent = proyecto.nombre || 'Proyecto';
 
+                    const projectText = document.createElement('sr7-txt');
+                    projectText.setAttribute('id', `CAROUSEL-PROJECTS-${slideIndex}-${baseId + 2}`);
+
+                    // Agregar evento para abrir el modal
+                    projectText.addEventListener('click', () => abrirModal(proyecto, data, slideIndex, index));
+
+                    const nombreProyecto = document.createElement('p');
+                    nombreProyecto.className = 'text-3xl md:text-7xl traducible';
+                    nombreProyecto.textContent = proyecto.nombre || 'Proyecto';
+
+                    // Agregar atributos data-en y data-es
+                    nombreProyecto.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[index].nombre || 'Project');
+                    nombreProyecto.setAttribute('data-es', data['es'].diapositivas[slideIndex].proyectos[index].nombre || 'Proyecto');
+
+                    projectText.appendChild(nombreProyecto);
+
+                    const etiquetasContainer = document.createElement('div');
+                    etiquetasContainer.className = 'text-lg';
+
+                    proyecto.etiquetas.forEach((etiqueta, etiquetaIndex) => {
+                        const badge = document.createElement('span');
+                        badge.className = etiqueta.clases;
+                        badge.textContent = etiqueta.nombre;
+
+                        // Agregar atributos data-en y data-es para etiquetas
+                        badge.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[index].etiquetas[etiquetaIndex].nombre || '');
+                        badge.setAttribute('data-es', data['es'].diapositivas[slideIndex].proyectos[index].etiquetas[etiquetaIndex].nombre || '');
+
+                        etiquetasContainer.appendChild(badge);
+                    });
+
+                    projectText.appendChild(etiquetasContainer);
                     slideElement.appendChild(projectText);
                 });
             });
 
             carouselContainer.appendChild(slideElement);
 
-            // Crear estructura para SR7.JSON
-            SR7.JSON['CAROUSEL-PROJECTS'].slides[slideIndex] = getSlides(
-                proyectos,
-                slideIndex
-            );
+            SR7.JSON['CAROUSEL-PROJECTS'].slides[slideIndex] = getSlides(proyectos, slideIndex);
         });
 
         console.log(SR7.JSON['CAROUSEL-PROJECTS']);
 
         initSR7();
-    } catch (error) {
-        console.error('Error al cargar los datos de los proyectos:', error);
-    }
+    // } catch (error) {
+    //     console.error('Error al cargar los datos de los proyectos:', error);
+    // }
 }
+
+
+function abrirModal(proyecto, data, slideIndex, projectIndex) {
+    const modal = document.getElementById('project-modal');
+    const modalContent = document.getElementById('modal-content');
+
+    // Limpiar contenido previo
+    modalContent.innerHTML = '';
+
+    // Título del proyecto
+    const titulo = document.createElement('h3');
+    titulo.className = 'text-2xl font-bold mb-4 traducible';
+    titulo.textContent = proyecto.nombre;
+
+    // Agregar atributos data-en y data-es
+    titulo.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[projectIndex].nombre || 'Project');
+    titulo.setAttribute('data-es', data['es'].diapositivas[slideIndex].proyectos[projectIndex].nombre || 'Proyecto');
+    modalContent.appendChild(titulo);
+
+    // Rol
+    const rol = document.createElement('p');
+    rol.className = 'mb-4 text-gray-600 traducible';
+    rol.textContent = `Rol: ${proyecto.rol}`;
+    rol.setAttribute('data-en', `Role: ${data['en'].diapositivas[slideIndex].proyectos[projectIndex].rol}`);
+    rol.setAttribute('data-es', `Rol: ${data['es'].diapositivas[slideIndex].proyectos[projectIndex].rol}`);
+    modalContent.appendChild(rol);
+
+    // Descripción
+    const descripcion = document.createElement('p');
+    descripcion.className = 'mb-4 traducible';
+    descripcion.textContent = proyecto.descripcion;
+    descripcion.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[projectIndex].descripcion);
+    descripcion.setAttribute('data-es', data['es'].diapositivas[slideIndex].proyectos[projectIndex].descripcion);
+    modalContent.appendChild(descripcion);
+
+    // Etiquetas
+    const etiquetasContainer = document.createElement('div');
+    etiquetasContainer.className = 'mb-4';
+    proyecto.etiquetas.forEach((etiqueta, etiquetaIndex) => {
+        const badge = document.createElement('span');
+        badge.className = `inline-block ${etiqueta.clases} text-xs px-2 rounded-full mr-2 traducible`;
+        badge.textContent = etiqueta.nombre;
+
+        // Agregar atributos data-en y data-es
+        badge.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[projectIndex].etiquetas[etiquetaIndex].nombre || '');
+        badge.setAttribute('data-es', data['es'].diapositivas[slideIndex].proyectos[projectIndex].etiquetas[etiquetaIndex].nombre || '');
+
+        etiquetasContainer.appendChild(badge);
+    });
+    modalContent.appendChild(etiquetasContainer);
+
+    // Carrusel de imágenes
+    const imagenContainer = document.createElement('div');
+    imagenContainer.id = 'carousel-images';
+    proyecto.imagenes.forEach((imgSrc) => {
+        const img = document.createElement('img');
+        img.src = imgSrc;
+        img.className = 'rounded-lg';
+        imagenContainer.appendChild(img);
+    });
+    modalContent.appendChild(imagenContainer);
+
+    // Agregar enlace con icono de Font Awesome
+    const enlaceContainer = document.createElement('div');
+    enlaceContainer.className = 'btn bg-red-600 text-white rounded-lg py-2 px-4 flex items-center justify-center hover:bg-red-700 transition';
+
+    const enlace = document.createElement('a');
+    enlace.href = proyecto.enlace || '#';
+    enlace.target = '_blank';
+    enlace.rel = 'noopener noreferrer';
+    enlace.className = 'text-white hover:underline text-lg flex items-center justify-center';
+
+    const icono = document.createElement('i');
+    icono.className = 'fa fa-external-link-alt mr-2'; // Font Awesome icon class
+    enlace.appendChild(icono);
+
+    const enlaceTexto = document.createTextNode('Ver proyecto');
+    enlace.appendChild(enlaceTexto);
+
+    enlaceContainer.appendChild(enlace);
+    modalContent.appendChild(enlaceContainer);
+
+    // Mostrar el modal
+    modal.classList.remove('hidden');
+
+    // Inicializar carrusel después de insertar imágenes
+    setTimeout(() => {
+        $('#carousel-images').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    }, 0);
+}
+
+
+document.getElementById('close-modal').addEventListener('click', () => {
+    document.getElementById('project-modal').classList.add('hidden');
+});
+
+window.addEventListener('click', (event) => {
+    const modal = document.getElementById('project-modal');
+    if (event.target === modal) {
+        modal.classList.add('hidden');
+    }
+});
 
 function getSlides(proyectos, slideIndex) {
     const slideLayers = {};
     const actions = [];
     proyectos.forEach((proyecto, index) => {
-        const baseId = slideIndex + index * 3; // Evitar colisión de IDs entre slides
+        const baseId = slideIndex + index * 3;
         let hPos = proyecto.posicion[1],
             vPos = proyecto.posicion[0];
 
@@ -193,12 +316,11 @@ function getSlides(proyectos, slideIndex) {
             title: `Slide ${slideIndex + 1}`,
             order: slideIndex + 1,
             description: `Diapositiva número ${slideIndex + 1}`,
-            actions: actions // Incluir las acciones generadas
+            actions: actions
         },
         layers: slideLayers
     };
 }
-
 
 function initSR7() {
     if (SR7.F.init) SR7.F.init();

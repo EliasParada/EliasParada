@@ -57,13 +57,3 @@ SR7.JSON['CAROUSEL-PROJECTS'] = {
     "id": "1",
 	"addOns": []
 };
-
-// if (SR7.F.init) SR7.F.init();
-// document.addEventListener('DOMContentLoaded', function () {
-// 	if (SR7.F.init) SR7.F.init();
-// 	else SR7.shouldBeInited = true;
-// });
-// window.addEventListener('load', function () {
-// 	if (SR7.F.init) SR7.F.init();
-// 	else SR7.shouldBeInited = true;
-// });

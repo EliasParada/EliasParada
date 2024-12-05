@@ -46,6 +46,7 @@
     <script type="text/javascript" src="/js/module.js" async="async" data-wp-strategy="async"></script>
     <script type="text/javascript" src="/js/tools.js" async="async" data-wp-strategy="async"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/progressbar.js@1.0.1/dist/progressbar.min.css" rel="stylesheet">
     <script src="/js/init.js"></script>
  <style>
         /* .logo {
@@ -79,6 +80,72 @@
             display: block;
         }
     </style>
+    <style>
+        /* Contenedor de cada habilidad */
+        .skill-card {
+            position: relative;
+            padding: 16px;
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Contenedor de la barra de habilidad */
+        .progress-bar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 14px; /* Altura de la barra */
+            margin-top: 16px;
+            background-color: #e0e0e0; /* Fondo gris claro */
+            border-radius: 20px;
+            position: relative;
+        }
+    
+        /* Estilo para cada cuadro de la barra */
+        .progress-square {
+            width: 10px; /* Tamaño de cada cuadro */
+            height: 10px;
+            margin: 1px;
+            background-color: rgba(239, 68, 68, 0.5); /* Rojo opaco */
+            border-radius: 4px;
+            transition: background-color 0.2s ease-in-out;
+        }
+    
+        /* Animación de pulso cuando un cuadro se llena */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+            50% {
+                transform: scale(1.2);
+                box-shadow: 0 0 10px rgba(239, 68, 68, 0.7);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+        }
+    
+        .pulsing {
+            animation: pulse 1s ease-in-out;
+        }
+    
+        /* Título de la habilidad */
+        .skill-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #EF4444;
+            margin-top: 12px;
+        }
+
+        
+    </style>
+    
+    
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="bg-white shadow">
@@ -132,9 +199,9 @@
         }
     </style>
 
-    <div id="overlay" class="overlay"></div>
 
-    <section class="hero h-96 relative flex items-center justify-center text-white">
+    <div id="overlay" class="overlay"></div>
+    <section class="hero h-96 w-full relative flex items-center justify-center text-white">
         <div class="overlay"></div>
         <div class="text-center z-10">
             <h1 class="text-4xl font-bold mb-4">Elias Mauricio Parada Lozano</h1>
@@ -142,355 +209,22 @@
             <button class="inline-block bg-gradient-to-r from-red-400 to-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-red-500 hover:to-red-800 transition-transform transform hover:scale-105" data-aos="zoom-in">Contactame</button>
         </div>
     </section>
-
-    <main class="container mx-auto py-8">
-        <section id="about-me" class="container mx-auto my-10 px-6 lg:px-20">
-            <div class="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-8">
-                <div class="text-center md:text-left flex-1">
-                    <h2 class="text-3xl font-bold mb-4" id="about-title">Sobre Mí</h2>
-                    <p class="text-gray-700 dark:text-gray-300 mb-6" id="about-description"></p>
-                    <a href="#" id="cv-download" target="_blank" 
-                       class="inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-                        Descargar CV
-                    </a>
-                </div>
-                <div class="flex-1">
-                    <img src="public/img/profile.jpg" alt="Foto de Elias Mauricio Parada Lozano" 
-                         class="rounded-full w-48 h-48 object-cover mx-auto md:mx-0 shadow-lg">
-                </div>
-            </div>
-        </section>
+    <main class="mx-auto py-8">
         
-        <!-- <section id="about" class="relative bg-white py-16">
-            <div class="container mx-auto px-4 text-start">
-                <div class="relative z-10">
-                    <h2 class="text-4xl font-bold mb-4 text-center sticky top-0 z-10 p-2 pt-4 bg-white">Sobre Mí</h2>
-                    <div class="flex flex-col md:flex-row items-center mb-8">
-                        <img src="img/about.webp" alt="Elias Mauricio Parada Lozano" class="w-48 h-48 rounded-full mx-auto md:mx-0 md:mr-8 mb-6 md:mb-0 shadow-lg">
-                        <p class="max-w-2xl text-gray-700 leading-relaxed text-left">
-                            Soy Elias Mauricio Parada Lozano, un desarrollador full-stack apasionado por la creación de soluciones web innovadoras. Con experiencia en HTML, CSS, JavaScript, PHP, Laravel, Node.js, Vue, y Firebase, estoy siempre buscando nuevas tecnologías y desafíos para mejorar mis habilidades y aportar valor a los proyectos en los que participo.
-                        </p>
-                    </div>
-                    <a href="ruta_al_portafolio.pdf" download class="inline-block bg-gradient-to-r from-red-400 to-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-red-500 hover:to-red-800 transition-transform transform hover:scale-105 text-start" data-aos="fade-up">
-                    Descargar CV
-                    </a>
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-semibold mb-4">Habilidades</h3>
-                        <div class="slider-for mb-8">
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">HTML</h4>
-                                <ul class="list-disc list-inside text-left text-gray-700">
-                                    <li>Laravel</li>
-                                    <li>Symfony</li>
-                                    <li>CodeIgniter</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">CSS</h4>
-                                <ul class="list-disc list-inside text-left text-gray-700">
-                                    <li>Laravel</li>
-                                    <li>Symfony</li>
-                                    <li>CodeIgniter</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">JavaScript</h4>
-                                <ul class="list-disc list-inside text-left text-gray-700">
-                                    <li>Vue.js</li>
-                                    <li>React</li>
-                                    <li>Angular</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">PHP</h4>
-                                <ul class="list-disc list-inside text-left text-gray-700">
-                                    <li>Laravel</li>
-                                    <li>Symfony</li>
-                                    <li>CodeIgniter</li>
-                                </ul>
-                            </div>
-                            Agrega más habilidades y frameworks según sea necesario
-                        </div>
-                        <div class="slick-carousel">
-                            <div class="carousel-item bg-white rounded-lg shadow-md p-4 flex items-center">
-                                <i class="fab fa-html5 text-red-600 text-2xl mr-2"></i>
-                                <span>HTML</span>
-                            </div>
-                            <div class="carousel-item bg-white rounded-lg shadow-md p-4 flex items-center">
-                                <i class="fab fa-css3-alt text-red-600 text-2xl mr-2"></i>
-                                <span>CSS</span>
-                            </div>
-                            <div class="carousel-item bg-white rounded-lg shadow-md p-4 flex items-center">
-                                <i class="fab fa-js-square text-red-600 text-2xl mr-2"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="carousel-item bg-white rounded-lg shadow-md p-4 flex items-center">
-                                <i class="fab fa-php text-red-600 text-2xl mr-2"></i>
-                                <span>PHP</span>
-                            </div>
-                            <div class="carousel-item bg-white rounded-lg shadow-md p-4 flex items-center">
-                                <i class="fab fa-laravel text-red-600 text-2xl mr-2"></i>
-                                <span>Laravel</span>
-                            </div>
-                            <div class="carousel-item bg-white rounded-lg shadow-md p-4 flex items-center">
-                                <i class="fab fa-node text-red-600 text-2xl mr-2"></i>
-                                <span>Node.js</span>
-                            </div>
-                            <div class="carousel-item bg-white rounded-lg shadow-md p-4 flex items-center">
-                                <i class="fab fa-vuejs text-red-600 text-2xl mr-2"></i>
-                                <span>Vue.js</span>
-                            </div>
-                            <div class="carousel-item bg-white rounded-lg shadow-md p-4 flex items-center">
-                                <i class="fas fa-database text-red-600 text-2xl mr-2"></i>
-                                <span>Firebase</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <section id="skills" class="container mx-auto my-10">
-            <h2 class="text-2xl font-bold text-center">Habilidades</h2>
-            <div id="skills-list" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
-                <!-- Las habilidades se generarán aquí -->
-            </div>
-        </section>
-
-        <section id="certificates" class="container mx-auto my-10">
-            <h2 class="text-2xl font-bold text-center">Certificados</h2>
-            <div id="certificates-list" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
-                <!-- Los certificados se generarán aquí -->
-            </div>
-        </section>
-
-        <script src="js/sections/skills.js"></script>
-        <script src="js/sections/badges.js"></script>
-        <script src="js/sections/aboutme.js"></script>
-
-        <!-- <section id="skills" class="container mx-auto px-4 py-8">
-            <h2 class="text-4xl font-bold mb-4 sticky top-0 z-10 p-2 pt-4 bg-white">Habilidades</h2>
-
-            <div id="skill-card" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="absolute top-0 left-5 -mt-4">
-                        <i class="fab fa-html5 text-4xl text-orange-500 mr-4"></i>
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">HTML</h3>
-                        </div>
-                        <span class="text-xl font-semibold">95%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-orange-500 h-2.5 rounded-full" style="width: 95%"></div>
-                    </div>
-                </div>
-
-                <script>
-                    const overlay = document.getElementById('overlay');
-                    const skillCard = document.getElementById('skill-card');
-
-                    skillCard.addEventListener('click', function() {
-                        const rect = skillCard.getBoundingClientRect();
-                        const viewportWidth = window.innerWidth;
-                        const viewportHeight = window.innerHeight;
-
-                        if (!overlay.classList.contains('expanded')) {
-                            // Set overlay position and size to match the card
-                            overlay.style.top = `${rect.top}px`;
-                            overlay.style.left = `${rect.left}px`;
-                            overlay.style.width = `${rect.width}px`;
-                            overlay.style.height = `${rect.height}px`;
-
-                            // Use setTimeout to trigger the expansion after initial position is set
-                            setTimeout(() => {
-                                overlay.classList.add('expanded');
-                            }, 10);
-
-                            // Hide content of the skill card
-                            skillCard.classList.add('content-hidden');
-                        } else {
-                            // Shrink overlay back to the card size
-                            overlay.classList.remove('expanded');
-
-                            // Use setTimeout to reset overlay position and size after shrinking
-                            setTimeout(() => {
-                                overlay.style.width = '0';
-                                overlay.style.height = '0';
-                            }, 500);
-
-                            // Show content of the skill card
-                            skillCard.classList.remove('content-hidden');
-                        }
-                    });
-
-                    // To prevent overlay from expanding beyond the viewport
-                    window.addEventListener('resize', function() {
-                        if (overlay.classList.contains('expanded')) {
-                            overlay.style.width = `${viewportWidth}px`;
-                            overlay.style.height = `${viewportHeight}px`;
-                        }
-                    });
-                </script>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="absolute top-0 left-5 -mt-4">
-                        <i class="fab fa-css3-alt text-4xl text-blue-500 mr-4"></i>
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">CSS</h3>
-                        </div>
-                        <span class="text-xl font-semibold">95%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="absolute top-0 left-5 -mt-4">
-                        <i class="fab fa-js-square text-4xl text-yellow-500 mr-4"></i>
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">JavaScript</h3>
-                        </div>
-                        <span class="text-xl font-semibold">90%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="absolute top-0 left-5 -mt-4">
-                        <i class="fab fa-php text-4xl text-indigo-500 mr-4"></i>
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">PHP</h3>
-                        </div>
-                        <span class="text-xl font-semibold">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-indigo-500 h-2.5 rounded-full" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="absolute top-0 left-5 -mt-4">
-                        <i class="fab fa-laravel text-4xl text-red-600 mr-4"></i>
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">Laravel</h3>
-                        </div>
-                        <span class="text-xl font-semibold">80%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-red-600 h-2.5 rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="absolute top-0 left-5 -mt-4">
-                        <i class="fab fa-node-js text-4xl text-green-500 mr-4"></i>
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">Node.js</h3>
-                        </div>
-                        <span class="text-xl font-semibold">80%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-green-500 h-2.5 rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="absolute top-0 left-5 -mt-4">
-                        <i class="fab fa-vuejs text-4xl text-green-400 mr-4"></i>
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">Vue</h3>
-                        </div>
-                        <span class="text-xl font-semibold">70%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-green-400 h-2.5 rounded-full" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="absolute top-0 left-5 -mt-4">
-                        <i class="fas fa-fire-alt text-4xl text-orange-400 mr-4"></i>
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">Firebase</h3>
-                        </div>
-                        <span class="text-xl font-semibold">65%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-orange-400 h-2.5 rounded-full" style="width: 65%"></div>
-                    </div>
-                </div>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="absolute top-0 left-5 -mt-4">
-                            <i class="fab fa-python text-4xl text-blue-500 mr-4"></i>
-                        </div>
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">Python</h3>
-                        </div>
-                        <span class="text-xl font-semibold">75%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="relative bg-white rounded-lg shadow-lg md:transform md:-rotate-6 md:hover:rotate-0 md:active:scale-105 md:transition-transform md:duration-300 p-6">
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="absolute top-0 left-5 -mt-4">
-                            <i class="fab fa-github text-4xl text-gray-800 mr-4"></i>
-                        </div>
-                        <div class="flex items-center">
-                            <h3 class="text-xl font-semibold">GitHub</h3>
-                        </div>
-                        <span class="text-xl font-semibold">80%</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                        <div class="bg-gray-800 h-2.5 rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         
+        <section id="about-me" class="mx-auto my-10">
+        </section>
 
-        <!-- <section id="experience" class="mb-12">
-            <h2 class="text-3xl font-bold mb-4">Experiencia</h2>
-            <div class="space-y-4">
-                <div class="bg-white p-4 shadow rounded">
-                    <h3 class="text-xl font-semibold mb-2">Empresa XYZ</h3>
-                    <p class="text-gray-600">Desarrollador Full-Stack</p>
-                    <p class="text-gray-600">Enero 2020 - Actualidad</p>
-                    <ul class="list-disc list-inside">
-                        <li>Desarrollo de aplicaciones web utilizando React y Node.js</li>
-                        <li>Implementación de APIs RESTful</li>
-                        <li>Mantenimiento de bases de datos SQL</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-4 shadow rounded">
-                    <h3 class="text-xl font-semibold mb-2">Empresa ABC</h3>
-                    <p class="text-gray-600">Desarrollador Front-End</p>
-                    <p class="text-gray-600">Junio 2018 - Diciembre 2019</p>
-                    <ul class="list-disc list-inside">
-                        <li>Desarrollo de interfaces de usuario interactivas</li>
-                        <li>Optimización de rendimiento web</li>
-                        <li>Colaboración con diseñadores UX/UI</li>
-                    </ul>
-                </div>
-            </div>
-        </section> -->
+        <section id="skills" class="p-8 bg-white shadow-lg rounded-lg">
+            <!-- Título de habilidades, contenido será insertado por JS -->
+        </section>
 
-        <section id="projects" class="mb-12">
-            <h2 class="text-3xl font-bold mb-4 text-center sticky top-0 z-10 p-2 pt-4 bg-white">Proyectos</h2>
+        <section id="certificates" class="mx-auto my-10">
+            <!-- Certificados -->
+        </section>
+
+        <section id="projects" class="p-8 bg-white shadow-lg rounded-lg">
+            <h2 class="text-3xl font-bold mb-4 text-center p-2 pt-4">Proyectos</h2>
             <div data-modal="true">
                 <p class="rs-p-wp-fix"></p>
                 <sr7-module data-alias="Proyectos" data-id="1" id="CAROUSEL-PROJECTS" class="rs-respect-topbar">
@@ -498,56 +232,9 @@
                     <sr7-content>
                         <sr7-carousel>
                             <!-- CAJAS DE TEXTO -->
-                            <sr7-slide id="CAROUSEL-PROJECTS-0" data-key="0">
-                                <sr7-txt id="CAROUSEL-PROJECTS-0-2" class="text-xs md:text-xl font-semibold mb-2">
-                                    UNO
-                                </sr7-txt>
-                                <sr7-txt id="CAROUSEL-PROJECTS-0-5" class="text-xs md:text-xl font-semibold mb-2">
-                                    DOS
-                                </sr7-txt>
-                                <sr7-txt id="CAROUSEL-PROJECTS-0-8" class="sr7-layer">
-                                    TRES
-                                </sr7-txt>
-                                <sr7-txt id="CAROUSEL-PROJECTS-0-11" class="sr7-layer">
-                                    CUATRO
-                                </sr7-txt>
-                            </sr7-slide>
-
-                            <sr7-slide id="CAROUSEL-PROJECTS-1" data-key="1">
-                                <sr7-txt id="CAROUSEL-PROJECTS-1-2" class="text-xs md:text-xl font-semibold mb-2">
-                                    UNO
-                                </sr7-txt>
-                                <sr7-txt id="CAROUSEL-PROJECTS-1-5" class="text-xs md:text-xl font-semibold mb-2">
-                                    DOS
-                                </sr7-txt>
-                                <sr7-txt id="CAROUSEL-PROJECTS-1-8" class="sr7-layer">
-                                    TRES
-                                </sr7-txt>
-                                <sr7-txt id="CAROUSEL-PROJECTS-1-11" class="sr7-layer">
-                                    CUATRO
-                                </sr7-txt>
-                            </sr7-slide>
-                            <!-- CAJAS DE TEXTO -->
                         </sr7-carousel>
                     </sr7-content>
                     <image_lists style="display:none">
-                        <!-- IMAGENES -->
-                        <img data-src="images/projects/lingotter/1.jpg" data-libid="1" title="images/projects/lingotter/1.jpg" width="0" height="0" data-dbsrc="Ly93d3cuc2xpZGVycmV2b2x1dGlvbi5jb20vd3AtY29udGVudC91cGxvYWRzL3JldnNsaWRlci9NYXNvbnJ5LUdhbGxlcnktQ2Fyb3VzZWwvYW5pbWFsc21hbGwxLmpwZw==">
-                        
-                        <img data-src="images/projects/feelsgood/1.jpeg" data-libid="2" title="images/projects/lingotter/2.jpeg" width="0" height="0" data-dbsrc="Ly93d3cuc2xpZGVycmV2b2x1dGlvbi5jb20vd3AtY29udGVudC91cGxvYWRzL3JldnNsaWRlci9NYXNvbnJ5LUdhbGxlcnktQ2Fyb3VzZWwvYW5pbWFsc21hbGwxLmpwZw==">
-                        
-                        <img data-src="images/projects/lingotter/3.jpg" data-libid="3" title="images/projects/lingotter/3.jpg" width="0" height="0" data-dbsrc="Ly93d3cuc2xpZGVycmV2b2x1dGlvbi5jb20vd3AtY29udGVudC91cGxvYWRzL3JldnNsaWRlci9NYXNvbnJ5LUdhbGxlcnktQ2Fyb3VzZWwvYW5pbWFsc21hbGwxLmpwZw==">
-                        
-                        <img data-src="images/projects/lingotter/4.jpg" data-libid="4" title="images/projects/lingotter/4.jpg" width="0" height="0" data-dbsrc="Ly93d3cuc2xpZGVycmV2b2x1dGlvbi5jb20vd3AtY29udGVudC91cGxvYWRzL3JldnNsaWRlci9NYXNvbnJ5LUdhbGxlcnktQ2Fyb3VzZWwvYW5pbWFsc21hbGwxLmpwZw==">
-
-
-                        <img data-src="images/projects/lingotter/1.jpg" data-libid="5" title="images/projects/lingotter/1.jpg" width="0" height="0" data-dbsrc="Ly93d3cuc2xpZGVycmV2b2x1dGlvbi5jb20vd3AtY29udGVudC91cGxvYWRzL3JldnNsaWRlci9NYXNvbnJ5LUdhbGxlcnktQ2Fyb3VzZWwvYW5pbWFsc21hbGwxLmpwZw==">
-                        
-                        <img data-src="images/projects/feelsgood/1.jpeg" data-libid="6" title="images/projects/lingotter/2.jpeg" width="0" height="0" data-dbsrc="Ly93d3cuc2xpZGVycmV2b2x1dGlvbi5jb20vd3AtY29udGVudC91cGxvYWRzL3JldnNsaWRlci9NYXNvbnJ5LUdhbGxlcnktQ2Fyb3VzZWwvYW5pbWFsc21hbGwxLmpwZw==">
-                        
-                        <img data-src="images/projects/lingotter/3.jpg" data-libid="7" title="images/projects/lingotter/3.jpg" width="0" height="0" data-dbsrc="Ly93d3cuc2xpZGVycmV2b2x1dGlvbi5jb20vd3AtY29udGVudC91cGxvYWRzL3JldnNsaWRlci9NYXNvbnJ5LUdhbGxlcnktQ2Fyb3VzZWwvYW5pbWFsc21hbGwxLmpwZw==">
-                        
-                        <img data-src="images/projects/lingotter/4.jpg" data-libid="8" title="images/projects/lingotter/4.jpg" width="0" height="0" data-dbsrc="Ly93d3cuc2xpZGVycmV2b2x1dGlvbi5jb20vd3AtY29udGVudC91cGxvYWRzL3JldnNsaWRlci9NYXNvbnJ5LUdhbGxlcnktQ2Fyb3VzZWwvYW5pbWFsc21hbGwxLmpwZw==">
                         <!-- IMAGENES -->
                     </image_lists>
                 </sr7-module>
@@ -573,7 +260,16 @@
             </div>
         </section>
 
-        <section id="testimonials" class="mb-12">
+        <div id="project-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50 hidden">
+            <div class="bg-white rounded-lg w-3/4 md:w-1/2 p-4 relative">
+                <button id="close-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">&times;</button>
+                <div id="modal-content">
+                    <!-- Información del proyecto se cargará aquí dinámicamente -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <section id="testimonials" class="mb-12">
             <h2 class="text-3xl font-bold mb-4 text-center sticky top-0 z-10 p-2 pt-4 bg-white">Testimonios</h2>
             <div class="relative">
                 <div id="testimonialsCarousel" class="carousel flex relative overflow-hidden">
@@ -595,7 +291,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Agrega más testimonios según sea necesario -->
                 </div>
                 <div class="absolute inset-y-0 left-0 flex items-center justify-center">
                     <button id="prevTestimonialBtn" class="hidden lg:block bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-l-lg">
@@ -608,7 +303,7 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="contact" class="bg-red-600 text-white py-12">
             <div class="container mx-auto px-4">
@@ -777,15 +472,24 @@
     </script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js" integrity="sha512-7IoDEsIJGxz/gNyJY/0LRtS45wDSvPFXGPuC7Fo4YueWMNOmWKMAllEqo2Im3pgOjeEwsOoieyliRgdkZnY0ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- <script src="public/css/js/modules/projects.js"></script> -->
     <script src="js/slider.js"></script>
+    <script src="js/sections/start.js"></script>
+    <script src="js/sections/skills.js"></script>
+    <script src="js/sections/badges.js"></script>
+    <script src="js/sections/aboutme.js"></script>
     <script src="js/sections/proyectos.js"></script>
 
     <script>
         AOS.init();
 
         document.addEventListener('DOMContentLoaded', () => {
+            cargarHero('es');
+            cargarAboutMe('es');
+            cargarHabilidades('es');
+            cargarCertificados('es');
             cargarProyectos('es');
             // updateMenu('es').then(seccionesActivas => {
             //     if (seccionesActivas['inicio']) cargarInicio('es');
@@ -799,6 +503,6 @@
 
     <script type="text/javascript" src="/js/lazysizes.js" id="lazysizes-js"></script>
 
-    <!-- <script src="js/slider.js"></script> -->
+    <script src="js/lang.js"></script>
 </body>
 </html>

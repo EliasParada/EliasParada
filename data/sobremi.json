@@ -6,7 +6,7 @@
             "title": "Descargar CV", 
             "rute": "public/docs/es/cv.pdf"
         },
-        "profile_image": "public/img/profile.jpg"
+        "profile_image": "img/about.webp"
     },
     "en": {
         "title": "About Me",
@@ -15,6 +15,6 @@
             "title": "Download CV", 
             "rute": "public/docs/en/cv.pdf"
         },
-        "profile_image": "public/img/profile.jpg"
+        "profile_image": "img/about.webp"
     }
 }

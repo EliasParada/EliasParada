@@ -1,39 +1,38 @@
-const languajes = document.querySelectorAll('[data-opt]');
-const langMap = {
-        'esSP': esSP,
-        'enUS': enUS,
-        'jpJP': jpJP
-};
+const languageButton = document.getElementById('language-button');
+const languageMenu = document.getElementById('language-menu');
+let currentLang = "es";
 
-const updateLanguage = (data) => {
-        for (const key in data) {
-                document.querySelectorAll('[data-lang="'+key+'"]').forEach(function(element) {
-                        element.innerHTML = data[key];
-                });
+function changeLanguage(language) {
+    currentLang = language;
+    const translatableElements = document.querySelectorAll('.traducible');
+
+    translatableElements.forEach(el => {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            const placeholder = el.getAttribute(`data-${language}-placeholder`);
+            if (placeholder) {
+                el.placeholder = placeholder;
+            }
+        } else {
+            const text = el.getAttribute(`data-${language}`);
+            if (text) {
+                el.innerHTML = text;
+            }
         }
-        
+    });
 }
 
-languajes.forEach(el => {
-        el.addEventListener('click', (e) => {
-                const newLang = e.target.getAttribute('data-opt');
-                let send = {};
+function toggleLanguageMenu() {
+    languageMenu.classList.toggle('hidden');
+}
 
-                localStorage.setItem('lang', newLang);
+function hideLanguageMenu(event) {
+    if (!languageButton.contains(event.target) && !languageMenu.contains(event.target)) {
+        languageMenu.classList.add('hidden');
+    }
+}
 
-                if (localStorage.lang && localStorage.lang == 'enUS') {
-                        renderProjects(enprojects);
-                } else {
-                        renderProjects(esprojects);
-                }
+// languageButton.onclick = toggleLanguageMenu;
+// document.getElementById('select-es').onclick = () => changeLanguage('es');
+// document.getElementById('select-en').onclick = () => changeLanguage('en');
 
-                e.target.innerHTML = newLang === 'esSP' ? 'Español <i class="fa-solid fa-check-to-slot"></i>' : 'English <i class="fa-solid fa-check-to-slot"></i>';
-                document.getElementById(newLang === 'esSP' ? 'enopt' : 'esopt').innerHTML = newLang === 'esSP' ? 'English' : 'Español';
-
-                send = langMap[newLang];
-                updateLanguage(send);
-
-        });
-
-});
-
+// document.addEventListener('click', hideLanguageMenu);

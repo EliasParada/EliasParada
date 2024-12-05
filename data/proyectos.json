@@ -1,6 +1,6 @@
 {
     "es" : {
-        "titulo" : "Mis <span class='font-bold'>Proyectos</span>",
+        "titulo" : "Proyectos",
         "diapositivas" : [
             {
                 "orden": 1,
@@ -13,7 +13,12 @@
                         "bordeColor": "#0000",
                         "libImagen": {"id": 1, "img": "images\/projects\/lingotter\/1.jpg"},
                         "rol" : "Desarrollador Full-Stack",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "Lingotter",
                         "descripcion" : "lorem impsu",
                         "lineasEspacio": 70,
@@ -29,7 +34,12 @@
                         "bordeColor": "#0000",
                         "libImagen": {"id": 2, "img": "images\/projects\/feelsgood\/1.jpeg"},
                         "rol" : "",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "feelsgood",
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
@@ -45,7 +55,12 @@
                         "bordeColor": "#0000",
                         "libImagen": {"id": 3, "img": "images\/projects\/faststore\/1.jpeg"},
                         "rol" : "",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "faststore",
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
@@ -61,7 +76,12 @@
                         "bordeColor": "#0000",
                         "libImagen": {"id": 4, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
                         "rol" : "",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "image normalizer",
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
@@ -85,7 +105,12 @@
                         "bordeColor": "#0000",
                         "libImagen": {"id": 5, "img": "images\/projects\/lingotter\/1.jpg"},
                         "rol" : "Desarrollador Full-Stack",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "Lingotter",
                         "descripcion" : "lorem impsu",
                         "lineasEspacio": 70,
@@ -101,7 +126,12 @@
                         "bordeColor": "#0000",
                         "libImagen": {"id": 6, "img": "images\/projects\/feelsgood\/1.jpeg"},
                         "rol" : "",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "feelsgood",
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
@@ -117,7 +147,12 @@
                         "bordeColor": "#0000",
                         "libImagen": {"id": 7, "img": "images\/projects\/faststore\/1.jpeg"},
                         "rol" : "",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "faststore",
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
@@ -133,7 +168,12 @@
                         "bordeColor": "#0000",
                         "libImagen": {"id": 8, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
                         "rol" : "",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "image normalizer",
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
@@ -149,21 +189,25 @@
         ]
     },
     "en": {
-        "titulo": "PROJECTS",
-        "subtitulo": "Some of the projects I have worked on",
+        "titulo": "Projects",
         "diapositivas" : [
             {
                 "orden": 1,
                 "nombre" : "",
-                "descripcion" : "Maximo 4 capas por diapositivas",
+                "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
                 "proyectos": [
                     {
                         "tamaño": [60, 50],
                         "posicion": ["top", "left"],
-                        "bordeColor": "#000000",
+                        "bordeColor": "#0000",
                         "libImagen": {"id": 1, "img": "images\/projects\/lingotter\/1.jpg"},
-                        "rol" : "Desarrollador Full-Stack",
-                        "etiquetas": ["HTML", "CSS"],
+                        "rol" : "Full-Stack Developer",
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "Lingotter",
                         "descripcion" : "lorem impsu",
                         "lineasEspacio": 70,
@@ -174,18 +218,65 @@
                         "enlace": ""
                     },
                     {
-                        "tamaño": [50, 50],
-                        "posicion": ["top", "left"],
-                        "bordeColor": "#000000",
-                        "libImagen": {"id": 1, "img": "images\/projects\/lingotter\/1.jpg"},
+                        "tamaño": [40, 50],
+                        "posicion": ["top", "right"],
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 2, "img": "images\/projects\/feelsgood\/1.jpeg"},
                         "rol" : "",
-                        "etiquetas": ["HTML", "CSS"],
-                        "nombre" : "",
-                        "descripcion" : "",
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "feelsgood",
+                        "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/lingotter/1.jpg",
-                            "images/projects/lingotter/2.jpg"
+                            "images/projects/feelsgood/1.jpg",
+                            "images/projects/feelsgood/2.jpg"
+                        ],
+                        "enlace": ""
+                    },
+                    {
+                        "tamaño": [40, 50],
+                        "posicion": ["bottom", "left"],
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 3, "img": "images\/projects\/faststore\/1.jpeg"},
+                        "rol" : "",
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "faststore",
+                        "descripcion" : "aaaaaaaaaaaaa",
+                        "lineasEspacio": 70,
+                        "imagenes" : [
+                            "images/projects/faststore/1.jpeg",
+                            "images/projects/faststore/2.jpeg"
+                        ],
+                        "enlace": ""
+                    },
+                    {
+                        "tamaño": [60, 50],
+                        "posicion": ["bottom", "right"],
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 4, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
+                        "rol" : "",
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "image normalizer",
+                        "descripcion" : "aaaaaaaaaaaaa",
+                        "lineasEspacio": 70,
+                        "imagenes" : [
+                            "images/projects/imagenormalizer/1.jpeg",
+                            "images/projects/imagenormalizer/2.jpeg"
                         ],
                         "enlace": ""
                     }
@@ -193,17 +284,22 @@
                 
             },
             {
-                "orden": 1,
+                "orden": 2,
                 "nombre" : "",
-                "descripcion" : "Maximo 4 capas por diapositivas",
-                "capas": [
+                "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
+                "proyectos": [
                     {
                         "tamaño": [60, 50],
                         "posicion": ["top", "left"],
-                        "bordeColor": "#000000",
-                        "libImagen": {"id": 1, "img": "images\/projects\/lingotter\/1.jpg"},
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 5, "img": "images\/projects\/lingotter\/1.jpg"},
                         "rol" : "Desarrollador Full-Stack",
-                        "etiquetas": ["HTML", "CSS"],
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
                         "nombre" : "Lingotter",
                         "descripcion" : "lorem impsu",
                         "lineasEspacio": 70,
@@ -214,18 +310,65 @@
                         "enlace": ""
                     },
                     {
-                        "tamaño": [50, 50],
-                        "posicion": ["top", "left"],
-                        "bordeColor": "#000000",
-                        "libImagen": {"id": 1, "img": "images\/projects\/lingotter\/1.jpg"},
+                        "tamaño": [40, 50],
+                        "posicion": ["top", "right"],
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 6, "img": "images\/projects\/feelsgood\/1.jpeg"},
                         "rol" : "",
-                        "etiquetas": ["HTML", "CSS"],
-                        "nombre" : "",
-                        "descripcion" : "",
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "feelsgood",
+                        "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/lingotter/1.jpg",
-                            "images/projects/lingotter/2.jpg"
+                            "images/projects/feelsgood/1.jpg",
+                            "images/projects/feelsgood/2.jpg"
+                        ],
+                        "enlace": ""
+                    },
+                    {
+                        "tamaño": [40, 50],
+                        "posicion": ["bottom", "left"],
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 7, "img": "images\/projects\/faststore\/1.jpeg"},
+                        "rol" : "",
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "faststore",
+                        "descripcion" : "aaaaaaaaaaaaa",
+                        "lineasEspacio": 70,
+                        "imagenes" : [
+                            "images/projects/faststore/1.jpeg",
+                            "images/projects/faststore/2.jpeg"
+                        ],
+                        "enlace": ""
+                    },
+                    {
+                        "tamaño": [60, 50],
+                        "posicion": ["bottom", "right"],
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 8, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
+                        "rol" : "",
+                        "etiquetas": [
+                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "image normalizer",
+                        "descripcion" : "aaaaaaaaaaaaa",
+                        "lineasEspacio": 70,
+                        "imagenes" : [
+                            "images/projects/imagenormalizer/1.jpeg",
+                            "images/projects/imagenormalizer/2.jpeg"
                         ],
                         "enlace": ""
                     }

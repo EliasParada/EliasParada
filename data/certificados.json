@@ -2,21 +2,13 @@
     "es": {
         "title": "Certificados",
         "certificates": [
-            { "name": "HTML Certificate", "image": "public/img/badges/html_certificate.png" },
-            { "name": "CSS Certificate", "image": "public/img/badges/css_certificate.png" },
-            { "name": "JavaScript Certificate", "image": "public/img/badges/js_certificate.png" },
-            { "name": "PHP Certificate", "image": "public/img/badges/php_certificate.png" },
-            { "name": "Laravel Certificate", "image": "public/img/badges/laravel_certificate.png" }
+            { "name": "EF SET Certificado de Inglés", "image": "images/certs/efset.jpg", "link": "https://cert.efset.org/en/4DHjpo"}
         ]
     },
     "en": {
         "title": "Certificates",
         "certificates": [
-            { "name": "HTML Certificate", "image": "public/img/badges/html_certificate.png" },
-            { "name": "CSS Certificate", "image": "public/img/badges/css_certificate.png" },
-            { "name": "JavaScript Certificate", "image": "public/img/badges/js_certificate.png" },
-            { "name": "PHP Certificate", "image": "public/img/badges/php_certificate.png" },
-            { "name": "Laravel Certificate", "image": "public/img/badges/laravel_certificate.png" }
+            { "name": "EF SET English Certifiate", "image": "images/certs/efset.jpg", "link": "https://cert.efset.org/en/4DHjpo"}
         ]
     }
 }
