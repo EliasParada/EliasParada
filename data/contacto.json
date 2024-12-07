@@ -5,9 +5,10 @@
         "descripcion": "Estoy disponible para explorar nuevas oportunidades y colaboraciones. Si deseas discutir un proyecto, solicitar información adicional o explorar cómo podemos trabajar juntos, no dudes en enviarme un mensaje. Me aseguraré de responder a la mayor brevedad posible.",
         "botonEnviar": "Enviar",
         "redes": [
-            { "nombre": "LinkedIn", "url": "https://www.linkedin.com/in/eliasparadalozano/", "icono": "fa-brands fa-linkedin" },
-            { "nombre": "GitHub", "url": "https://github.com/EliasParada", "icono": "fa-brands fa-github" },
-            { "nombre": "Correo Electrónico", "url": "mailto:contacto@yoelias.com", "icono": "fa-solid fa-envelope" }
+            { "nombre": "Elías Parada Lozano", "url": "https://www.linkedin.com/in/eliasparadalozano/", "icono": "fa-brands fa-linkedin" },
+            { "nombre": "EliasParada", "url": "https://github.com/EliasParada", "icono": "fa-brands fa-github" },
+            { "nombre": "contacto@yoelias.com", "url": "mailto:contacto@yoelias.com", "icono": "fa-solid fa-envelope" },
+            { "nombre": "7712-14813", "url": "tel:50377124813", "icono": "fa-solid fa-phone" }
         ]
     },
     "en": {
@@ -16,9 +17,10 @@
         "descripcion": "I am available to explore new opportunities and collaborations. If you would like to discuss a project, request additional information, or explore how we can work together, please feel free to send me a message. I will make sure to respond as soon as possible.",
         "botonEnviar": "Send",
         "redes": [
-            { "nombre": "LinkedIn", "url": "https://www.linkedin.com/in/eliasparadalozano/", "icono": "fa-brands fa-linkedin" },
-            { "nombre": "GitHub", "url": "https://github.com/EliasParada", "icono": "fa-brands fa-github" },
-            { "nombre": "Email", "url": "mailto:contacto@yoelias.com", "icono": "fa-solid fa-envelope" }
+            { "nombre": "Elías Parada Lozano", "url": "https://www.linkedin.com/in/eliasparadalozano/", "icono": "fa-brands fa-linkedin" },
+            { "nombre": "EliasParada", "url": "https://github.com/EliasParada", "icono": "fa-brands fa-github" },
+            { "nombre": "contacto@yoelias.com", "url": "mailto:contacto@yoelias.com", "icono": "fa-solid fa-envelope" },
+            { "nombre": "7712-14813", "url": "tel:50377124813", "icono": "fa-solid fa-phone" }
         ]
     }
 }

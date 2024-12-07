@@ -81,8 +81,8 @@ async function cargarContacto(language) {
                 const link = document.createElement("a");
                 link.href = red.url;
                 link.target = "_blank";
-                link.className = "hover:scale-150 transition-transform transform text-2xl";
-                link.innerHTML = `<i class="${red.icono}"></i>`;
+                link.className = "text-center flex flex-col items-center justify-center hover:text-white text-red-300 transition text-1xl";
+                link.innerHTML = `<i class="${red.icono}"></i>${red.nombre}`;
                 redesContainer.appendChild(link);
             });
 
