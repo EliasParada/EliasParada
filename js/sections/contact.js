@@ -46,25 +46,25 @@ async function cargarContacto(language) {
                 <label for="from_name" class="block">
                     <span class="text-lg font-semibold traducible" data-en="Name" data-es="Nombre">Nombre</span>
                     <input type="text" id="from_name" name="from_name" placeholder="${language === "es" ? "Tu nombre" : "Your name"}" 
-                        class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300" 
+                        class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300 text-black" 
                         required>
                 </label>
                 <label for="from_email" class="block">
                     <span class="text-lg font-semibold traducible" data-en="Email" data-es="Correo electrónico">Correo electrónico</span>
                     <input type="email" id="from_email" name="from_email" placeholder="${language === "es" ? "correo@example.com" : "email@example.com"}" 
-                        class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300" 
+                        class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300 text-black" 
                         required>
                 </label>
                 <label for="subjet" class="block">
                     <span class="text-lg font-semibold traducible" data-en="Email" data-es="Correo electrónico">Correo electrónico</span>
                     <input type="text" id="subjet" name="subjet" placeholder="${language === "es" ? "Sujeto" : "Subjet"}" 
-                        class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300" 
+                        class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300 text-black" 
                         required>
                 </label>
                 <label for="message" class="block">
                     <span class="text-lg font-semibold traducible" data-en="Message" data-es="Mensaje">Mensaje</span>
                     <textarea id="message" name="message" rows="4" placeholder="${language === "es" ? "Escribe tu mensaje aquí" : "Write your message here"}" 
-                        class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300" 
+                        class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300 text-black" 
                         required></textarea>
                 </label>
                 <button type="submit" class="inline-block bg-white text-red-500 font-bold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-red-100 traducible"
