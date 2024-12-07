@@ -1,5 +1,5 @@
 async function cargarProyectos(language) {
-    // try {
+    try {
         const response = await fetch('../../../../data/proyectos.json');
         const data = await response.json();
 
@@ -10,6 +10,14 @@ async function cargarProyectos(language) {
 
         const content = data[language];
         const proyectosPorDiapositiva = content.diapositivas;
+
+        // Actualizar el título principal
+        const tituloProyectos = document.getElementById('tituloProyectos');
+        if (tituloProyectos) {
+            tituloProyectos.textContent = content.titulo || 'Título no disponible';
+        }
+        tituloProyectos.setAttribute('data-en', data['en'].titulo || 'Projects');
+        tituloProyectos.setAttribute('data-es', data['es'].titulo || 'Proyectos');
 
         const carouselContainer = document.querySelector('sr7-carousel');
         carouselContainer.innerHTML = '';
@@ -35,9 +43,7 @@ async function cargarProyectos(language) {
                     const projectText = document.createElement('sr7-txt');
                     projectText.setAttribute('id', `CAROUSEL-PROJECTS-${slideIndex}-${baseId + 2}`);
 
-                    // Agregar evento para abrir el modal
-                    projectText.addEventListener('click', () => abrirModal(proyecto, data, slideIndex, index));
-
+                    // Crear nombre del proyecto
                     const nombreProyecto = document.createElement('p');
                     nombreProyecto.className = 'text-3xl md:text-7xl traducible';
                     nombreProyecto.textContent = proyecto.nombre || 'Proyecto';
@@ -48,6 +54,23 @@ async function cargarProyectos(language) {
 
                     projectText.appendChild(nombreProyecto);
 
+                    // Crear botón para abrir proyecto
+                    const botonAbrir = document.createElement('button');
+                    botonAbrir.className = 'bg-red-600 text-white px-3 rounded-lg hover:bg-red-700 transition mt-4 flex items-center gap-2 m-auto h-10 traducible';
+
+                    // Agregar texto del botón
+                    botonAbrir.textContent = 'Ver más';
+                    botonAbrir.setAttribute('data-en', 'See more');
+                    botonAbrir.setAttribute('data-es', 'Ver más');
+
+                    const icono = document.createElement('i');
+                    icono.className = 'fas fa-eye';
+                    botonAbrir.prepend(icono);
+
+                    botonAbrir.addEventListener('click', () => abrirModal(proyecto, data, slideIndex, index));
+                    projectText.appendChild(botonAbrir);
+
+                    // Crear contenedor de etiquetas
                     const etiquetasContainer = document.createElement('div');
                     etiquetasContainer.className = 'text-lg';
 
@@ -76,10 +99,11 @@ async function cargarProyectos(language) {
         console.log(SR7.JSON['CAROUSEL-PROJECTS']);
 
         initSR7();
-    // } catch (error) {
-    //     console.error('Error al cargar los datos de los proyectos:', error);
-    // }
+    } catch (error) {
+        console.error('Error al cargar los datos de los proyectos:', error);
+    }
 }
+
 
 
 function abrirModal(proyecto, data, slideIndex, projectIndex) {
@@ -89,6 +113,18 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
     // Limpiar contenido previo
     modalContent.innerHTML = '';
 
+    // Botón de cerrar
+    const botonCerrar = document.createElement('button');
+    botonCerrar.className =
+        'absolute top-4 right-4 bg-red-800 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-700 transition';
+    botonCerrar.innerHTML = '<i class="fas fa-times"></i>';
+    botonCerrar.addEventListener('click', () => modal.classList.add('hidden'));
+    modal.appendChild(botonCerrar);
+
+    // Contenedor principal para el contenido con scroll
+    const contenidoScrollable = document.createElement('div');
+    contenidoScrollable.className = 'max-w-3xl max-h-[80vh] mx-auto overflow-y-auto p-4';
+
     // Título del proyecto
     const titulo = document.createElement('h3');
     titulo.className = 'text-2xl font-bold mb-4 traducible';
@@ -97,7 +133,7 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
     // Agregar atributos data-en y data-es
     titulo.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[projectIndex].nombre || 'Project');
     titulo.setAttribute('data-es', data['es'].diapositivas[slideIndex].proyectos[projectIndex].nombre || 'Proyecto');
-    modalContent.appendChild(titulo);
+    contenidoScrollable.appendChild(titulo);
 
     // Rol
     const rol = document.createElement('p');
@@ -105,7 +141,7 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
     rol.textContent = `Rol: ${proyecto.rol}`;
     rol.setAttribute('data-en', `Role: ${data['en'].diapositivas[slideIndex].proyectos[projectIndex].rol}`);
     rol.setAttribute('data-es', `Rol: ${data['es'].diapositivas[slideIndex].proyectos[projectIndex].rol}`);
-    modalContent.appendChild(rol);
+    contenidoScrollable.appendChild(rol);
 
     // Descripción
     const descripcion = document.createElement('p');
@@ -113,14 +149,14 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
     descripcion.textContent = proyecto.descripcion;
     descripcion.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[projectIndex].descripcion);
     descripcion.setAttribute('data-es', data['es'].diapositivas[slideIndex].proyectos[projectIndex].descripcion);
-    modalContent.appendChild(descripcion);
+    contenidoScrollable.appendChild(descripcion);
 
     // Etiquetas
     const etiquetasContainer = document.createElement('div');
-    etiquetasContainer.className = 'mb-4';
+    etiquetasContainer.className = 'mb-4 flex flex-wrap gap-2';
     proyecto.etiquetas.forEach((etiqueta, etiquetaIndex) => {
         const badge = document.createElement('span');
-        badge.className = `inline-block ${etiqueta.clases} text-xs px-2 rounded-full mr-2 traducible`;
+        badge.className = `inline-block ${etiqueta.clases} text-xs px-2 rounded-full traducible`;
         badge.textContent = etiqueta.nombre;
 
         // Agregar atributos data-en y data-es
@@ -129,38 +165,42 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
 
         etiquetasContainer.appendChild(badge);
     });
-    modalContent.appendChild(etiquetasContainer);
+    contenidoScrollable.appendChild(etiquetasContainer);
 
     // Carrusel de imágenes
     const imagenContainer = document.createElement('div');
     imagenContainer.id = 'carousel-images';
+    imagenContainer.className = 'overflow-hidden rounded-lg'; // TailwindCSS para imágenes
     proyecto.imagenes.forEach((imgSrc) => {
         const img = document.createElement('img');
         img.src = imgSrc;
-        img.className = 'rounded-lg';
+        img.className = 'rounded-lg w-full object-cover'; // Ajustar imágenes responsivamente
         imagenContainer.appendChild(img);
     });
-    modalContent.appendChild(imagenContainer);
+    contenidoScrollable.appendChild(imagenContainer);
 
-    // Agregar enlace con icono de Font Awesome
+    // Enlace con ícono de Font Awesome
     const enlaceContainer = document.createElement('div');
-    enlaceContainer.className = 'btn bg-red-600 text-white rounded-lg py-2 px-4 flex items-center justify-center hover:bg-red-700 transition';
+    enlaceContainer.className = 'flex justify-center mt-4';
 
     const enlace = document.createElement('a');
     enlace.href = proyecto.enlace || '#';
     enlace.target = '_blank';
     enlace.rel = 'noopener noreferrer';
-    enlace.className = 'text-white hover:underline text-lg flex items-center justify-center';
+    enlace.className =
+        'bg-red-600 text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-red-700 transition';
 
     const icono = document.createElement('i');
-    icono.className = 'fa fa-external-link-alt mr-2'; // Font Awesome icon class
+    icono.className = 'fa fa-external-link-alt'; // Font Awesome icon class
     enlace.appendChild(icono);
 
     const enlaceTexto = document.createTextNode('Ver proyecto');
     enlace.appendChild(enlaceTexto);
 
     enlaceContainer.appendChild(enlace);
-    modalContent.appendChild(enlaceContainer);
+    contenidoScrollable.appendChild(enlaceContainer);
+
+    modalContent.appendChild(contenidoScrollable);
 
     // Mostrar el modal
     modal.classList.remove('hidden');
@@ -172,10 +212,15 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
             infinite: true,
             speed: 500,
             slidesToShow: 1,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            prevArrow:
+                '<button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-red-800 text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-700 transition z-10"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow:
+                '<button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-800 text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-700 transition z-10"><i class="fas fa-chevron-right"></i></button>'
         });
     }, 0);
 }
+
 
 
 document.getElementById('close-modal').addEventListener('click', () => {

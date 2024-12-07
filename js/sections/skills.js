@@ -36,8 +36,8 @@ async function cargarHabilidades(language) {
             const skillTitle = document.createElement('h3');
             skillTitle.className = 'skill-title traducible';
             skillTitle.innerHTML = `${skill.icono} ${skill.name}`;
-            skillTitle.setAttribute('data-en', data['en'].skills[index].name || 'Skill');
-            skillTitle.setAttribute('data-es', data['es'].skills[index].name || 'Habilidad');
+            skillTitle.setAttribute('data-en', `${skill.icono} ${data['en'].skills[index].name}` || 'Skill');
+            skillTitle.setAttribute('data-es', `${skill.icono} ${data['es'].skills[index].name}` || 'Habilidad');
             skillContainer.appendChild(skillTitle);
 
             // Crear contenedor de la barra de habilidad

@@ -8,7 +8,7 @@
         "sobre-mi" : {
             "es" : "Sobre mí",
             "en" : "About me",
-            "activo" : true
+            "activo" : false
         },
         "habilidades" : {
             "es" : "Habilidades",
