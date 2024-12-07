@@ -55,6 +55,7 @@ async function cargarAboutMe(language) {
             'inline-block bg-white text-red-500 font-bold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-red-100 traducible';
         downloadButton.setAttribute('data-en', data['en'].download.title || 'Download CV');
         downloadButton.setAttribute('data-es', data['es'].download.title || 'Descargar CV');
+        downloadButton.setAttribute('download', 'cv.pdf');
 
         // Agregar elementos al contenedor de texto
         textContainer.appendChild(title);

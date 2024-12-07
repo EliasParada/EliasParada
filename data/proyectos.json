@@ -14,19 +14,23 @@
                         "libImagen": {"id": 1, "img": "images\/projects\/lingotter\/1.jpg"},
                         "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Lingotter",
-                        "descripcion" : "lorem impsu",
+                        "descripcion" : "Aplicaión Web desarrollada en Laravel que fortalece el aprenizaje del idioma ingles mediamte contenido gamificado, diseñado para estudiates de Inglés Básico de la Facultad en Ciencias y Humanidades de la Universidad Gerard Barrios. Configure un servidor en Digital Ocean con un dominio en Cloudflare.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/lingotter/1.jpg",
-                            "images/projects/lingotter/2.jpg"
+                            "images/projects/lingotter/2.jpg",
+                            "images/projects/lingotter/3.jpg",
+                            "images/projects/lingotter/4.jpg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://lingotter.com/"
                     },
                     {
                         "tamaño": [40, 50],
@@ -35,19 +39,23 @@
                         "libImagen": {"id": 2, "img": "images\/projects\/feelsgood\/1.jpeg"},
                         "rol" : "",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "AWS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Node.Js", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "feelsgood",
-                        "descripcion" : "aaaaaaaaaaaaa",
+                        "nombre" : "Feels Good",
+                        "descripcion" : "Aplicación Web desarrollada en Laravel diseñada para la busqueda de ayuda psicologica, esto comunicando a usuarios con expertos de la salud en diversas ramas de la salud mental. Se contrato un dominio grátis en Freenom y se conecto a una instancia EC2 de AWS, juntoa a una base de datos RB2 de AWS.",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/feelsgood/1.jpg",
-                            "images/projects/feelsgood/2.jpg"
+                            "images/projects/feelsgood/1.jpeg",
+                            "images/projects/feelsgood/2.jpeg",
+                            "images/projects/feelsgood/3.jpeg",
+                            "images/projects/feelsgood/4.jpeg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/Programacion_Computacional_IV/tree/proyecto_final"
                     },
                     {
                         "tamaño": [40, 50],
@@ -56,19 +64,20 @@
                         "libImagen": {"id": 3, "img": "images\/projects\/faststore\/1.jpeg"},
                         "rol" : "",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "faststore",
-                        "descripcion" : "aaaaaaaaaaaaa",
+                        "nombre" : "Fast Store",
+                        "descripcion" : "Tienda Online programada en Python con un gestor de inventario impulsado por Inteligencia Artidicial que permite organizar automaticamente los productos que se almacenan en bodega mediante reconocimiento de imagen.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/faststore/1.jpeg",
-                            "images/projects/faststore/2.jpeg"
+                            "images/projects/faststore/2.jpeg",
+                            "images/projects/faststore/3.jpeg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/Programacion_Computacional_III/tree/Proyecto_Final"
                     },
                     {
                         "tamaño": [60, 50],
@@ -77,19 +86,18 @@
                         "libImagen": {"id": 4, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
                         "rol" : "",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "image normalizer",
-                        "descripcion" : "aaaaaaaaaaaaa",
+                        "nombre" : "Normalizador de Imagenes",
+                        "descripcion" : "Un proyecto extracurricular en Python que permite ingresar una serie de imagenes de una carpeta para asignarles una etiqueta, obteniendo así una carpeta de imagenes normalizadas para entrenar un modelo de inteligencia neuronal.",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/imagenormalizer/1.jpeg",
-                            "images/projects/imagenormalizer/2.jpeg"
+                            "images/projects/imagenormalizer/1.jpeg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/tensorflow-image-dataset-generator"
                     }
                 ]
                 
@@ -103,41 +111,48 @@
                         "tamaño": [60, 50],
                         "posicion": ["top", "left"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 5, "img": "images\/projects\/lingotter\/1.jpg"},
+                        "libImagen": {"id": 5, "img": "images\/projects\/calzadoamaya\/1.png"},
                         "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "Lingotter",
+                        "nombre" : "Calzado Amaya",
                         "descripcion" : "lorem impsu",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/lingotter/1.jpg",
-                            "images/projects/lingotter/2.jpg"
+                            "images/projects/calzadoamaya/1.png",
+                            "images/projects/calzadoamaya/2.png",
+                            "images/projects/calzadoamaya/3.png",
+                            "images/projects/calzadoamaya/4.png",
+                            "images/projects/calzadoamaya/5.png",
+                            "images/projects/calzadoamaya/6.png"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/calzado-amaya"
                     },
                     {
                         "tamaño": [40, 50],
                         "posicion": ["top", "right"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 6, "img": "images\/projects\/feelsgood\/1.jpeg"},
-                        "rol" : "",
+                        "libImagen": {"id": 6, "img": "images\/projects\/blank.png"},
+                        "rol" : "Desarrollador Back-End",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "feelsgood",
-                        "descripcion" : "aaaaaaaaaaaaa",
+                        "nombre" : "Arca Access",
+                        "descripcion" : "Tiena de productos electronicos desarrollada en Laravel, ",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/feelsgood/1.jpg",
-                            "images/projects/feelsgood/2.jpg"
+                            "images/projects/blank.png"
                         ],
                         "enlace": ""
                     },
@@ -145,7 +160,7 @@
                         "tamaño": [40, 50],
                         "posicion": ["bottom", "left"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 7, "img": "images\/projects\/faststore\/1.jpeg"},
+                        "libImagen": {"id": 7, "img": "images\/projects\/blank.png"},
                         "rol" : "",
                         "etiquetas": [
                             { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -153,12 +168,11 @@
                             { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "faststore",
+                        "nombre" : "Libreria Online",
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/faststore/1.jpeg",
-                            "images/projects/faststore/2.jpeg"
+                            "images/projects/blank.png"
                         ],
                         "enlace": ""
                     },
@@ -166,7 +180,7 @@
                         "tamaño": [60, 50],
                         "posicion": ["bottom", "right"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 8, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
+                        "libImagen": {"id": 8, "img": "images\/projects\/blank.png"},
                         "rol" : "",
                         "etiquetas": [
                             { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -174,14 +188,43 @@
                             { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "image normalizer",
+                        "nombre" : "Votaciones Online",
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/imagenormalizer/1.jpeg",
-                            "images/projects/imagenormalizer/2.jpeg"
+                            "images/projects/blank.png"
                         ],
                         "enlace": ""
+                    }
+                ]
+                
+            },
+            {
+                "orden": 3,
+                "nombre" : "",
+                "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
+                "proyectos": [
+                    {
+                        "tamaño": [100, 100],
+                        "posicion": ["top", "left"],
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 5, "img": "images\/projects\/blank.png"},
+                        "rol" : "Desarrollador Full-Stack",
+                        "etiquetas": [
+                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "Travel Accident",
+                        "descripcion" : "lorem impsu",
+                        "lineasEspacio": 70,
+                        "imagenes" : [
+                            "images/projects/blank.png"
+                        ],
+                        "enlace": "https://github.com/EliasParada/calzado-amaya"
                     }
                 ]
                 
@@ -193,95 +236,102 @@
         "diapositivas" : [
             {
                 "orden": 1,
-                "nombre" : "",
-                "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
+                "nombre": "",
+                "descripcion": "Maximum 4 layers (projects) per slide",
                 "proyectos": [
                     {
                         "tamaño": [60, 50],
                         "posicion": ["top", "left"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 1, "img": "images\/projects\/lingotter\/1.jpg"},
-                        "rol" : "Full-Stack Developer",
+                        "libImagen": { "id": 1, "img": "images/projects/lingotter/1.jpg" },
+                        "rol": "Full-Stack Developer",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "Lingotter",
-                        "descripcion" : "lorem impsu",
+                        "nombre": "Lingotter",
+                        "descripcion": "Web application developed in Laravel that strengthens English learning through gamified content, designed for Basic English students of the Faculty of Sciences and Humanities at the Gerard Barrios University. Configured a Digital Ocean server with a domain in Cloudflare.",
                         "lineasEspacio": 70,
-                        "imagenes" : [
+                        "imagenes": [
                             "images/projects/lingotter/1.jpg",
-                            "images/projects/lingotter/2.jpg"
+                            "images/projects/lingotter/2.jpg",
+                            "images/projects/lingotter/3.jpg",
+                            "images/projects/lingotter/4.jpg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://lingotter.com/"
                     },
                     {
                         "tamaño": [40, 50],
                         "posicion": ["top", "right"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 2, "img": "images\/projects\/feelsgood\/1.jpeg"},
-                        "rol" : "",
+                        "libImagen": { "id": 2, "img": "images/projects/feelsgood/1.jpeg" },
+                        "rol": "",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "AWS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Node.Js", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "feelsgood",
-                        "descripcion" : "aaaaaaaaaaaaa",
+                        "nombre": "Feels Good",
+                        "descripcion": "Web application developed in Laravel designed to search for psychological help, connecting users with health experts in various fields of mental health. A free domain was acquired in Freenom and connected to an AWS EC2 instance, along with an AWS RDS database.",
                         "lineasEspacio": 70,
-                        "imagenes" : [
-                            "images/projects/feelsgood/1.jpg",
-                            "images/projects/feelsgood/2.jpg"
+                        "imagenes": [
+                            "images/projects/feelsgood/1.jpeg",
+                            "images/projects/feelsgood/2.jpeg",
+                            "images/projects/feelsgood/3.jpeg",
+                            "images/projects/feelsgood/4.jpeg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/Programacion_Computacional_IV/tree/proyecto_final"
                     },
                     {
                         "tamaño": [40, 50],
                         "posicion": ["bottom", "left"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 3, "img": "images\/projects\/faststore\/1.jpeg"},
-                        "rol" : "",
+                        "libImagen": { "id": 3, "img": "images/projects/faststore/1.jpeg" },
+                        "rol": "",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "faststore",
-                        "descripcion" : "aaaaaaaaaaaaa",
+                        "nombre": "Fast Store",
+                        "descripcion": "Online store programmed in Python with an AI-powered inventory manager that automatically organizes stored products using image recognition.",
                         "lineasEspacio": 70,
-                        "imagenes" : [
+                        "imagenes": [
                             "images/projects/faststore/1.jpeg",
-                            "images/projects/faststore/2.jpeg"
+                            "images/projects/faststore/2.jpeg",
+                            "images/projects/faststore/3.jpeg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/Programacion_Computacional_III/tree/Proyecto_Final"
                     },
                     {
                         "tamaño": [60, 50],
                         "posicion": ["bottom", "right"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 4, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
-                        "rol" : "",
+                        "libImagen": { "id": 4, "img": "images/projects/imagenormalizer/1.jpeg" },
+                        "rol": "",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "image normalizer",
-                        "descripcion" : "aaaaaaaaaaaaa",
+                        "nombre": "Image Normalizer",
+                        "descripcion": "An extracurricular project in Python that processes a set of images from a folder, assigns labels, and outputs a folder of normalized images for training a neural model.",
                         "lineasEspacio": 70,
-                        "imagenes" : [
-                            "images/projects/imagenormalizer/1.jpeg",
-                            "images/projects/imagenormalizer/2.jpeg"
+                        "imagenes": [
+                            "images/projects/imagenormalizer/1.jpeg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/tensorflow-image-dataset-generator"
                     }
                 ]
-                
             },
             {
                 "orden": 2,
@@ -292,41 +342,48 @@
                         "tamaño": [60, 50],
                         "posicion": ["top", "left"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 5, "img": "images\/projects\/lingotter\/1.jpg"},
+                        "libImagen": {"id": 5, "img": "images\/projects\/calzadoamaya\/1.png"},
                         "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "Lingotter",
+                        "nombre" : "Calzado Amaya",
                         "descripcion" : "lorem impsu",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/lingotter/1.jpg",
-                            "images/projects/lingotter/2.jpg"
+                            "images/projects/calzadoamaya/1.png",
+                            "images/projects/calzadoamaya/2.png",
+                            "images/projects/calzadoamaya/3.png",
+                            "images/projects/calzadoamaya/4.png",
+                            "images/projects/calzadoamaya/5.png",
+                            "images/projects/calzadoamaya/6.png"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/calzado-amaya"
                     },
                     {
                         "tamaño": [40, 50],
                         "posicion": ["top", "right"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 6, "img": "images\/projects\/feelsgood\/1.jpeg"},
-                        "rol" : "",
+                        "libImagen": {"id": 6, "img": "images\/projects\/blank.png"},
+                        "rol" : "Desarrollador Back-End",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
+                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "feelsgood",
-                        "descripcion" : "aaaaaaaaaaaaa",
+                        "nombre" : "Arca Access",
+                        "descripcion" : "Tiena de productos electronicos desarrollada en Laravel, ",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/feelsgood/1.jpg",
-                            "images/projects/feelsgood/2.jpg"
+                            "images/projects/blank.png"
                         ],
                         "enlace": ""
                     },
@@ -334,7 +391,7 @@
                         "tamaño": [40, 50],
                         "posicion": ["bottom", "left"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 7, "img": "images\/projects\/faststore\/1.jpeg"},
+                        "libImagen": {"id": 7, "img": "images\/projects\/blank.png"},
                         "rol" : "",
                         "etiquetas": [
                             { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -346,8 +403,7 @@
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/faststore/1.jpeg",
-                            "images/projects/faststore/2.jpeg"
+                            "images/projects/blank.png"
                         ],
                         "enlace": ""
                     },
@@ -355,7 +411,7 @@
                         "tamaño": [60, 50],
                         "posicion": ["bottom", "right"],
                         "bordeColor": "#0000",
-                        "libImagen": {"id": 8, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
+                        "libImagen": {"id": 8, "img": "images\/projects\/blank.png"},
                         "rol" : "",
                         "etiquetas": [
                             { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -367,10 +423,39 @@
                         "descripcion" : "aaaaaaaaaaaaa",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/imagenormalizer/1.jpeg",
-                            "images/projects/imagenormalizer/2.jpeg"
+                            "images/projects/blank.png"
                         ],
                         "enlace": ""
+                    }
+                ]
+                
+            },
+            {
+                "orden": 3,
+                "nombre" : "",
+                "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
+                "proyectos": [
+                    {
+                        "tamaño": [100, 100],
+                        "posicion": ["top", "left"],
+                        "bordeColor": "#0000",
+                        "libImagen": {"id": 5, "img": "images\/projects\/blank.png"},
+                        "rol" : "Desarrollador Full-Stack",
+                        "etiquetas": [
+                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "Travel Accident",
+                        "descripcion" : "lorem impsu",
+                        "lineasEspacio": 70,
+                        "imagenes" : [
+                            "images/projects/blank.png"
+                        ],
+                        "enlace": "https://github.com/EliasParada/calzado-amaya"
                     }
                 ]
                 

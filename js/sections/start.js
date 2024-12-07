@@ -19,7 +19,7 @@ async function cargarHero(language) {
         const heroSubtitle = document.querySelector('.hero p');
         heroSubtitle.className = 'text-xl traducible';
 
-        const heroButton = document.querySelector('.hero button');
+        const heroButton = document.querySelector('.hero a');
         heroButton.className = 'inline-block bg-gradient-to-r from-red-400 to-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-red-500 hover:to-red-800 transition-transform transform hover:scale-105 traducible';
 
         const heroSection = document.querySelector('.hero');
@@ -36,6 +36,7 @@ async function cargarHero(language) {
         heroButton.textContent = content.boton || 'Botón por defecto';
         heroButton.setAttribute('data-en', data['en'].boton || 'Default button');
         heroButton.setAttribute('data-es', data['es'].boton || 'Botón por defecto');
+        // heroButton.setAttribute('href', 'contact');
 
         // Si hay imagen definida, actualizar el fondo
         if (content.imagen) {

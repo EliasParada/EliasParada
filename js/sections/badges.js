@@ -9,13 +9,9 @@ async function cargarCertificados(language) {
         }
 
         const content = data[language];
-        const certificatesSection = document.getElementById('certificates'); // Asegúrate de tener este ID en tu HTML
-
-        // Limpiar contenido previo
+        const certificatesSection = document.getElementById('certificates');
         certificatesSection.innerHTML = '';
-
-        // Contenedor de certificados con fondo gradiente rojo
-        certificatesSection.classList.add('bg-gradient-to-r', 'from-red-400', 'to-red-600', 'py-8', 'rounded-lg', 'overflow-hidden');
+        certificatesSection.classList.add('bg-gradient-to-r', 'from-red-500', 'to-red-700', 'py-8', 'rounded-lg', 'overflow-hidden');
 
         // Título de la sección de certificados
         const title = document.createElement('h2');

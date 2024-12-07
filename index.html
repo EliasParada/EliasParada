@@ -15,13 +15,13 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- SEO estándar -->
-    <meta name="description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador full-stack.">
-    <meta name="keywords" content="Elias Mauricio Parada Lozano, desarrollador full-stack, portafolio, desarrollo web, desarrollo de software">
+    <meta name="description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador back-end.">
+    <meta name="keywords" content="Elias Mauricio Parada Lozano, desarrollador back-end, portafolio, desarrollo web, desarrollo de software">
     <meta name="author" content="Elias Mauricio Parada Lozano">
     
     <!-- Facebook SEO -->
     <meta property="og:title" content="Elias Mauricio Parada Lozano - Desarrollador Full-Stack">
-    <meta property="og:description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador full-stack.">
+    <meta property="og:description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador back-end.">
     <meta property="og:image" content="URL_DE_TU_IMAGEN/logo.png">
     <meta property="og:url" content="URL_DE_TU_SITIO">
     <meta property="og:type" content="website">
@@ -29,7 +29,7 @@
     <!-- X.com SEO -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Elias Mauricio Parada Lozano - Desarrollador Full-Stack">
-    <meta name="twitter:description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador full-stack.">
+    <meta name="twitter:description" content="Portafolio profesional de Elias Mauricio Parada Lozano, desarrollador back-end.">
     <meta name="twitter:image" content="URL_DE_TU_IMAGEN/logo.png">
     
     <!-- Tailwind CSS -->
@@ -42,6 +42,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
     <!-- AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script type="text/javascript" src="/js/module.js" async="async" data-wp-strategy="async"></script>
     <script type="text/javascript" src="/js/tools.js" async="async" data-wp-strategy="async"></script>
@@ -94,7 +97,7 @@
         /* Contenedor de la barra de habilidad */
         .progress-bar-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             width: 100%;
             height: 14px; /* Altura de la barra */
@@ -166,11 +169,11 @@
             </div>
             <nav>
                 <ul class="flex space-x-4 flex-wrap">
-                    <li><a href="#about" class="text-gray-700 hover:text-gray-900">Sobre Mí</a></li>
+                    <li><a href="#about-me" class="text-gray-700 hover:text-gray-900">Sobre Mí</a></li>
                     <li><a href="#skills" class="text-gray-700 hover:text-gray-900">Habilidades</a></li>
-                    <li><a href="#experience" class="text-gray-700 hover:text-gray-900">Experiencia</a></li>
+                    <!-- <li><a href="#experience" class="text-gray-700 hover:text-gray-900">Experiencia</a></li> -->
                     <li><a href="#projects" class="text-gray-700 hover:text-gray-900">Proyectos</a></li>
-                    <li><a href="#testimonials" class="text-gray-700 hover:text-gray-900">Testimonios</a></li>
+                    <!-- <li><a href="#testimonials" class="text-gray-700 hover:text-gray-900">Testimonios</a></li> -->
                     <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contacto</a></li>
                 </ul>
             </nav>
@@ -203,13 +206,13 @@
     <div id="overlay" class="overlay"></div>
     <section class="hero h-96 w-full relative flex items-center justify-center text-white">
         <div class="overlay"></div>
-        <div class="text-center z-10">
+        <div class="text-center z-10 space-y-4">
             <h1 class="text-4xl font-bold mb-4">Elias Mauricio Parada Lozano</h1>
-            <p class="text-xl">Desarrollador Full-Stack</p>
-            <button class="inline-block bg-gradient-to-r from-red-400 to-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-red-500 hover:to-red-800 transition-transform transform hover:scale-105" data-aos="zoom-in">Contactame</button>
+            <p class="text-xl">Desarrollador Back-End</p>
+            <a id="contactBtn" class="inline-block bg-gradient-to-r from-red-400 to-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-red-500 hover:to-red-800 transition-transform transform hover:scale-105" data-aos="zoom-in" href="#contact">Contactame</a>
         </div>
     </section>
-    <main class="mx-auto py-8">
+    <main class="mx-auto pt-8">
         
         
         <section id="about-me" class="mx-auto my-10">
@@ -224,7 +227,7 @@
         </section>
 
         <section id="projects" class="p-8 bg-white shadow-lg rounded-lg">
-            <h2 class="text-3xl font-bold mb-4 text-center p-2 pt-4">Proyectos</h2>
+            <h2 id="tituloProyectos" class="text-3xl font-bold text-center text-red-600 mb-8 traducible">Proyectos</h2>
             <div data-modal="true">
                 <p class="rs-p-wp-fix"></p>
                 <sr7-module data-alias="Proyectos" data-id="1" id="CAROUSEL-PROJECTS" class="rs-respect-topbar">
@@ -269,85 +272,45 @@
             </div>
         </div>
 
-        <!-- <section id="testimonials" class="mb-12">
-            <h2 class="text-3xl font-bold mb-4 text-center sticky top-0 z-10 p-2 pt-4 bg-white">Testimonios</h2>
-            <div class="relative">
-                <div id="testimonialsCarousel" class="carousel flex relative overflow-hidden">
-                    <div class="bg-white p-4 shadow rounded-lg mx-2 sm:mx-4 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-20">
-                        <div class="flex items-center">
-                            <img src="client_image1.jpg" alt="Cliente A" class="rounded-full h-12 w-12 object-cover mr-4">
-                            <div>
-                                <p class="text-gray-700 italic">&quot;Elias es un desarrollador excepcional con un ojo para los detalles. Su habilidad para resolver problemas es impresionante.&quot;</p>
-                                <p class="text-gray-600 mt-2">- Cliente A, Desarrollador Frontend</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 shadow rounded-lg mx-2 sm:mx-4 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-20">
-                        <div class="flex items-center">
-                            <img src="client_image2.jpg" alt="Cliente B" class="rounded-full h-12 w-12 object-cover mr-4">
-                            <div>
-                                <p class="text-gray-700 italic">&quot;Trabajar con Elias ha sido una experiencia fantástica. Siempre entrega resultados de alta calidad.&quot;</p>
-                                <p class="text-gray-600 mt-2">- Cliente B, Diseñador UX/UI</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute inset-y-0 left-0 flex items-center justify-center">
-                    <button id="prevTestimonialBtn" class="hidden lg:block bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-l-lg">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    </button>
-                </div>
-                <div class="absolute inset-y-0 right-0 flex items-center justify-center">
-                    <button id="nextTestimonialBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-r-lg">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </button>
-                </div>
-            </div>
-        </section> -->
-
-        <section id="contact" class="bg-red-600 text-white py-12">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-6 text-center sticky top-0 z-10 p-2 pt-4 bg-red-600">Contacto</h2>
-                <div class="max-w-lg mx-auto">
-                    <form action="#" method="POST" class="grid grid-cols-1 gap-4">
-                        <label for="name" class="block">
-                            <span class="text-lg font-semibold">Nombre</span>
-                            <input type="text" id="name" name="name" placeholder="Tu nombre" class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300">
-                        </label>
-                        <label for="email" class="block">
-                            <span class="text-lg font-semibold">Correo electrónico</span>
-                            <input type="email" id="email" name="email" placeholder="correo@example.com" class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300">
-                        </label>
-                        <label for="message" class="block">
-                            <span class="text-lg font-semibold">Mensaje</span>
-                            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí" class="mt-1 px-3 py-2 w-full rounded-md border-2 border-white focus:outline-none focus:border-gray-300 transition-colors duration-300"></textarea>
-                        </label>
-                        <button type="submit" class="bg-white text-red-600 py-2 px-4 rounded-md hover:bg-gray-200 hover:text-red-600 transition-colors duration-300">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
+        <section id="contact" class="bg-gradient-to-r from-red-500 to-red-700 text-white py-12 my-10">
+            
         </section>
         
     </main>
 
-    <footer class="bg-white shadow mt-8">
+    <div class="fixed bottom-4 right-4 z-50 flex flex-col justify-end items-end">
+        <div id="languageMenu" class="hidden mt-2 w-48 bg-white rounded-lg shadow-lg overflow-hidden">
+            <ul id="languageOptions" class="divide-y divide-gray-200">
+                <li>
+                    <button class="w-full text-left px-4 py-2 hover:bg-red-100 text-red-600" data-lang="en">
+                        English
+                    </button>
+                </li>
+                <li>
+                    <button class="w-full text-left px-4 py-2 hover:bg-red-100 text-red-600" data-lang="es">
+                        Español
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <button id="languageButton" class="bg-red-600 text-white rounded-full p-4 shadow-lg hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300 w-16 h-16">
+            <i class="fas fa-globe"></i>
+        </button>
+    </div>
+
+    <footer class="bg-white shadow">
         <div class="container mx-auto px-4 py-4 text-center">
-            <p class="text-gray-700">&copy; 2024 Elias Mauricio Parada Lozano. Todos los derechos reservados.</p>
+            <p 
+                class="text-gray-700 traducible" 
+                data-en="&copy; 2024 Elias Mauricio Parada Lozano. All rights reserved." 
+                data-es="&copy; 2024 Elias Mauricio Parada Lozano. Todos los derechos reservados.">
+                &copy; 2024 Elias Mauricio Parada Lozano. Todos los derechos reservados.
+            </p>
         </div>
     </footer>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        // Efecto de scroll suave
-        $('nav a').click(function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-            }, 500);
-        });
-    </script>
 
     <!-- AOS for animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -357,51 +320,30 @@
 
     <!-- Slick JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.slider-for').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                asNavFor: '.slick-carousel'
-            });
 
-            $('.slick-carousel').slick({
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                asNavFor: '.slider-for',
-                dots: true,
-                arrows: false,
-                centerMode: true,
-                focusOnSelect: true,
-                autoplay: true,
-                autoplaySpeed: 3000
-            });
-        });
-
-    </script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js" integrity="sha512-7IoDEsIJGxz/gNyJY/0LRtS45wDSvPFXGPuC7Fo4YueWMNOmWKMAllEqo2Im3pgOjeEwsOoieyliRgdkZnY0ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- <script src="public/css/js/modules/projects.js"></script> -->
     <script src="js/slider.js"></script>
     <script src="js/sections/start.js"></script>
     <script src="js/sections/skills.js"></script>
     <script src="js/sections/badges.js"></script>
     <script src="js/sections/aboutme.js"></script>
     <script src="js/sections/proyectos.js"></script>
+    <script src="js/sections/contact.js"></script>
+    <script src="js/lang.js"></script>
 
     <script>
         AOS.init();
 
         document.addEventListener('DOMContentLoaded', () => {
-            cargarHero('es');
-            cargarAboutMe('es');
-            cargarHabilidades('es');
-            cargarCertificados('es');
-            cargarProyectos('es');
+            cargarHero(currentLang);
+            cargarAboutMe(currentLang);
+            cargarHabilidades(currentLang);
+            cargarCertificados(currentLang);
+            cargarProyectos(currentLang);
+            cargarContacto(currentLang);
             // updateMenu('es').then(seccionesActivas => {
             //     if (seccionesActivas['inicio']) cargarInicio('es');
             //     if (seccionesActivas['sobre-mi']) cargarSobreMi('es');
@@ -412,8 +354,20 @@
         });
     </script>
 
-    <script type="text/javascript" src="/js/lazysizes.js" id="lazysizes-js"></script>
+    <script>
+        $('nav a, #contactBtn').click(function(e) {
+            e.preventDefault();
+            const target = $($(this).attr('href'));
 
-    <script src="js/lang.js"></script>
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 500);
+            }
+        });
+    </script>
+
+    <script type="text/javascript" src="/js/lazysizes.js" id="lazysizes-js"></script>   
+
 </body>
 </html>
