@@ -8,9 +8,9 @@
                 "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
                 "proyectos": [
                     {
-                        "tamaño": [60, 50],
+                        "tamaño": [60, 60],
                         "posicion": ["top", "left"],
-                        "bordeColor": "#0000",
+                        "bordeColor": "#c525252",
                         "libImagen": {"id": 1, "img": "images\/projects\/lingotter\/1.jpg"},
                         "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
@@ -22,7 +22,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Lingotter",
-                        "descripcion" : "Aplicaión Web desarrollada en Laravel que fortalece el aprenizaje del idioma ingles mediamte contenido gamificado, diseñado para estudiates de Inglés Básico de la Facultad en Ciencias y Humanidades de la Universidad Gerard Barrios. Configure un servidor en Digital Ocean con un dominio en Cloudflare.",
+                        "descripcion" : "Aplicaión Web desarrollada en Laravel que fortalece el aprenizaje del idioma ingles mediamte contenido gamificado, diseñado para estudiates de Inglés Básico de la Facultad en Ciencias y Humanidades de la Universidad Gerard Barrios. Configure un servidor Ubuntu en Digital Ocean con un dominio en Cloudflare.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/lingotter/1.jpg",
@@ -35,7 +35,7 @@
                     {
                         "tamaño": [40, 50],
                         "posicion": ["top", "right"],
-                        "bordeColor": "#0000",
+                        "bordeColor": "#c525252",
                         "libImagen": {"id": 2, "img": "images\/projects\/feelsgood\/1.jpeg"},
                         "rol" : "",
                         "etiquetas": [
@@ -47,7 +47,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Feels Good",
-                        "descripcion" : "Aplicación Web desarrollada en Laravel diseñada para la busqueda de ayuda psicologica, esto comunicando a usuarios con expertos de la salud en diversas ramas de la salud mental. Se contrato un dominio grátis en Freenom y se conecto a una instancia EC2 de AWS, juntoa a una base de datos RB2 de AWS.",
+                        "descripcion" : "Aplicación Web desarrollada en Laravel diseñada para la busqueda de ayuda psicologica, esto comunicando a usuarios con expertos de la salud en diversas ramas de la salud mental. Se contrato un dominio grátis en Freenom y se conecto a una instancia Debian en EC2 de AWS, juntoa a una base de datos RB2 de AWS.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/feelsgood/1.jpeg",
@@ -58,12 +58,13 @@
                         "enlace": "https://github.com/EliasParada/Programacion_Computacional_IV/tree/proyecto_final"
                     },
                     {
-                        "tamaño": [40, 50],
+                        "tamaño": [60, 40],
                         "posicion": ["bottom", "left"],
-                        "bordeColor": "#0000",
+                        "bordeColor": "#c525252",
                         "libImagen": {"id": 3, "img": "images\/projects\/faststore\/1.jpeg"},
                         "rol" : "",
                         "etiquetas": [
+                            { "nombre": "AI", "clases": "inline-block bg-red-200 text-red-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -80,9 +81,9 @@
                         "enlace": "https://github.com/EliasParada/Programacion_Computacional_III/tree/Proyecto_Final"
                     },
                     {
-                        "tamaño": [60, 50],
+                        "tamaño": [40, 50],
                         "posicion": ["bottom", "right"],
-                        "bordeColor": "#0000",
+                        "bordeColor": "#c525252",
                         "libImagen": {"id": 4, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
                         "rol" : "",
                         "etiquetas": [
@@ -108,9 +109,9 @@
                 "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
                 "proyectos": [
                     {
-                        "tamaño": [60, 50],
-                        "posicion": ["top", "left"],
-                        "bordeColor": "#0000",
+                        "tamaño": [60, 60],
+                        "posicion": ["top", "right"],
+                        "bordeColor": "#c525252",
                         "libImagen": {"id": 5, "img": "images\/projects\/calzadoamaya\/1.png"},
                         "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
@@ -122,7 +123,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Calzado Amaya",
-                        "descripcion" : "lorem impsu",
+                        "descripcion" : "Tienda Online programada en Laravel, integra pagos online mediante la librería de PAGADITO, así como la posibilidad de realizar pagos a contra entrega, con un tablero completo para administrar la tienda. Desplegada en un servidor de Ubuntu en Digital Ocean con dominio en Cloudflare.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/calzadoamaya/1.png",
@@ -136,9 +137,9 @@
                     },
                     {
                         "tamaño": [40, 50],
-                        "posicion": ["top", "right"],
-                        "bordeColor": "#0000",
-                        "libImagen": {"id": 6, "img": "images\/projects\/blank.png"},
+                        "posicion": ["top", "left"],
+                        "bordeColor": "#c525252",
+                        "libImagen": {"id": 6, "img": "images\/projects\/arcaaccess\/1.jpg"},
                         "rol" : "Desarrollador Back-End",
                         "etiquetas": [
                             { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -149,82 +150,67 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Arca Access",
-                        "descripcion" : "Tiena de productos electronicos desarrollada en Laravel, ",
+                        "descripcion" : "Tiena de productos electronicos desarrollada en Laravel, con carrito incluido que permite pagos electronicos mediante la libreria de PAGADITO así como pagos a contra entrega, cuenta con un registro de compras. Configure un servidor Ubuntu en Digital Ocean y contate un dominio en Cloudflare.",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/blank.png"
+                            "images/projects/arcaaccess/1.jpg",
+                            "images/projects/arcaaccess/2.jpg",
+                            "images/projects/arcaaccess/3.jpg",
+                            "images/projects/arcaaccess/4.jpg",
+                            "images/projects/arcaaccess/5.jpg",
+                            "images/projects/arcaaccess/6.jpg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/arca-access"
                     },
                     {
-                        "tamaño": [40, 50],
-                        "posicion": ["bottom", "left"],
-                        "bordeColor": "#0000",
-                        "libImagen": {"id": 7, "img": "images\/projects\/blank.png"},
-                        "rol" : "",
-                        "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
-                        ],
-                        "nombre" : "Libreria Online",
-                        "descripcion" : "aaaaaaaaaaaaa",
-                        "lineasEspacio": 70,
-                        "imagenes" : [
-                            "images/projects/blank.png"
-                        ],
-                        "enlace": ""
-                    },
-                    {
-                        "tamaño": [60, 50],
+                        "tamaño": [60, 40],
                         "posicion": ["bottom", "right"],
-                        "bordeColor": "#0000",
-                        "libImagen": {"id": 8, "img": "images\/projects\/blank.png"},
-                        "rol" : "",
-                        "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
-                        ],
-                        "nombre" : "Votaciones Online",
-                        "descripcion" : "aaaaaaaaaaaaa",
-                        "lineasEspacio": 70,
-                        "imagenes" : [
-                            "images/projects/blank.png"
-                        ],
-                        "enlace": ""
-                    }
-                ]
-                
-            },
-            {
-                "orden": 3,
-                "nombre" : "",
-                "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
-                "proyectos": [
-                    {
-                        "tamaño": [100, 100],
-                        "posicion": ["top", "left"],
-                        "bordeColor": "#0000",
-                        "libImagen": {"id": 5, "img": "images\/projects\/blank.png"},
+                        "bordeColor": "#c525252",
+                        "libImagen": {"id": 7, "img": "images\/projects\/libreriaonline\/2.jpg"},
                         "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
-                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "AI", "clases": "inline-block bg-red-200 text-red-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "Travel Accident",
-                        "descripcion" : "lorem impsu",
+                        "nombre" : "Libreria Online",
+                        "descripcion" : "Tienda virtual de libros desarrollada en Python que, mediante un modelo neuronal, es capaz de recomendar libros a los usuarios según sus gustos y los de los usuarios con los que se asemejan.",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/blank.png"
+                            "images/projects/libreriaonline/1.jpg",
+                            "images/projects/libreriaonline/2.jpg",
+                            "images/projects/libreriaonline/3.jpg",
+                            "images/projects/libreriaonline/4.jpg",
+                            "images/projects/libreriaonline/5.jpg"
                         ],
-                        "enlace": "https://github.com/EliasParada/calzado-amaya"
+                        "enlace": "https://github.com/EliasParada/libreria-online"
+                    },
+                    {
+                        "tamaño": [40, 50],
+                        "posicion": ["bottom", "left"],
+                        "bordeColor": "#c525252",
+                        "libImagen": {"id": 8, "img": "images\/projects\/votacionesonline\/1.jpg"},
+                        "rol" : "Desarrollador Full-Stack",
+                        "etiquetas": [
+                            { "nombre": "AI", "clases": "inline-block bg-red-200 text-red-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "Votaciones Online",
+                        "descripcion" : "Aplicación web desarrollada en Python y basada en IA que permite predecir el ganador a medida que avanzan las votaciones, teniendo en cuenta la cantidad de votos recibidos por cada candidato en un periodo de tiempo determinado. Cuenta con un apartado de administrador que monitoriza las acciones de los usuarios en las votaciones.",
+                        "lineasEspacio": 70,
+                        "imagenes" : [
+                            "images/projects/votacionesonline/1.jpg",
+                            "images/projects/votacionesonline/2.jpg",
+                            "images/projects/votacionesonline/3.jpg",
+                            "images/projects/votacionesonline/4.jpg",
+                            "images/projects/votacionesonline/5.jpg"
+                        ],
+                        "enlace": "https://github.com/EliasParada/votaciones-online"
                     }
                 ]
                 
@@ -240,9 +226,9 @@
                 "descripcion": "Maximum 4 layers (projects) per slide",
                 "proyectos": [
                     {
-                        "tamaño": [60, 50],
+                        "tamaño": [60, 60],
                         "posicion": ["top", "left"],
-                        "bordeColor": "#0000",
+                        "bordeColor": "#c525252",
                         "libImagen": { "id": 1, "img": "images/projects/lingotter/1.jpg" },
                         "rol": "Full-Stack Developer",
                         "etiquetas": [
@@ -254,7 +240,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre": "Lingotter",
-                        "descripcion": "Web application developed in Laravel that strengthens English learning through gamified content, designed for Basic English students of the Faculty of Sciences and Humanities at the Gerard Barrios University. Configured a Digital Ocean server with a domain in Cloudflare.",
+                        "descripcion": "Web application developed in Laravel that strengthens English learning through gamified content, designed for Basic English students of the Faculty of Sciences and Humanities at the Gerard Barrios University. Configured on a Ubuntu server in Digital Ocean with a domain in Cloudflare.",
                         "lineasEspacio": 70,
                         "imagenes": [
                             "images/projects/lingotter/1.jpg",
@@ -267,9 +253,9 @@
                     {
                         "tamaño": [40, 50],
                         "posicion": ["top", "right"],
-                        "bordeColor": "#0000",
+                        "bordeColor": "#c525252",
                         "libImagen": { "id": 2, "img": "images/projects/feelsgood/1.jpeg" },
-                        "rol": "",
+                        "rol": "Full-Stack Developer",
                         "etiquetas": [
                             { "nombre": "AWS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -279,7 +265,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre": "Feels Good",
-                        "descripcion": "Web application developed in Laravel designed to search for psychological help, connecting users with health experts in various fields of mental health. A free domain was acquired in Freenom and connected to an AWS EC2 instance, along with an AWS RDS database.",
+                        "descripcion": "Web application developed in Laravel designed to search for psychological help, connecting users with health experts in various fields of mental health. A free domain was acquired in Freenom and connected to an Debian AWS EC2 instance, along with an AWS RDS database.",
                         "lineasEspacio": 70,
                         "imagenes": [
                             "images/projects/feelsgood/1.jpeg",
@@ -290,12 +276,13 @@
                         "enlace": "https://github.com/EliasParada/Programacion_Computacional_IV/tree/proyecto_final"
                     },
                     {
-                        "tamaño": [40, 50],
+                        "tamaño": [60, 40],
                         "posicion": ["bottom", "left"],
-                        "bordeColor": "#0000",
+                        "bordeColor": "#c525252",
                         "libImagen": { "id": 3, "img": "images/projects/faststore/1.jpeg" },
-                        "rol": "",
+                        "rol": "Full-Stack Developer",
                         "etiquetas": [
+                            { "nombre": "AI", "clases": "inline-block bg-red-200 text-red-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -312,11 +299,11 @@
                         "enlace": "https://github.com/EliasParada/Programacion_Computacional_III/tree/Proyecto_Final"
                     },
                     {
-                        "tamaño": [60, 50],
+                        "tamaño": [40, 50],
                         "posicion": ["bottom", "right"],
-                        "bordeColor": "#0000",
+                        "bordeColor": "#c525252",
                         "libImagen": { "id": 4, "img": "images/projects/imagenormalizer/1.jpeg" },
-                        "rol": "",
+                        "rol": "Full-Stack Developer",
                         "etiquetas": [
                             { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -339,11 +326,11 @@
                 "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
                 "proyectos": [
                     {
-                        "tamaño": [60, 50],
-                        "posicion": ["top", "left"],
-                        "bordeColor": "#0000",
+                        "tamaño": [60, 60],
+                        "posicion": ["top", "right"],
+                        "bordeColor": "#c525252",
                         "libImagen": {"id": 5, "img": "images\/projects\/calzadoamaya\/1.png"},
-                        "rol" : "Desarrollador Full-Stack",
+                        "rol" : "Full-Stack Developer",
                         "etiquetas": [
                             { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -353,7 +340,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Calzado Amaya",
-                        "descripcion" : "lorem impsu",
+                        "descripcion" : "Online store programmed in Laravel, integrates online payments through the PAGADITO library, as well as the possibility of making payments on delivery, with a complete dashboard to manage the store. Deployed on an Ubuntu server at Digital Ocean with Cloudflare domain.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/calzadoamaya/1.png",
@@ -367,10 +354,10 @@
                     },
                     {
                         "tamaño": [40, 50],
-                        "posicion": ["top", "right"],
-                        "bordeColor": "#0000",
-                        "libImagen": {"id": 6, "img": "images\/projects\/blank.png"},
-                        "rol" : "Desarrollador Back-End",
+                        "posicion": ["top", "left"],
+                        "bordeColor": "#c525252",
+                        "libImagen": {"id": 6, "img": "images\/projects\/arcaaccess\/1.jpg"},
+                        "rol" : "Back-End Developer",
                         "etiquetas": [
                             { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -380,82 +367,67 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Arca Access",
-                        "descripcion" : "Tiena de productos electronicos desarrollada en Laravel, ",
+                        "descripcion" : "Electronic products store developed in Laravel, with included cart that allows electronic payments through the PAGADITO library as well as cash on delivery, it has a purchase register. Set up an Ubuntu server at Digital Ocean and get a domain at Cloudflare.",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/blank.png"
+                            "images/projects/arcaaccess/1.jpg",
+                            "images/projects/arcaaccess/2.jpg",
+                            "images/projects/arcaaccess/3.jpg",
+                            "images/projects/arcaaccess/4.jpg",
+                            "images/projects/arcaaccess/5.jpg",
+                            "images/projects/arcaaccess/6.jpg"
                         ],
-                        "enlace": ""
+                        "enlace": "https://github.com/EliasParada/arca-access"
                     },
                     {
-                        "tamaño": [40, 50],
-                        "posicion": ["bottom", "left"],
-                        "bordeColor": "#0000",
-                        "libImagen": {"id": 7, "img": "images\/projects\/blank.png"},
-                        "rol" : "",
-                        "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
-                        ],
-                        "nombre" : "faststore",
-                        "descripcion" : "aaaaaaaaaaaaa",
-                        "lineasEspacio": 70,
-                        "imagenes" : [
-                            "images/projects/blank.png"
-                        ],
-                        "enlace": ""
-                    },
-                    {
-                        "tamaño": [60, 50],
+                        "tamaño": [60, 40],
                         "posicion": ["bottom", "right"],
-                        "bordeColor": "#0000",
-                        "libImagen": {"id": 8, "img": "images\/projects\/blank.png"},
-                        "rol" : "",
+                        "bordeColor": "#c525252",
+                        "libImagen": {"id": 7, "img": "images\/projects\/libreriaonline\/1.jpg"},
+                        "rol" : "Full-Stack Developer",
                         "etiquetas": [
-                            { "nombre": "PHP", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "JavaScript", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "HTML", "clases": "inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "CSS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" }
-                        ],
-                        "nombre" : "image normalizer",
-                        "descripcion" : "aaaaaaaaaaaaa",
-                        "lineasEspacio": 70,
-                        "imagenes" : [
-                            "images/projects/blank.png"
-                        ],
-                        "enlace": ""
-                    }
-                ]
-                
-            },
-            {
-                "orden": 3,
-                "nombre" : "",
-                "descripcion" : "Maximo 4 capas(proyectos) por diapositivas",
-                "proyectos": [
-                    {
-                        "tamaño": [100, 100],
-                        "posicion": ["top", "left"],
-                        "bordeColor": "#0000",
-                        "libImagen": {"id": 5, "img": "images\/projects\/blank.png"},
-                        "rol" : "Desarrollador Full-Stack",
-                        "etiquetas": [
-                            { "nombre": "Digital Ocean", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "Cloudflare", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
-                            { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "AI", "clases": "inline-block bg-red-200 text-red-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
-                        "nombre" : "Travel Accident",
-                        "descripcion" : "lorem impsu",
+                        "nombre" : "Online Bookstore",
+                        "descripcion" : "Virtual book store developed in Python that, through a neural model, is able to recommend books to users based on their tastes and those of users with whom they are similar.",
                         "lineasEspacio": 70,
                         "imagenes" : [
-                            "images/projects/blank.png"
+                            "images/projects/libreriaonline/1.jpg",
+                            "images/projects/libreriaonline/2.jpg",
+                            "images/projects/libreriaonline/3.jpg",
+                            "images/projects/libreriaonline/4.jpg",
+                            "images/projects/libreriaonline/5.jpg"
                         ],
-                        "enlace": "https://github.com/EliasParada/calzado-amaya"
+                        "enlace": "https://github.com/EliasParada/libreria-online"
+                    },
+                    {
+                        "tamaño": [40, 50],
+                        "posicion": ["bottom", "left"],
+                        "bordeColor": "#c525252",
+                        "libImagen": {"id": 8, "img": "images\/projects\/votacionesonline\/1.jpg"},
+                        "rol" : "Full-Stack Developer",
+                        "etiquetas": [
+                            { "nombre": "AI", "clases": "inline-block bg-red-200 text-red-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "HTML", "clases": "inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full mr-2 traducible" },
+                            { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
+                        ],
+                        "nombre" : "Online Voting",
+                        "descripcion" : "Web application developed in Python and based on AI that allows predicting the winner as voting progresses, taking into account the number of votes received by each candidate in a given period of time. It has an administrator section that monitors the actions of users in the voting.",
+                        "lineasEspacio": 70,
+                        "imagenes" : [
+                            "images/projects/votacionesonline/1.jpg",
+                            "images/projects/votacionesonline/2.jpg",
+                            "images/projects/votacionesonline/3.jpg",
+                            "images/projects/votacionesonline/4.jpg",
+                            "images/projects/votacionesonline/5.jpg"
+                        ],
+                        "enlace": "https://github.com/EliasParada/votaciones-online"
                     }
                 ]
                 

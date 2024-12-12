@@ -128,7 +128,7 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
     // Título del proyecto
     const titulo = document.createElement('h3');
     titulo.className = 'text-2xl font-bold mb-4 traducible';
-    titulo.textContent = proyecto.nombre;
+    titulo.textContent = data[currentLang].diapositivas[slideIndex].proyectos[projectIndex].nombre;
 
     // Agregar atributos data-en y data-es
     titulo.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[projectIndex].nombre || 'Project');
@@ -138,7 +138,7 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
     // Rol
     const rol = document.createElement('p');
     rol.className = 'mb-4 text-gray-600 traducible';
-    rol.textContent = `Rol: ${proyecto.rol}`;
+    rol.textContent = `Rol: ${data[currentLang].diapositivas[slideIndex].proyectos[projectIndex].rol}`;
     rol.setAttribute('data-en', `Role: ${data['en'].diapositivas[slideIndex].proyectos[projectIndex].rol}`);
     rol.setAttribute('data-es', `Rol: ${data['es'].diapositivas[slideIndex].proyectos[projectIndex].rol}`);
     contenidoScrollable.appendChild(rol);
@@ -146,7 +146,7 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
     // Descripción
     const descripcion = document.createElement('p');
     descripcion.className = 'mb-4 traducible';
-    descripcion.textContent = proyecto.descripcion;
+    descripcion.textContent = data[currentLang].diapositivas[slideIndex].proyectos[projectIndex].descripcion;
     descripcion.setAttribute('data-en', data['en'].diapositivas[slideIndex].proyectos[projectIndex].descripcion);
     descripcion.setAttribute('data-es', data['es'].diapositivas[slideIndex].proyectos[projectIndex].descripcion);
     contenidoScrollable.appendChild(descripcion);
