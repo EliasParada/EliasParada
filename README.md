@@ -1,6 +1,6 @@
 # Sobre mí
 
-![Perfil](https://yoelias.com)
+![Perfil](https://yoelias.com/img/mstile-144x144.png)
 
 ## Hola, soy un Desarrollador Web 👨‍💻
 
