@@ -1,33 +1,36 @@
-# Sobre mi
-### Soy un desarrollador web, que trabaja de lado del cliente tanto como de lado de servidor, he trabajado con herramientas muy conocidad dentro del mundo del desarrollo web y la técnología, como pueden ser:
+# Sobre mí
 
-- JS, HTML y CSS
-- Vue.js
-- Node.js
-- PHP
-- Laravel
-- Python
-- Tensorflow
-- Firebase
-- AWS
-- Azure
-- Git y Github
-- Boostrap, Tailwind CSS, UI Kit, Carbone, Material Designe
+![Perfil](https://yoelias.com)
 
-[Mi portafolio](https://eliasparada.github.io/EliasParada/)
+## Hola, soy un Desarrollador Web 👨‍💻
 
+Soy un desarrollador web con experiencia trabajando tanto en el lado del cliente como en el servidor. Me apasiona construir soluciones funcionales y atractivas utilizando tecnologías modernas y herramientas reconocidas en el mundo del desarrollo web y la tecnología.
 
-<!--
-**EliasParada/EliasParada** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Tecnologías y Herramientas
 
-Here are some ideas to get you started:
+- **Frontend:**
+  - JavaScript (JS), HTML, CSS
+  - Frameworks y librerías: Vue.js, Boostrap, Tailwind CSS, UI Kit, Material Design
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **Backend:**
+  - Node.js, PHP, Python
+  - Frameworks: Laravel
+
+- **Machine Learning y Data Science:**
+  - Tensorflow
+
+- **Bases de Datos y Cloud:**
+  - Firebase, AWS, Azure
+
+- **Control de Versiones:**
+  - Git y GitHub
+
+### Proyectos
+
+Puedes explorar algunos de mis proyectos y ver más detalles sobre mi trabajo en mi portafolio:
+
+[👉 Visita mi portafolio aquí](https://yoelias.com)
+
+---
+
+¡Estoy siempre abierto a colaborar en proyectos interesantes! No dudes en contactarme.
