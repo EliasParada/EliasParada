@@ -68,7 +68,7 @@ async function cargarContacto(language) {
                         required></textarea>
                 </label>
                 <button type="submit" class="inline-block bg-white text-red-500 font-bold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-red-100 traducible"
-                    data-en="Send message" data-es="Enviar mensaje">
+                    data-en="Send message" data-es="Enviar mensaje" id="enviar">
                     ${content.botonEnviar}
                 </button>
             `;
