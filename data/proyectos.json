@@ -22,7 +22,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Lingotter",
-                        "descripcion" : "Aplicaión Web desarrollada en Laravel que fortalece el aprenizaje del idioma ingles mediamte contenido gamificado, diseñado para estudiates de Inglés Básico de la Facultad en Ciencias y Humanidades de la Universidad Gerard Barrios. Configure un servidor Ubuntu en Digital Ocean con un dominio en Cloudflare.",
+                        "descripcion" : "Aplicación Web desarrollada en Laravel que fortalece el aprendizaje del idioma inglés mediante contenido gamificado, diseñado para estudiantes de Inglés Básico de la Facultad en Ciencias y Humanidades de la Universidad Gerardo Barrios. Configuré un servidor Ubuntu en Digital Ocean con un dominio en Cloudflare.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/lingotter/1.jpg",
@@ -47,7 +47,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Feels Good",
-                        "descripcion" : "Aplicación Web desarrollada en Laravel diseñada para la busqueda de ayuda psicologica, esto comunicando a usuarios con expertos de la salud en diversas ramas de la salud mental. Se contrato un dominio grátis en Freenom y se conecto a una instancia Debian en EC2 de AWS, juntoa a una base de datos RB2 de AWS.",
+                        "descripcion" : "Aplicación Web desarrollada en Laravel diseñada para la búsqueda de ayuda psicológica, esto comunicando a usuarios con expertos de la salud en diversas ramas de la salud mental. Se contrató un dominio gratis en Freenom y se conectó a una instancia Debian en EC2 de AWS, junto a una base de datos RB2 de AWS.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/feelsgood/1.jpeg",
@@ -71,7 +71,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Fast Store",
-                        "descripcion" : "Tienda Online programada en Python con un gestor de inventario impulsado por Inteligencia Artidicial que permite organizar automaticamente los productos que se almacenan en bodega mediante reconocimiento de imagen.",
+                        "descripcion" : "Tienda Online programada en Python con un gestor de inventario impulsado por Inteligencia Artificial que permite organizar automáticamente los productos que se almacenan en bodega mediante reconocimiento de imagen.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/faststore/1.jpeg",
@@ -93,7 +93,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Normalizador de Imagenes",
-                        "descripcion" : "Un proyecto extracurricular en Python que permite ingresar una serie de imagenes de una carpeta para asignarles una etiqueta, obteniendo así una carpeta de imagenes normalizadas para entrenar un modelo de inteligencia neuronal.",
+                        "descripcion" : "Un proyecto extracurricular en Python que permite ingresar una serie de imágenes de una carpeta para asignarles una etiqueta, obteniendo así una carpeta de imágenes normalizadas para entrenar un modelo de inteligencia neuronal.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/imagenormalizer/1.jpeg"
@@ -150,7 +150,7 @@
                             { "nombre": "CSS", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" }
                         ],
                         "nombre" : "Arca Access",
-                        "descripcion" : "Tiena de productos electronicos desarrollada en Laravel, con carrito incluido que permite pagos electronicos mediante la libreria de PAGADITO así como pagos a contra entrega, cuenta con un registro de compras. Configure un servidor Ubuntu en Digital Ocean y contate un dominio en Cloudflare.",
+                        "descripcion" : "Tienda de productos electrónicos desarrollada en Laravel, con carrito incluido que permite pagos electrónicos mediante la librería de PAGADITO así como pagos a contra entrega, cuenta con un registro de compras. Configuré un servidor Ubuntu en Digital Ocean y contraté un dominio en Cloudflare.",
                         "lineasEspacio": 70,
                         "imagenes" : [
                             "images/projects/arcaaccess/1.jpg",
