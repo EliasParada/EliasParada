@@ -28,7 +28,7 @@ async function cargarCertificados(language) {
         content.certificates.forEach((certificate, index) => {
             // Contenedor de cada certificado con fondo blanco y bordes redondeados
             const certificateContainer = document.createElement('div');
-            certificateContainer.className = 'certificate-card p-6 text-center bg-white rounded-lg shadow-md cursor-pointer relative flex flex-col justify-center items-center';
+            certificateContainer.className = 'certificate-card p-6 text-center bg-white rounded-lg shadow-md cursor-pointer relative';
 
             // Imagen del certificado
             const certificateImage = document.createElement('img');
