@@ -51,108 +51,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/progressbar.js@1.0.1/dist/progressbar.min.css" rel="stylesheet">
     <script src="/js/init.js"></script>
- <style>
-        /* .logo {
-            background-image: url('images/logo.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-        } */
-        .hero {
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image: url('img/bg.webp');
-            background-size: cover;
-            background-position: center;
-            filter: blur(2.5px);
-            z-index: -1;
-        }
-        .hero .overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .carousel img {
-            display: none;
-        }
-        .carousel img:first-child {
-            display: block;
-        }
-    </style>
-    <style>
-        /* Contenedor de cada habilidad */
-        .skill-card {
-            position: relative;
-            padding: 16px;
-            text-align: center;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-    
-        /* Contenedor de la barra de habilidad */
-        .progress-bar-container {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 100%;
-            height: 14px; /* Altura de la barra */
-            margin-top: 16px;
-            background-color: #e0e0e0; /* Fondo gris claro */
-            border-radius: 20px;
-            position: relative;
-        }
-    
-        /* Estilo para cada cuadro de la barra */
-        .progress-square {
-            width: 10px; /* Tamaño de cada cuadro */
-            height: 10px;
-            margin: 1px;
-            background-color: rgba(239, 68, 68, 0.5); /* Rojo opaco */
-            border-radius: 4px;
-            transition: background-color 0.2s ease-in-out;
-        }
-    
-        /* Animación de pulso cuando un cuadro se llena */
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 0 rgba(239, 68, 68, 0.7);
-            }
-            50% {
-                transform: scale(1.2);
-                box-shadow: 0 0 10px rgba(239, 68, 68, 0.7);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 0 rgba(239, 68, 68, 0.7);
-            }
-        }
-    
-        .pulsing {
-            animation: pulse 1s ease-in-out;
-        }
-    
-        /* Título de la habilidad */
-        .skill-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #EF4444;
-            margin-top: 12px;
-        }
-
-        
-    </style>
-    
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
             <div class="logo">
                 <img 
                     src="img/logox100.webp"
@@ -167,58 +71,58 @@
                     class="logo"
                 />
             </div>
-            <nav>
+    
+            <!-- Botón Hamburguesa (Móvil) -->
+            <button 
+                class="block md:hidden text-gray-700 focus:outline-none z-50" 
+                id="menu-toggle"
+            >
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+    
+            <!-- Menú para Escritorio -->
+            <nav class="hidden md:block">
                 <ul class="flex space-x-4 flex-wrap">
                     <li><a href="#about-me" class="text-gray-700 hover:text-gray-900">Sobre Mí</a></li>
                     <li><a href="#skills" class="text-gray-700 hover:text-gray-900">Habilidades</a></li>
-                    <!-- <li><a href="#experience" class="text-gray-700 hover:text-gray-900">Experiencia</a></li> -->
                     <li><a href="#projects" class="text-gray-700 hover:text-gray-900">Proyectos</a></li>
-                    <!-- <li><a href="#testimonials" class="text-gray-700 hover:text-gray-900">Testimonios</a></li> -->
                     <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contacto</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Menú Flotante para Móviles -->
+            <nav 
+                class="fixed inset-0 bg-white bg-opacity-95 flex flex-col items-center justify-center hidden md:hidden z-40" 
+                id="navbar-menu"
+            >
+                <ul class="space-y-6 text-center">
+                    <li><a href="#about-me" class="text-gray-700 hover:text-gray-900 text-lg">Sobre Mí</a></li>
+                    <li><a href="#skills" class="text-gray-700 hover:text-gray-900 text-lg">Habilidades</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-gray-900 text-lg">Proyectos</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900 text-lg">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <style>
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            background-color: rgba(255, 0, 0, 0.5);
-            z-index: 50;
-            transition: all 0.5s ease;
-        }
-
-        .expanded {
-            width: 100vw;
-            height: 100vh;
-        }
-
-        .content-hidden {
-            visibility: hidden;
-        }
-    </style>
-
-
     <div id="overlay" class="overlay"></div>
-    <section class="hero h-96 w-full relative flex items-center justify-center text-white">
+    <section class="hero h-96 w-full relative flex items-center justify-center text-white" data-aos="zoom-in">
         <div class="overlay"></div>
         <div class="text-center z-10 space-y-4">
             <h1 class="text-4xl font-bold mb-4">Elias Mauricio Parada Lozano</h1>
             <p class="text-xl">Desarrollador Back-End</p>
-            <a id="contactBtn" class="inline-block bg-gradient-to-r from-red-400 to-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-red-500 hover:to-red-800 transition-transform transform hover:scale-105" data-aos="zoom-in" href="#contact">Contactame</a>
+            <a id="contactBtn" class="inline-block bg-gradient-to-r from-red-400 to-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:from-red-500 hover:to-red-800 transition-transform transform hover:scale-105" href="#contact">Contactame</a>
         </div>
     </section>
     <main class="mx-auto pt-8">
         
         
-        <section id="about-me" class="mx-auto my-10">
+        <section id="about-me" data-aos="fade-up" class="mx-auto my-10">
         </section>
 
-        <section id="skills" class="p-8 bg-white shadow-lg rounded-lg">
+        <section id="skills" data-aos="fade-right" class="p-8 bg-white shadow-lg rounded-lg">
             <!-- Título de habilidades, contenido será insertado por JS -->
         </section>
 
@@ -342,8 +246,6 @@
     <script src="js/sections/contact.js"></script>
 
     <script>
-        AOS.init();
-
         document.addEventListener('DOMContentLoaded', () => {
             cargarHero(currentLang);
             cargarAboutMe(currentLang);
@@ -358,6 +260,25 @@
             //     if (seccionesActivas['testimonios']) cargarTestimonios('es');
             //     if (seccionesActivas['contacto']) cargarContacto('es');
             // });
+        });
+        
+        AOS.init();
+    </script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarMenu = document.getElementById('navbar-menu');
+        const menuLinks = navbarMenu.querySelectorAll('a');
+    
+        // Mostrar/Ocultar el menú flotante
+        menuToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('hidden');
+        });
+    
+        // Cerrar el menú al hacer clic en un enlace
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbarMenu.classList.add('hidden');
+            });
         });
     </script>
 
