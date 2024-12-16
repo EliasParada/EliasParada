@@ -45,7 +45,7 @@
 /* Imagen difuminada del inicio */
 .hero {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .hero::before {
   content: '';
