@@ -121,7 +121,7 @@ async function cargarHabilidades(language) {
                     isFirstScroll = false;
                 }
             });
-        }, { threshold: 0.5 }); // Activar cuando el 50% de la sección sea visible
+        }, { threshold: 0.1 }); // Activar cuando el 50% de la sección sea visible
 
         observer.observe(skillsSection); // Observar la sección de habilidades
 
