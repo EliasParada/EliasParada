@@ -151,3 +151,11 @@
 .content-hidden {
   visibility: hidden;
 }
+
+.me-icons {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+}

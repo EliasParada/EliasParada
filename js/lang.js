@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    changeLanguage(currentLang);
 });
 
 function changeLanguage(language) {

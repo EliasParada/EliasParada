@@ -37,7 +37,7 @@
                         "posicion": ["top", "right"],
                         "bordeColor": "#c525252",
                         "libImagen": {"id": 2, "img": "images\/projects\/feelsgood\/1.jpeg"},
-                        "rol" : "",
+                        "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
                             { "nombre": "AWS", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "Laravel", "clases": "inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -62,7 +62,7 @@
                         "posicion": ["bottom", "left"],
                         "bordeColor": "#c525252",
                         "libImagen": {"id": 3, "img": "images\/projects\/faststore\/1.jpeg"},
-                        "rol" : "",
+                        "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
                             { "nombre": "AI", "clases": "inline-block bg-red-200 text-red-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
@@ -85,7 +85,7 @@
                         "posicion": ["bottom", "right"],
                         "bordeColor": "#c525252",
                         "libImagen": {"id": 4, "img": "images\/projects\/imagenormalizer\/1.jpeg"},
-                        "rol" : "",
+                        "rol" : "Desarrollador Full-Stack",
                         "etiquetas": [
                             { "nombre": "Python", "clases": "inline-block bg-purple-200 text-purple-800 text-xs px-2 rounded-full mr-2 traducible" },
                             { "nombre": "JavaScript", "clases": "inline-block bg-yellow-200 text-yellow-800 text-xs px-2 rounded-full mr-2 traducible" },
