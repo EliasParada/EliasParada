@@ -83,10 +83,10 @@
     
             <nav class="hidden md:block">
                 <ul class="flex space-x-4 flex-wrap">
-                    <li><a href="#about-me" class="text-gray-700 hover:text-gray-900">Sobre Mí</a></li>
-                    <li><a href="#skills" class="text-gray-700 hover:text-gray-900">Habilidades</a></li>
-                    <li><a href="#projects" class="text-gray-700 hover:text-gray-900">Proyectos</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contacto</a></li>
+                    <li><a href="#about-me" class="text-gray-700 hover:text-gray-900 traducible" data-es="Sobre Mí" data-en="About me">Sobre Mí</a></li>
+                    <li><a href="#skills" class="text-gray-700 hover:text-gray-900 traducible" data-es="Habilidades" data-en="Skills">Habilidades</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-gray-900 traducible" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900 traducible" data-es="Contacto" data-en="Contact">Contacto</a></li>
                 </ul>
             </nav>
     
@@ -95,10 +95,10 @@
                 id="navbar-menu"
             >
                 <ul class="space-y-6 text-center">
-                    <li><a href="#about-me" class="text-gray-700 hover:text-gray-900 text-lg">Sobre Mí</a></li>
-                    <li><a href="#skills" class="text-gray-700 hover:text-gray-900 text-lg">Habilidades</a></li>
-                    <li><a href="#projects" class="text-gray-700 hover:text-gray-900 text-lg">Proyectos</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900 text-lg">Contacto</a></li>
+                    <li><a href="#about-me" class="text-gray-700 hover:text-gray-900 traducible" data-es="Sobre Mí" data-en="About me">Sobre Mí</a></li>
+                    <li><a href="#skills" class="text-gray-700 hover:text-gray-900 traducible" data-es="Habilidades" data-en="Skills">Habilidades</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-gray-900 traducible" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900 traducible" data-es="Contacto" data-en="Contact">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -256,13 +256,6 @@
             cargarCertificados(currentLang);
             cargarProyectos(currentLang);
             cargarContacto(currentLang);
-            // updateMenu('es').then(seccionesActivas => {
-            //     if (seccionesActivas['inicio']) cargarInicio('es');
-            //     if (seccionesActivas['sobre-mi']) cargarSobreMi('es');
-            //     if (seccionesActivas['proyectos']) cargarProyectos('es');
-            //     if (seccionesActivas['testimonios']) cargarTestimonios('es');
-            //     if (seccionesActivas['contacto']) cargarContacto('es');
-            // });
         });
         
         AOS.init();
@@ -271,21 +264,16 @@
         const menuToggle = document.getElementById('menu-toggle');
         const navbarMenu = document.getElementById('navbar-menu');
         const menuLinks = navbarMenu.querySelectorAll('a');
-    
-        // Mostrar/Ocultar el menú flotante
+
         menuToggle.addEventListener('click', () => {
             navbarMenu.classList.toggle('hidden');
         });
-    
-        // Cerrar el menú al hacer clic en un enlace
+
         menuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navbarMenu.classList.add('hidden');
             });
         });
-    </script>
-
-    <script>
         $('nav a, #contactBtn').click(function(e) {
             e.preventDefault();
             const target = $($(this).attr('href'));
