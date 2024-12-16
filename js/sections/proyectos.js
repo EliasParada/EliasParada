@@ -221,12 +221,6 @@ function abrirModal(proyecto, data, slideIndex, projectIndex) {
     }, 0);
 }
 
-
-
-document.getElementById('close-modal').addEventListener('click', () => {
-    document.getElementById('project-modal').classList.add('hidden');
-});
-
 window.addEventListener('click', (event) => {
     const modal = document.getElementById('project-modal');
     if (event.target === modal) {

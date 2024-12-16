@@ -11,7 +11,7 @@ async function cargarContacto(language) {
         const contactSection = document.getElementById("contact");
         const content = data[language];
         contactSection.innerHTML = '';
-        contactSection.classList.add('bg-gradient-to-r', 'from-red-500', 'to-red-700', 'py-8', 'rounded-lg', 'overflow-hidden');
+        contactSection.classList.add('bg-gradient-to-r', 'from-red-500', 'to-red-700', 'py-8', 'px-8','rounded-lg', 'overflow-hidden');
 
 
         // Título y subtítulo
@@ -75,7 +75,7 @@ async function cargarContacto(language) {
 
             // Redes sociales
             const redesContainer = document.createElement("div");
-            redesContainer.className = "flex justify-center space-x-4 mt-6";
+            redesContainer.className = "flex flex-col sm:flex-row justify-center items-center flex-wrap justify-center sm:space-x-4 mt-6";
 
             content.redes.forEach((red, index) => {
                 const link = document.createElement("a");

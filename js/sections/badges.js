@@ -49,7 +49,9 @@ async function cargarCertificados(language) {
             // Botón "Ver más"
             const viewMoreButton = document.createElement('button');
             viewMoreButton.className = 'btn bg-red-600 text-white rounded-lg py-2 px-4 mt-4 hover:bg-red-700 transition';
-            viewMoreButton.innerHTML = 'Ver más';
+            viewMoreButton.innerHTML = currentLang == 'es' ? 'Ver más' : 'See more';
+            certificateTitle.setAttribute('data-en', 'See more');
+            certificateTitle.setAttribute('data-es', 'Ver más');
             viewMoreButton.addEventListener('click', (event) => {
                 event.stopPropagation(); // Evitar que se active el clic en la imagen
                 abrirModalBadge(certificate.image, certificate.name, certificate.link, index, data);
@@ -61,7 +63,7 @@ async function cargarCertificados(language) {
 
             // Agregar evento click para mostrar enlace con ícono
             certificateImage.addEventListener('click', () => {
-                abrirModal(certificate.image, certificate.name, certificate.link);
+                abrirModalBadge(certificate.image, certificate.name, certificate.link, index, data);
             });
         });
 
@@ -71,13 +73,13 @@ async function cargarCertificados(language) {
         // Inicializar el carrusel de Slick
         $(document).ready(function () {
             $('.certificates-carousel').slick({
-                dots: true, // Muestra los puntos de navegación
-                infinite: true, // Carrusel infinito
-                speed: 500, // Velocidad de transición
-                slidesToShow: 1, // Muestra 3 certificados a la vez
-                slidesToScroll: 1, // Desplaza 1 certificado por vez
-                centerMode: true, // Centrar los elementos
-                focusOnSelect: true, // Hacer clic en un elemento lo selecciona
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                focusOnSelect: true,
                 responsive: [
                     {
                         breakpoint: 1024,
@@ -103,48 +105,53 @@ async function cargarCertificados(language) {
 // Función para abrir el modal con la imagen del certificado
 function abrirModalBadge(imageSrc, certificateName, certificateLink, index, data) {
     // Crear el modal
-    const modal = document.createElement('div');
-    modal.className = 'modal fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50';
+    const modal = document.getElementById('badge-modal');
+    const modalContent = document.getElementById('badge-content');
 
-    // Crear el contenedor del contenido del modal
-    const modalContent = document.createElement('div');
-    modalContent.className = 'modal-content bg-white p-6 rounded-lg relative max-w-lg mx-auto';
+    console.log(modalContent);
+
+    modalContent.innerHTML = '';
+
+    const botonCerrar = document.createElement('button');
+    botonCerrar.className =
+        'absolute top-4 right-4 bg-red-800 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-700 transition';
+    botonCerrar.innerHTML = '<i class="fas fa-times"></i>';
+    botonCerrar.addEventListener('click', () => modal.classList.add('hidden'));
+    modal.appendChild(botonCerrar);
 
     // Crear la imagen del certificado
     const certificateModalImage = document.createElement('img');
     certificateModalImage.className = 'w-full h-auto';
     certificateModalImage.src = imageSrc;
-    certificateModalImage.alt = certificateName;
+    certificateModalImage.alt = data[currentLang].certificates[index].name;
 
     // Título del certificado
     const certificateModalTitle = document.createElement('h3');
-    certificateModalTitle.className = 'text-2xl font-semibold mb-4';
-    certificateModalTitle.textContent = certificateName;
-
-    // Botón de cerrar modal
-    const closeButton = document.createElement('button');
-    closeButton.className = 'absolute top-2 right-2 text-white bg-red-600 rounded-full p-2';
-    closeButton.textContent = 'X';
-    closeButton.addEventListener('click', () => {
-        modal.remove();
-    });
+    certificateModalTitle.className = 'text-2xl font-semibold mb-4 traducible';
+    certificateModalTitle.textContent = data[currentLang].certificates[index].name;
+    certificateModalTitle.setAttribute('data-en', data['en'].certificates[index].name);
+    certificateModalTitle.setAttribute('data-es', data['es'].certificates[index].name);
 
     // Crear el botón con el enlace
     const viewCertificateButton = document.createElement('a');
     viewCertificateButton.href = certificateLink;
     viewCertificateButton.target = '_blank'; // Abrir el enlace en una nueva pestaña
-    viewCertificateButton.className = 'btn bg-red-600 text-white rounded-lg py-2 px-4 flex items-center justify-center hover:bg-red-700 transition';
-    viewCertificateButton.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>Ver Certificado`;
+    viewCertificateButton.className = 'btn bg-red-600 text-white rounded-lg py-2 px-4 flex items-center justify-center hover:bg-red-700 transition traducible';
+    viewCertificateButton.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${currentLang == 'es' ? 'Ver Certificado' : 'View Certificate'}`;
+    viewCertificateButton.setAttribute('data-en', '<i class="fas fa-external-link-alt mr-2"></i>View Certificate');
+    viewCertificateButton.setAttribute('data-es', '<i class="fas fa-external-link-alt mr-2"></i>Ver Certificado');
 
     // Añadir la imagen, el título, el botón y el enlace al contenido del modal
     modalContent.appendChild(certificateModalTitle);
     modalContent.appendChild(certificateModalImage);
-    modalContent.appendChild(closeButton);
     modalContent.appendChild(viewCertificateButton);
 
-    // Añadir el contenido del modal al modal
-    modal.appendChild(modalContent);
-
-    // Añadir el modal al cuerpo del documento
-    document.body.appendChild(modal);
+    modal.classList.remove('hidden');
 }
+
+window.addEventListener('click', (event) => {
+    const modal = document.getElementById('badge-modal');
+    if (event.target === modal) {
+        modal.classList.add('hidden');
+    }
+});

@@ -24,20 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
     languageOptions.forEach(option => {
         option.addEventListener('click', (e) => {
             const selectedLang = e.target.getAttribute('data-lang');
-
-            // Guardar idioma en localStorage
             localStorage.setItem('selectedLanguage', selectedLang);
-
-            // Resaltar el idioma seleccionado
             highlightSelectedLanguage(selectedLang);
 
-            // Lógica para cambiar idioma (aquí puedes agregar la funcionalidad específica)
             changeLanguage(selectedLang);
             languageMenu.classList.add('hidden');
         });
     });
 
-    // Cerrar el menú si se hace clic fuera de él
     document.addEventListener('click', (e) => {
         if (!languageButton.contains(e.target) && !languageMenu.contains(e.target)) {
             languageMenu.classList.add('hidden');
@@ -72,6 +66,14 @@ function changeLanguage(language) {
             if (text) {
                 el.innerHTML = text;
             }
+        }
+    });
+
+    const downloaderElements = document.querySelectorAll('.downloader');
+    downloaderElements.forEach(el => {
+        const downloadLink = el.getAttribute(`data-${language}-file`);
+        if (downloadLink) {
+            el.setAttribute('href', downloadLink);
         }
     });
 }

@@ -4,7 +4,7 @@
         "description": "Soy Elias Mauricio Parada Lozano, un desarrollador back-end apasionado por la creación de soluciones web innovadoras. Con experiencia en HTML, CSS, JavaScript, PHP, Laravel, Node.js, Vue, y Firebase, estoy siempre buscando nuevas tecnologías y desafíos para mejorar mis habilidades y aportar valor a los proyectos en los que participo.",
         "download": { 
             "title": "Descargar CV", 
-            "rute": "public/docs/curriculum vitae Elias Parada ES.pdf"
+            "rute": "docs/curriculum vitae Elias Parada ES.pdf"
         },
         "profile_image": "img/about.webp"
     },
@@ -13,7 +13,7 @@
         "description": "I'm Elias Mauricio Parada Lozano, a back-end developer passionate about creating innovative web solutions. With experience in HTML, CSS, JavaScript, PHP, Laravel, Node.js, Vue, and Firebase, I'm always seeking new technologies and challenges to improve my skills and add value to the projects I work on.",
         "download": { 
             "title": "Download CV", 
-            "rute": "public/docs/en/cv.pdf"
+            "rute": "docs/curriculum vitae Elias Parada EN.pdf"
         },
         "profile_image": "img/about.webp"
     }

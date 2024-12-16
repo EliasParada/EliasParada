@@ -11,26 +11,21 @@ async function cargarAboutMe(language) {
 
         const content = data[language];
 
-        // Seleccionar la sección
         const aboutMeSection = document.getElementById('about-me');
 
-        // Limpiar contenido previo
         aboutMeSection.innerHTML = '';
 
-        // Crear el contenedor principal
         const container = document.createElement('div');
         container.className = 'flex flex-col lg:flex-row items-center bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg shadow-lg p-8';
 
-        // Imagen de perfil
         const imageContainer = document.createElement('div');
         imageContainer.className = 'w-full lg:w-1/3 mb-6 lg:mb-0';
         const profileImage = document.createElement('img');
         profileImage.src = content.profile_image;
-        profileImage.alt = 'Profile Image';
+        profileImage.alt = 'Elías Mauricio Parada Lozano';
         profileImage.className = 'rounded-full shadow-lg w-48 h-48 mx-auto';
         imageContainer.appendChild(profileImage);
 
-        // Contenido textual
         const textContainer = document.createElement('div');
         textContainer.className = 'w-full lg:w-2/3 text-center lg:text-left';
 
@@ -47,15 +42,17 @@ async function cargarAboutMe(language) {
         description.setAttribute('data-es', data['es'].description || 'Descripción por defecto');
 
         const downloadButton = document.createElement('a');
-        downloadButton.href = content.download.rute;
-        downloadButton.textContent = content.download.title;
+        downloadButton.href = data[currentLang].download.rute;
+        downloadButton.textContent = data[currentLang].download.title;
         downloadButton.target = '_blank';
         downloadButton.rel = 'noopener noreferrer';
         downloadButton.className =
-            'inline-block bg-white text-red-500 font-bold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-red-100 traducible';
+            'inline-block bg-white text-red-500 font-bold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-red-100 traducible downloader';
         downloadButton.setAttribute('data-en', data['en'].download.title || 'Download CV');
         downloadButton.setAttribute('data-es', data['es'].download.title || 'Descargar CV');
-        downloadButton.setAttribute('download', 'cv.pdf');
+        downloadButton.setAttribute('download', 'CV Elias Parada.pdf');
+        downloadButton.setAttribute('data-en-file', data['en'].download.rute);
+        downloadButton.setAttribute('data-es-file', data['es'].download.rute);
 
         // Agregar elementos al contenedor de texto
         textContainer.appendChild(title);
