@@ -28,7 +28,7 @@
             },
             {
                 "name": "Laravel",
-                "icono": "<i class='fa-solid fa-l'></i>",
+                "icono": "<i class='fa-brands fa-laravel'></i>",
                 "percent": 0.75,
                 "frameworks": []
             },
@@ -46,7 +46,7 @@
             },
             {
                 "name": "Firebase",
-                "icono": "<i class='fa-brands fa-fire'></i>",
+                "icono": "<i class='me-icons icon-firebase'></i>",
                 "percent": 0.65,
                 "frameworks": []
             },
@@ -99,7 +99,7 @@
             },
             {
                 "name": "Laravel",
-                "icono": "<i class='fa-solid fa-l'></i>",
+                "icono": "<i class='fa-brands fa-laravel'></i>",
                 "percent": 0.75,
                 "frameworks": []
             },
@@ -117,7 +117,7 @@
             },
             {
                 "name": "Firebase",
-                "icono": "<i class='fa-brands fa-fire'></i>",
+                "icono": "<i class='me-icons icon-firebase'></i>",
                 "percent": 0.65,
                 "frameworks": []
             },

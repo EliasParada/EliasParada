@@ -147,6 +147,8 @@ async function cargarHabilidades(language) {
             }
         }, true);
 
+        cargarIcons();
+
     } catch (error) {
         console.error('Error al cargar las habilidades:', error);
     }
