@@ -28,11 +28,11 @@ async function cargarCertificados(language) {
         content.certificates.forEach((certificate, index) => {
             // Contenedor de cada certificado con fondo blanco y bordes redondeados
             const certificateContainer = document.createElement('div');
-            certificateContainer.className = 'certificate-card p-6 text-center bg-white rounded-lg shadow-md cursor-pointer relative';
+            certificateContainer.className = 'certificate-card p-6 text-center bg-white rounded-lg shadow-md cursor-pointer relative flex flex-col justify-center items-center';
 
             // Imagen del certificado
             const certificateImage = document.createElement('img');
-            certificateImage.className = 'w-full h-auto rounded-lg';
+            certificateImage.className = 'rounded-lg w-44 h-44 m-auto';
             certificateImage.src = certificate.image;
             certificateImage.alt = certificate.name;
             certificateImage.setAttribute('data-link', certificate.link); // Guardamos el enlace en el atributo de la imagen
@@ -50,8 +50,8 @@ async function cargarCertificados(language) {
             const viewMoreButton = document.createElement('button');
             viewMoreButton.className = 'btn bg-red-600 text-white rounded-lg py-2 px-4 mt-4 hover:bg-red-700 transition';
             viewMoreButton.innerHTML = currentLang == 'es' ? 'Ver más' : 'See more';
-            certificateTitle.setAttribute('data-en', 'See more');
-            certificateTitle.setAttribute('data-es', 'Ver más');
+            viewMoreButton.setAttribute('data-en', 'See more');
+            viewMoreButton.setAttribute('data-es', 'Ver más');
             viewMoreButton.addEventListener('click', (event) => {
                 event.stopPropagation(); // Evitar que se active el clic en la imagen
                 abrirModalBadge(certificate.image, certificate.name, certificate.link, index, data);
@@ -121,7 +121,7 @@ function abrirModalBadge(imageSrc, certificateName, certificateLink, index, data
 
     // Crear la imagen del certificado
     const certificateModalImage = document.createElement('img');
-    certificateModalImage.className = 'w-full h-auto';
+    certificateModalImage.className = 'w-96 h-auto m-auto';
     certificateModalImage.src = imageSrc;
     certificateModalImage.alt = data[currentLang].certificates[index].name;
 
