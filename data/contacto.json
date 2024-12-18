@@ -8,7 +8,7 @@
             { "nombre": "Elías Parada Lozano", "url": "https://www.linkedin.com/in/eliasparadalozano/", "icono": "fa-brands fa-linkedin" },
             { "nombre": "EliasParada", "url": "https://github.com/EliasParada", "icono": "fa-brands fa-github" },
             { "nombre": "eliasparadalozano@hotmail.com", "url": "mailto:eliasparadalozano@hotmail.com", "icono": "fa-solid fa-envelope" },
-            { "nombre": "7712-14813", "url": "tel:50377124813", "icono": "fa-solid fa-phone" }
+            { "nombre": "7712-4813", "url": "tel:50377124813", "icono": "fa-solid fa-phone" }
         ]
     },
     "en": {
@@ -20,7 +20,7 @@
             { "nombre": "Elías Parada Lozano", "url": "https://www.linkedin.com/in/eliasparadalozano/", "icono": "fa-brands fa-linkedin" },
             { "nombre": "EliasParada", "url": "https://github.com/EliasParada", "icono": "fa-brands fa-github" },
             { "nombre": "eliasparadalozano@hotmail.com", "url": "mailto:eliasparadalozano@hotmail.com", "icono": "fa-solid fa-envelope" },
-            { "nombre": "7712-14813", "url": "tel:50377124813", "icono": "fa-solid fa-phone" }
+            { "nombre": "7712-4813", "url": "tel:50377124813", "icono": "fa-solid fa-phone" }
         ]
     }
 }
