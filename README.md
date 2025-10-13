@@ -1,6 +1,9 @@
 # Sobre mí
 
-![Perfil](https://yoelias.com/img/mstile-144x144.png)
+<!--
+[Perfil](https://yoelias.com/img/mstile-144x144.png)
+-->
+![Perfil](https://portfolioelias.pages.dev/img/mstile-144x144.png)
 
 ## Hola, soy un Desarrollador Web 👨‍💻
 
@@ -29,7 +32,10 @@ Soy un desarrollador web con experiencia trabajando tanto en el lado del cliente
 
 Puedes explorar algunos de mis proyectos y ver más detalles sobre mi trabajo en mi portafolio:
 
+<!--
 [👉 Visita mi portafolio aquí](https://yoelias.com)
+-->
+[👉 Visita mi portafolio aquí](https://portfolioelias.pages.dev/)
 
 ---
 
